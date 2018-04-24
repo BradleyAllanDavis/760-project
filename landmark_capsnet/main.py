@@ -6,8 +6,8 @@ import time
 from skimage.transform import resize
 import matplotlib.pyplot as plt
 
-from zz_model_dynm_classes import CapsNet
-from zz_config_face import args
+from model import CapsNet
+from config import args
 # import Utils_Data
 
 #############  for different datasets, only need to change zz_config_face
@@ -17,13 +17,13 @@ from zz_config_face import args
 # length = 2965     # for face96 dataset
 
 def train(args, from_epoch=0):
-    acc_file = open("acc_0410.txt", 'w')                    
+    acc_file = open("acc_0410.txt", 'w')
     tf.set_random_seed(100)
     imgs = tf.placeholder(tf.float32, [args.batch_size, args.height,
                                        args.width, args.num_channel])
     labels_raw = tf.placeholder(tf.float32, [args.batch_size])
     labels = tf.one_hot(tf.cast(labels_raw, tf.int32), args.num_class)
-                        
+
     model = CapsNet(imgs, labels, 'capsnet')
     model.build()
     model.calc_loss()
@@ -56,7 +56,7 @@ def train(args, from_epoch=0):
 ##    test_img, test_label = prepare_data(args.data_path, 'mnist_test.csv', 10000)
 ##    test_img = np.reshape(test_img, [-1, 28, 28, 1])
 
-############           for face96 data    
+############           for face96 data
 ##    data = np.load("face_96.npy")
 ##    total_label = data[:,0]
 ##    total_img = data[:,1:]/255
@@ -84,7 +84,7 @@ def train(args, from_epoch=0):
 ##    train_img = train_img_resize
 ##    test_img = test_img_resize
 
-################   for landmark data, don't need this one 
+################   for landmark data, don't need this one
 #######            idea is using getimagebatch and keep track of
 ##########         label using index of the labels.npy
 ##    #train_labels = np.load("labels_train_8249.npy")
@@ -95,7 +95,7 @@ def train(args, from_epoch=0):
 ##    # print(data_meta.shape)  (1225029,3)
 ##    (data_urls_train, labels_train, imgid_train, data_urls_test,
 ##     labels_test, imgid_test) = Utils_Data.FormatDataset(data_meta,
-##              num_labels=num_labels, train_size=train_size, test_size=test_size) 
+##              num_labels=num_labels, train_size=train_size, test_size=test_size)
 ##    num_train = data_urls_train.size
 ##    num_test = data_urls_test.size
 ##    #print(set(labels_train),set(labels_test))   ## 50 classes
@@ -121,7 +121,7 @@ def train(args, from_epoch=0):
 ##    raise
 ##
 
-######   load train and test data, trainsize ~30000, testsize ~34000    
+######   load train and test data, trainsize ~30000, testsize ~34000
     train_img = np.load("train_img_resize_1.npy")
     print("check: ", train_img.max(), train_img.shape)
     train_label = np.load("train_label_1.npy")
@@ -175,15 +175,15 @@ def train(args, from_epoch=0):
                 val_img_bch = test_img[(j*args.batch_size):((j+1)*args.batch_size),:,:,:]
                 val_label_bch = test_label[(j*args.batch_size):((j+1)*args.batch_size)]
                 #val_img_bch, _curr_index, _label_index = Utils_Data.GetImageBatch(urls=data_urls_train,
-                #    start_index=_curr_index,imgids=imgid_test, batch_size=args.batch_size, 
+                #    start_index=_curr_index,imgids=imgid_test, batch_size=args.batch_size,
                 #    path='./test_images', n_rows=28, n_cols=28)
                 #val_label_bch = labels_test[_label_index]
-                    
+
                 val_acc = sess.run(accuracy,
                                    feed_dict={imgs: val_img_bch,
                                               labels_raw: val_label_bch})
                 acc.append(val_acc)
-                    
+
             print("Epoch: {} TestAccu: {:.4f}".format(
                   epoch, np.mean(acc)))
             acc_file.write("Epoch: {} TestAccu: {:.4f}\n".format(
@@ -216,7 +216,7 @@ def train(args, from_epoch=0):
 ##    imgs = data[:,1:]/255
 ##    return imgs, labels
 ##a,b = prepare_data('face_96.npy', 2965)
-    
+
 
 if __name__ == "__main__":
     #data = np.load("face_96.npy")

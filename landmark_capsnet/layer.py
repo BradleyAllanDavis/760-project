@@ -1,6 +1,6 @@
 import numpy as np
 import tensorflow as tf
-from zz_config_face import args
+from config import args
 
 
 class CapsLayer(object):

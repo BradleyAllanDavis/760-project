@@ -1,6 +1,6 @@
 import tensorflow as tf
-from zz_layer_dynm_classes import CapsLayer
-from zz_config_face import args
+from  import CapsLayer
+from config import args
 
 
 class CapsNet():
