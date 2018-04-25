@@ -75,14 +75,14 @@ def main(unused_argv):
     """Get batch from data queue."""
     batch_x, batch_labels = create_inputs() # get_create_inputs from capsnetEM_datautils.py
     # batch_y = tf.one_hot(batch_labels, depth=10, axis=1, dtype=tf.float32)
-    breakpoint()
+    # breakpoint()
 
     """Define the dataflow graph."""
     m_op = tf.placeholder(dtype=tf.float32, shape=())
     # with tf.device('/gpu:0'):
     with tf.device('/cpu:0'):
       with slim.arg_scope([slim.variable], device='/cpu:0'):
-        breakpoint()
+        # breakpoint()
         batch_squash = tf.divide(batch_x, 255.)
         batch_x = slim.batch_norm(batch_x, center=False, is_training=True, trainable=True)
         output, pose_out = build_arch(batch_x, coord_add, is_train=True,
