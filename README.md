@@ -10,12 +10,12 @@ The code in this repository relies is written in python 3. In python 3 the pytho
 	source activate py3env
 	conda install numpy
  	conda install pillow
- 	conda install tensorflow
+ 	conda install tensorflow=1.3.0
  	pip install daiquiri
 ```
 
 The package daiquiri is needed for logging in the capsnetEM model. Pillow is needed to load the 
-landmark dataset.
+landmark dataset. 
 
 ### CapsNetEM Setup
 
@@ -25,6 +25,8 @@ After downloading all the dependencies above, create the following two directori
 	mkdir mnist_capsnetEM/logdir/
 	mkdir mnist_capsnetEM/test_logdir/
 ```
+
+Finally make sure that the line `line 83` in `capsnetEM_mnist_train.py` is set to use cpu or gpu whatever you need.
 
 Then to train simply run `capsnetEM_mnist_train.py`.
 
