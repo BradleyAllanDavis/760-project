@@ -3,7 +3,7 @@
 
 ## Setup 
 
-The code in this repository relies is written in python 3.
+The code in this repository relies is written in python 3. In python 3 the python image library (PIL) is called pillow. 
 
 ```
 	conda create -n py3env python=3.5
@@ -12,9 +12,6 @@ The code in this repository relies is written in python 3.
  	conda install pillow
  	conda install tensorflow
 ```
-
-In python 3 the python image library (PIL) is called pillow.
-
 
 #### Dataset utility code dependencies
 
