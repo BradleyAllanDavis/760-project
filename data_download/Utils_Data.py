@@ -232,5 +232,14 @@ def GetImageBatch(urls, start_index, imgids=0, batch_size=4, path='./', n_rows=2
 	end_index = curr_index
 	return (I_batch, end_index)
 
+def parse_data(data_file):
+	csvfile = open(data_file, 'r')
+	csvreader = csv.reader(csvfile)
+	key_url_list = []
+	for line in csvreader:
+		key_url_list.append(line)
+	# key_url_list = [line[:3] for line in csvreader]
+	return key_url_list[1:]  # Chop off header
+
 
 
