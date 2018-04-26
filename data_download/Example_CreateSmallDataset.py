@@ -2,8 +2,8 @@
 
 ##### Python Libraries
 import numpy as np
-# from IPython.core import debugger
-# breakpoint = debugger.set_trace
+from IPython.core import debugger
+breakpoint = debugger.set_trace
 ##### Local libraries
 import Utils_Data
 from Timer import Timer
@@ -12,7 +12,7 @@ from Timer import Timer
 ##### set the filename_urls to train.npy, set num_labels to 14951, set the 
 ##### for loop iterations to data_urls_train.size
 ##### Path to datasets
-path_urls = '../data/image_retrieval/image_recognition/'
+path_urls = '../../data/image_retrieval/image_recognition/'
 save_path = path_urls + 'images/'
 filename_urls = 'train.npy' # Change this to train.npy to download the full dataset
 N_min = 5000

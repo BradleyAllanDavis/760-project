@@ -40,6 +40,7 @@ flags.DEFINE_boolean('is_train', True, 'train or predict phase')
 flags.DEFINE_integer('num_threads', 8, 'number of threads of enqueueing examples')
 flags.DEFINE_string('logdir', 'logdir', 'logs directory')
 flags.DEFINE_string('test_logdir', 'test_logdir', 'test logs directory')
+flags.DEFINE_integer('checkpoint_frequency', 10, 'how often to checkpoint the model')
 
 cfg = tf.app.flags.FLAGS
 

@@ -71,7 +71,7 @@ def main(unused_argv):
       1e-3, global_step, num_batches_per_epoch, 0.8), 1e-5)
     tf.summary.scalar('learning_rate', lrn_rate)
     opt = tf.train.AdamOptimizer()  # lrn_rate
-
+    breakpoint()
     """Get batch from data queue."""
     batch_x, batch_labels = create_inputs() # get_create_inputs from capsnetEM_datautils.py
     # batch_y = tf.one_hot(batch_labels, depth=10, axis=1, dtype=tf.float32)
@@ -169,6 +169,7 @@ def main(unused_argv):
               m = m_max
 
           """Save model periodically"""
+        if((step % (cfg.checkpoint_frequency*num_batches_per_epoch))==0):
           ckpt_path = os.path.join(
             cfg.logdir + '/caps/{}/'.format(dataset_name), 'model-{:.4f}.ckpt'.format(loss_value))
           saver.save(sess, ckpt_path, global_step=step)
