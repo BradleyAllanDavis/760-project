@@ -2,8 +2,8 @@
 
 ##### Python Libraries
 import numpy as np
-# from IPython.core import debugger
-# breakpoint = debugger.set_trace
+from IPython.core import debugger
+breakpoint = debugger.set_trace
 ##### Local libraries
 import Utils_Data
 from Timer import Timer
@@ -12,7 +12,7 @@ from Timer import Timer
 ##### set the filename_urls to train.npy, set num_labels to 14951, set the 
 ##### for loop iterations to data_urls_train.size
 ##### Path to datasets
-path_urls = '../data/image_retrieval/image_recognition/'
+path_urls = '../../data/image_retrieval/image_recognition/'
 path_images = path_urls + 'images/'
 filename_urls = 'train.npy' # Change this to train.npy to download the full dataset
 ##### Dataset format parameters
@@ -36,6 +36,11 @@ dataset = np.load(path_urls+filename_urls)
 ##### Split dataset in train and test containing the specified number of classes
 ## The following function returns all entries sorted for both train and test sets.
 (data_urls_train, labels_train, imgid_train, data_urls_test, labels_test, imgid_test) = Utils_Data.FormatDataset(dataset, num_labels=num_labels, train_size=train_size, test_size=test_size) 
+##### Shuffle the training dataset
+shuffled_indeces = np.random.permutation(labels_train.size)
+data_urls_train = data_urls_train[shuffled_indeces] 
+labels_train = labels_train[shuffled_indeces] 
+imgid_train = imgid_train[shuffled_indeces] 
 #####
 ## Curr index keeps track of where in the urls array we are at. Sometimes we will have to skip
 ## urls when loading a batch and this makes sure that we take into account that  
