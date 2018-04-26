@@ -108,12 +108,12 @@ def FormatDataset(dataset, num_labels=10, train_size=0.9, test_size=0.1):
 		curr_index = end_index_test
 	print("Train set size: {}, Test set size: {}".format(n_labels_train.size,n_labels_test.size))
 	##### Remove some extra characters from each string
-	for i in range(n_label_train_dataset.size): 
-		n_label_train_dataset[i] = n_label_train_dataset[i][1:-1] 
-		n_label_train_ids[i] = n_label_train_ids[i][1:-1] 
+	for i in range(n_label_train_dataset.size):
+		n_label_train_dataset[i] = n_label_train_dataset[i] 
+		n_label_train_ids[i] = n_label_train_ids[i] 
 	for i in range(n_label_test_dataset.size): 
-		n_label_test_dataset[i] = n_label_test_dataset[i][1:-1] 
-		n_label_test_ids[i] = n_label_test_ids[i][1:-1] 
+		n_label_test_dataset[i] = n_label_test_dataset[i] 
+		n_label_test_ids[i] = n_label_test_ids[i] 
 
 	return (n_label_train_dataset,n_labels_train,n_label_train_ids,n_label_test_dataset,n_labels_test,n_label_test_ids)
 

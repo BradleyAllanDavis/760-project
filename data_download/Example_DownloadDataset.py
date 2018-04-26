@@ -32,7 +32,6 @@ dataset = np.load(path_urls+filename_urls)
 ##### Split dataset in train and test containing the specified number of classes
 ## The following function returns all entries sorted for both train and test sets.
 (data_urls_train, labels_train, imgid_train, data_urls_test, labels_test, imgid_test) = Utils_Data.FormatDataset(dataset, num_labels=num_labels, train_size=train_size, test_size=test_size) 
-breakpoint()
 
 ########## DOWNLOAD TRAINING SET ##############
 #### UNCOMMENT THE FOLLOWING SNIPPET TO DOWNLOAD THE TRAIN SET
