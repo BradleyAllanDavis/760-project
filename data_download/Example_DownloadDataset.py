@@ -35,21 +35,20 @@ dataset = np.load(path_urls+filename_urls)
 
 ########## DOWNLOAD TRAINING SET ##############
 #### UNCOMMENT THE FOLLOWING SNIPPET TO DOWNLOAD THE TRAIN SET
-n_images = data_urls_train.size
-##### Downloads Train set
+# n_images = data_urls_train.size
+# ##### Downloads Train set
+# for i in range(0,n_images):
+# 	with Timer('Download Image Time'):
+# 		print("Image {} out of {}".format(i, n_images))
+# 		# image = Utils_Data.DownloadAndSaveImage(url=data_urls_train[i],out_dir=save_path,imgid=imgid_train[i])
+# 		image = Utils_Data.DownloadResizeAndSave(url=data_urls_train[i],out_dir=save_path,imgid=imgid_train[i])
+
+########## DOWNLOAD TEST SET ##############
+#### UNCOMMENT THE FOLLOWING SNIPPET TO DOWNLOAD THE TEST SET
+n_images = data_urls_test.size
+##### Downloads Test set
 for i in range(0,n_images):
 	with Timer('Download Image Time'):
 		print("Image {} out of {}".format(i, n_images))
 		# image = Utils_Data.DownloadAndSaveImage(url=data_urls_train[i],out_dir=save_path,imgid=imgid_train[i])
-		image = Utils_Data.DownloadResizeAndSave(url=data_urls_train[i],out_dir=save_path,imgid=imgid_train[i])
-
-########## DOWNLOAD TEST SET ##############
-#### UNCOMMENT THE FOLLOWING SNIPPET TO DOWNLOAD THE TEST SET
-# n_images = data_urls_test.size
-# ##### Downloads Test set
-# for i in range(0,n_images):
-# 	breakpoint()
-# 	with Timer('Download Image Time'):
-# 		print("Image {} out of {}".format(i, n_images))
-# 		# image = Utils_Data.DownloadAndSaveImage(url=data_urls_train[i],out_dir=save_path,imgid=imgid_train[i])
-# 		image = Utils_Data.DownloadResizeAndSave(url=data_urls_test[i],out_dir=save_path,imgid=imgid_test[i])
+		image = Utils_Data.DownloadResizeAndSave(url=data_urls_test[i],out_dir=save_path,imgid=imgid_test[i])
