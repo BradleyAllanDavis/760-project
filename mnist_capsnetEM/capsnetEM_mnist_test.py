@@ -68,7 +68,6 @@ def main(args):
         allow_soft_placement=True, log_device_placement=False)) as sess:
       sess.run(tf.local_variables_initializer())
       sess.run(tf.global_variables_initializer())
-
       coord = tf.train.Coordinator()
       threads = tf.train.start_queue_runners(sess=sess, coord=coord)
       if not os.path.exists(cfg.test_logdir + '/{}/{}/'.format(model_name, dataset_name)):
@@ -77,9 +76,14 @@ def main(args):
         cfg.test_logdir + '/{}/{}/'.format(model_name, dataset_name), graph=sess.graph)  # graph=sess.graph, huge!
 
       files = os.listdir(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name))
-      for epoch in range(20, cfg.epoch):
+      ckpt_frequency = cfg.checkpoint_frequency
+      n_ckpts = int(np.round(cfg.epoch / ckpt_frequency))
+      epochs = np.arange(0, n_ckpts)*num_batches_per_epoch_train*ckpt_frequency
+      # for epoch in range(20, cfg.epoch):
+      for epoch_id in epochs:
         # requires a regex to adapt the loss value in the file name here
-        ckpt_re = ".ckpt-%d" % (num_batches_per_epoch_train * epoch)
+        # ckpt_re = ".ckpt-%d" % (num_batches_per_epoch_train * epoch)
+        ckpt_re = ".ckpt-%d" % (epoch_id)
         for __file in files:
           if __file.endswith(ckpt_re + ".index"):
             ckpt = os.path.join(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name), __file[:-6])
