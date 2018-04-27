@@ -10,7 +10,7 @@ from model import CapsNet
 from config import args
 # import Utils_Data
 
-#############  for different datasets, only need to change zz_config_face
+#############  for different datasets, only need to change config
 #############                for all three .py files
 ###############          04/10/18   worked
 
