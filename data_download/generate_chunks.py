@@ -4,10 +4,14 @@ from skimage.transform import resize
 
 import Utils_Data
 
+''' when using the codes, change the following three paths to your path'''
+
 num_labels = 50
 train_size = 0.9
 test_size = 0.1
 data_meta = np.load("../train.npy")
+Train_img_path = "../images/"
+Test_img_paht = "../test_images/"
 
 chunk_size = 30000
 
@@ -38,7 +42,7 @@ def generate():
     np.random.seed(100)
     np.random.shuffle(imgid_test)
 
-    def generate_chunk(img, label, i, name):
+    def generate_chunk(img, label, img_path, i, name):
         in_memory_labels = label[i*chunk_size:(i+1)*chunk_size]
         in_memory_imgid = img[i*chunk_size:(i+1)*chunk_size]
         curr_index = 0
@@ -47,7 +51,7 @@ def generate():
         for j,img_id in enumerate(in_memory_imgid):
             try:
                 print(curr_index)
-                loc = os.path.join("../images/","{}_{}_{}".format(img_id,256,256))+".npy"
+                loc = os.path.join(img_path, "{}_{}_{}".format(img_id,256,256))+".npy"
                 img = np.load(loc)  ## (256,256,3)
                 #out[curr_index] = img
                 img_resize[curr_index] = resize(img,[28,28,3])
@@ -62,9 +66,9 @@ def generate():
 
     ## generate train chunks
     for i in range(10):
-        generate_chunk(imgid_train, labels_train, i, 'train')
+        generate_chunk(imgid_train, labels_train, Train_img_path, i, 'train')
     ## generate test chunk
-    generate_chunk(imgid_test, labels_test, 0, 'test')
+    generate_chunk(imgid_test, labels_test, Test_img_path, 0, 'test')
     
 if __name__ == "__main__":
     generate()
