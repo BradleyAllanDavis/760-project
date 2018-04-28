@@ -127,10 +127,6 @@ def train(args, from_epoch=0):
 
 ######   load train and test data, trainsize ~30000, testsize ~34000
 
-    # Bradley's Paths
-    # test_img = np.load(os.path.join(args.data_path, "../../chunks/train_img_9.npy"))
-    # test_label = np.load(os.path.join(args.data_path, "../../chunks/train_label_9.npy"))
-
     test_img = np.load(os.path.join(args.data_path, "train_img_9.npy"))
     test_label = np.load(os.path.join(args.data_path, "train_label_9.npy"))
     num_test = test_img.shape[0]
