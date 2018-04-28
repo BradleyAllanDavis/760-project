@@ -17,11 +17,10 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
 import numpy as np
 import random
 import tensorflow as tf
-
-# from tensorflow.examples.tutorials.mnist import input_data
 
 tf.logging.set_verbosity(tf.logging.INFO)
 
@@ -107,7 +106,9 @@ def cnn_model_fn(features, labels, mode):
     optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.001)
     train_op = optimizer.minimize(
         loss=loss,
-        global_step=tf.train.get_global_step())
+        global_step=tf.train.get_global_step()
+        # global_step=global_step
+    )
     return tf.estimator.EstimatorSpec(mode=mode, loss=loss, train_op=train_op)
 
   # Add evaluation metrics (for EVAL mode)
@@ -119,23 +120,31 @@ def cnn_model_fn(features, labels, mode):
 
 
 def main(unused_argv):
+  batch_size = 60000
+
+  fd = open(os.path.join("data/mnist", 'train-images-idx3-ubyte'))
+  train_data = np.fromfile(file=fd, dtype=np.uint8)
+  train_data = train_data[16:].reshape((60000, 784)).astype(np.float32)
+  train_data = train_data[0:batch_size] / 255.
+
+  fd = open(os.path.join("data/mnist", 'train-labels-idx1-ubyte'))
+  train_labels = np.fromfile(file=fd, dtype=np.uint8)
+  train_labels = train_labels[8:].reshape((60000)).astype(np.int32)
+  train_labels = train_labels[0:batch_size]
+
+  fd = open(os.path.join("data/mnist", 't10k-images-idx3-ubyte'))
+  eval_data = np.fromfile(file=fd, dtype=np.uint8)
+  eval_data = eval_data[16:].reshape((10000, 784)).astype(np.float32)
+  eval_data = eval_data[0:batch_size] / 255.
+
+  fd = open(os.path.join("data/mnist", 't10k-labels-idx1-ubyte'))
+  eval_labels = np.fromfile(file=fd, dtype=np.uint8)
+  eval_labels = eval_labels[8:].reshape((10000)).astype(np.int32)
+  eval_labels = eval_labels[0:batch_size]
+
   ###################################################################################
   # MNIST
   # Load training and eval data
-  mnist = tf.contrib.learn.datasets.load_dataset("mnist")
-  train_data = mnist.train.images  # Returns np.array
-
-  # Take random sample at X percentage
-  # train_data = np.random.choice(train_data, len(train_data) * 0.5, replace=False)
-
-  train_labels = np.asarray(mnist.train.labels, dtype=np.int32)
-  eval_data = mnist.test.images  # Returns np.array
-  eval_labels = np.asarray(mnist.test.labels, dtype=np.int32)
-  ###################################################################################
-
-
-  ###################################################################################
-  # Other dataset
   # mnist = tf.contrib.learn.datasets.load_dataset("mnist")
   # train_data = mnist.train.images  # Returns np.array
   # train_labels = np.asarray(mnist.train.labels, dtype=np.int32)
@@ -150,21 +159,22 @@ def main(unused_argv):
 
   # Set up logging for predictions
   # Log the values in the "Softmax" tensor with label "probabilities"
-  tensors_to_log = {"probabilities": "softmax_tensor"}
-  logging_hook = tf.train.LoggingTensorHook(
-      tensors=tensors_to_log, every_n_iter=50)
+  # tensors_to_log = {"probabilities": "softmax_tensor"}
+  # logging_hook = tf.train.LoggingTensorHook(
+      # tensors=tensors_to_log, every_n_iter=50)
 
   # Train the model
   train_input_fn = tf.estimator.inputs.numpy_input_fn(
       x={"x": train_data},
       y=train_labels,
-      batch_size=100,
-      num_epochs=None,
-      shuffle=True)
+      batch_size=50,
+      num_epochs=100,
+      shuffle=True
+  )
   mnist_classifier.train(
-      input_fn=train_input_fn,
-      steps=20000
+      input_fn=train_input_fn
       )
+      # steps=1000
       # hooks=[logging_hook])
 
   # Evaluate the model and print results
