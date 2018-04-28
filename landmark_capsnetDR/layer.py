@@ -24,28 +24,28 @@ class CapsLayer(object):
         self.layer_type = layer_type
 
     def __call__(self, input, kernel_size=None, stride=None):
-        
+
         # input: [batch_size, 20, 20, 256]
 
         batch_size = input.get_shape().as_list()[0]
-        
+
         if self.layer_type == 'CONV':
             self.kernel_size = kernel_size
             self.stride = stride
             if not self.with_routing:
-                
+
                 capsules = tf.contrib.layers.conv2d(input, self.num_outputs * self.vec_len,
                                                     self.kernel_size, self.stride, padding="VALID",
                                                     activation_fn=tf.nn.relu)
                 capsules = tf.reshape(capsules, (batch_size, -1, self.vec_len, 1))
-                
+
                 capsules = squash(capsules)
-    
+
                 return capsules   # output: [batch_size, 1152, 8, 1]
 
         if self.layer_type == 'FC':
             if self.with_routing:
-                
+
                 # Reshape the input into [batch_size, 1152, 1, 8, 1]
                 self.input = tf.reshape(input, shape=(batch_size, -1, 1, input.shape[-2].value, 1))
 
@@ -132,7 +132,7 @@ def routing(input, b_IJ, num_out):
                 # b_IJ += tf.reduce_sum(u_produce_v, axis=0, keep_dims=True)
                 b_IJ += u_produce_v
 
-    return v_J 
+    return v_J
 
 
 def squash(vector):

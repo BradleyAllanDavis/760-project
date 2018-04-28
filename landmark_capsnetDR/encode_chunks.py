@@ -2,8 +2,8 @@ import tensorflow as tf
 import numpy as np
 import os
 
-from zz_model import CapsNet
-from zz_config import args
+from model import CapsNet
+from config import args
 
 def encode(data, model_ckpt, save_name):
     num_test = data.shape[0]

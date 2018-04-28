@@ -1,5 +1,5 @@
 import tensorflow as tf
-from  import CapsLayer
+from layer import CapsLayer
 from config import args
 
 
@@ -11,7 +11,7 @@ class CapsNet():
         self.name = name
         self.batch_size = inpu.get_shape().as_list()[0]
 
-    
+
     def build(self):
         with tf.variable_scope(self.name, reuse=tf.AUTO_REUSE):
             if args.height == args.width and args.height == 168:
@@ -43,7 +43,7 @@ class CapsNet():
             #    v = self.caps2[batch_size][self.argmax_idx[batch_size], :]
             #    masked_v.append(tf.reshape(v, shape=(1, 1, 16, 1)))
             #self.masked_v = tf.concat(masked_v, axis=0)
-            
+
             #vector_j = tf.reshape(self.masked_v, shape=(self.batch_size, -1))
             #fc1 = tf.contrib.layers.fully_connected(vector_j, num_outputs=1)
             #fc2 = tf.contrib.layers.fully_connected(fc1, num_outputs=1)
@@ -70,8 +70,8 @@ class CapsNet():
         #self.reconstruction_err = tf.reduce_mean(squared)
 
         self.total_loss = self.margin_loss #+ 0 * self.reconstruction_err
-        
-    
 
 
-        
+
+
+
