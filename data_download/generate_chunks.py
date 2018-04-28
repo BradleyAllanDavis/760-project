@@ -11,7 +11,7 @@ train_size = 0.9
 test_size = 0.1
 data_meta = np.load("../train.npy")
 Train_img_path = "../images/"
-Test_img_paht = "../test_images/"
+Test_img_path = "../test_images/"
 
 chunk_size = 30000
 
