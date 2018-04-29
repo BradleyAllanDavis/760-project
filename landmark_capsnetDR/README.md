@@ -8,3 +8,7 @@ For landmark data, it needs train data trunks and test data trunks. But I sugges
 the last chunk of train data as test data, since it contains 50 classes.
 
 The test accuracy v.s. epochs summary is in summary.txt.
+
+The retrieval result (accuracy and pictures) are in folder ./retrieval.
+
+To retreive, you can use encode_chunk.py and zz_retrieve.py to first encode the images and then retrieval. Results are shown in folder ./retreival.
