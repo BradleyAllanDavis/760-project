@@ -36,7 +36,7 @@ def load_mnist(path, is_training):
     loaded = np.fromfile(file=fd, dtype=np.uint8)
     trX = loaded[16:].reshape((60000, 28, 28, 1)).astype(np.float)
     trX = trX[0:batch_size,:,:,:]
-    print(trX.shape)
+    # print(trX.shape)
 
     fd = open(os.path.join(cfg.dataset, 'train-labels-idx1-ubyte'))
     loaded = np.fromfile(file=fd, dtype=np.uint8)
@@ -77,7 +77,7 @@ def load_landmark(path, is_training, chunk_id = 0):
 
     # trX = tf.convert_to_tensor(trX[:,:,:,1].reshape((nrX, 28, 28, 1)) , tf.float32)
     # teX = tf.convert_to_tensor(teX[:,:,:,1].reshape((neX, 28, 28, 1)) , tf.float32)
-    print(trX.shape)
+    # print(trX.shape)
     trX = tf.convert_to_tensor(trX ,tf.float32)
     teX = tf.convert_to_tensor(teX ,tf.float32)
     if is_training:

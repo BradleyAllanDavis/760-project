@@ -31,7 +31,6 @@ def main(args):
     dataset_name = 'landmark'
     logger.info('Using dataset: {}'.format(dataset_name))
     chunk_ids = list(range(9))
-    print(chunk_ids)
     """Set reproducible random seed"""
     tf.set_random_seed(1234)
 
@@ -46,7 +45,6 @@ def main(args):
             'global_step', [], initializer=tf.constant_initializer(0), trainable=False)
 
         """Get batches per epoch."""
-        print(chunk_ids)
         dataset_size = get_landmark_dataset_size(path=cfg.dataset, is_training=True, chunk_ids=chunk_ids)
         num_batches_per_epoch = int(dataset_size / cfg.batch_size)
 
@@ -128,7 +126,6 @@ def main(args):
         for epoch in range(cfg.epoch):
             tic = time.time()
             for chunk_id in chunk_ids:
-                print(chunk_id)
                 create_inputs = get_create_inputs(dataset_name, is_train=True, epochs=cfg.epoch, chunk_id=chunk_id)
                 batch_x, batch_labels = create_inputs()
                 chunk_size = get_chunk_size(path=cfg.dataset, is_training=True, chunk_id=chunk_id)
