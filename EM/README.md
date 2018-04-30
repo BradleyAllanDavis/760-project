@@ -38,4 +38,7 @@ Test
 
 Need landmark chunks inside `data/landmark_chunks` to run.
 
+### Running MNIST vs Landmark
 
+MNIST and Landmark share config file.
+To run MNIST, uncomment data/mnist as the path and comment out data/landmark path.
