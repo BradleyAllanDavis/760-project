@@ -15,7 +15,8 @@ flags.DEFINE_integer('epoch', 75, 'epoch')
 flags.DEFINE_integer('iter_routing', 1, 'number of iterations')
 flags.DEFINE_float('m_schedule', 0.2, 'the m will get to 0.9 at current epoch')
 flags.DEFINE_float('epsilon', 1e-9, 'epsilon')
-flags.DEFINE_integer('epoch_save', 1, 'save after number of epochs')
+flags.DEFINE_integer('epoch_save', 25, 'save after number of epochs')
+# flags.DEFINE_integer('epoch_save', 1, 'save after number of epochs')
 
 ################################
 #    structure parameters      #
