@@ -120,7 +120,7 @@ def cnn_model_fn(features, labels, mode):
 
 
 def main(unused_argv):
-  batch_size = 60000
+  batch_size = 5000
 
   fd = open(os.path.join("data/mnist", 'train-images-idx3-ubyte'))
   train_data = np.fromfile(file=fd, dtype=np.uint8)
