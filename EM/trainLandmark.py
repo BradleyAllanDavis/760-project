@@ -16,8 +16,8 @@ import capsulesLandmark as net
 import logging
 import daiquiri
 
-from IPython.core import debugger
-breakpoint = debugger.set_trace
+# from IPython.core import debugger
+# breakpoint = debugger.set_trace
 
 from utils import get_landmark_dataset_size, get_chunk_size
 
@@ -30,14 +30,15 @@ def main(args):
     """Get dataset hyperparameters."""
     dataset_name = 'landmark'
     logger.info('Using dataset: {}'.format(dataset_name))
-    chunk_ids = [2,3]
+    chunk_ids = list(range(9))
+    print(chunk_ids)
     """Set reproducible random seed"""
     tf.set_random_seed(1234)
 
     coord_add = get_coord_add(dataset_name)
     #dataset_size = get_dataset_size_train(dataset_name)
     num_classes = get_num_classes(dataset_name)
-    create_inputs = get_create_inputs(dataset_name, is_train=True, epochs=cfg.epoch, chunk_id=2)
+    create_inputs = get_create_inputs(dataset_name, is_train=True, epochs=cfg.epoch, chunk_id=0)
 
     with tf.Graph().as_default(), tf.device('/cpu:0'):
         """Get global_step."""
@@ -45,6 +46,7 @@ def main(args):
             'global_step', [], initializer=tf.constant_initializer(0), trainable=False)
 
         """Get batches per epoch."""
+        print(chunk_ids)
         dataset_size = get_landmark_dataset_size(path=cfg.dataset, is_training=True, chunk_ids=chunk_ids)
         num_batches_per_epoch = int(dataset_size / cfg.batch_size)
 
@@ -123,13 +125,14 @@ def main(args):
         m_min = 0.2
         m_max = 0.9
         m = m_min
-        for epoch in range(cfg.epoch):   
+        for epoch in range(cfg.epoch):
             tic = time.time()
             for chunk_id in chunk_ids:
+                print(chunk_id)
                 create_inputs = get_create_inputs(dataset_name, is_train=True, epochs=cfg.epoch, chunk_id=chunk_id)
                 batch_x, batch_labels = create_inputs()
                 chunk_size = get_chunk_size(path=cfg.dataset, is_training=True, chunk_id=chunk_id)
-                num_batches_per_chunk = int(float(chunk_size) / float(cfg.batch_size)) 
+                num_batches_per_chunk = int(float(chunk_size) / float(cfg.batch_size))
 
                 # for step in range(cfg.epoch * num_batches_per_epoch + 1):
                 for step in range(num_batches_per_chunk + 1):

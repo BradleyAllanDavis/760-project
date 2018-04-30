@@ -105,7 +105,7 @@ def mat_transform(input, caps_num_c, regularizer, tag=False):
     return votes
 
 
-def build_arch(input, coord_add, is_train: bool, num_classes: int):
+def build_arch(input, coord_add, is_train, num_classes):
     """
     Function for building the architecture for the capsule network.
     """
