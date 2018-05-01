@@ -2,3 +2,4 @@ MNIST-data/
 __pycache__/
 logdir/
 test_logdir/
+*.npy
