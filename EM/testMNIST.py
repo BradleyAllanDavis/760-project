@@ -8,7 +8,7 @@ import tensorflow as tf
 from config import cfg, get_coord_add, get_dataset_size_train, get_dataset_size_test, get_num_classes, get_create_inputs
 import time
 import os
-import capsules as net
+import capsulesMNIST as net
 import tensorflow.contrib.slim as slim
 
 import logging

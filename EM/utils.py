@@ -30,7 +30,7 @@ def create_inputs_landmark(is_train, chunk_id=0):
 
 
 def load_mnist(path, is_training):
-    batch_size = 10000
+    batch_size = 60000
 
     fd = open(os.path.join(cfg.dataset, 'train-images-idx3-ubyte'))
     loaded = np.fromfile(file=fd, dtype=np.uint8)
