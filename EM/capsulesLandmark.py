@@ -41,8 +41,15 @@ def spread_loss(output, pose_out, x, y, m):
     with tf.variable_scope('decoder'):
         pose_out = slim.fully_connected(pose_out, 512, trainable=True)
         pose_out = slim.fully_connected(pose_out, 1024, trainable=True)
-        pose_out = slim.fully_connected(pose_out, data_size * data_size * 3,
+
+        # For RGB
+        # pose_out = slim.fully_connected(pose_out, data_size * data_size * 3,
+        #                                 trainable=True, activation_fn=tf.sigmoid)
+
+        # For grayscale
+        pose_out = slim.fully_connected(pose_out, data_size * data_size * 1,
                                         trainable=True, activation_fn=tf.sigmoid)
+
         x = tf.reshape(x, shape=[cfg.batch_size, -1])
         reconstruction_loss = tf.reduce_mean(tf.square(pose_out - x))
 

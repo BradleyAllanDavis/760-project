@@ -30,7 +30,10 @@ def main(args):
     """Get dataset hyperparameters."""
     dataset_name = 'landmark'
     logger.info('Using dataset: {}'.format(dataset_name))
-    chunk_ids = list(range(9))
+
+    # chunk_ids = list(range(9))
+    chunk_ids = [0, 1]
+
     """Set reproducible random seed"""
     tf.set_random_seed(1234)
 

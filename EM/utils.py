@@ -11,6 +11,9 @@ import daiquiri
 daiquiri.setup(level=logging.DEBUG)
 logger = daiquiri.getLogger(__name__)
 
+# from IPython.core import debugger
+# breakpoint = debugger.set_trace
+
 
 def create_inputs_mnist(is_train):
     tr_x, tr_y = load_mnist(cfg.dataset, is_train)
@@ -75,11 +78,18 @@ def load_landmark(path, is_training, chunk_id = 0):
     teY = np.load(os.path.join(cfg.dataset, 'train_label_{}.npy'.format(chunk_id))).astype(np.int32)
     neX = teX.shape[0]
 
-    # trX = tf.convert_to_tensor(trX[:,:,:,1].reshape((nrX, 28, 28, 1)) , tf.float32)
-    # teX = tf.convert_to_tensor(teX[:,:,:,1].reshape((neX, 28, 28, 1)) , tf.float32)
+    # For grayscale
+    # If this doesnt not work, check that data is normalized
+    trX = tf.convert_to_tensor(trX[:,:,:,1].reshape((nrX, 28, 28, 1)) , tf.float32)
+    teX = tf.convert_to_tensor(teX[:,:,:,1].reshape((neX, 28, 28, 1)) , tf.float32)
+    # breakpoint()
+    # np.max(trX)
     # print(trX.shape)
-    trX = tf.convert_to_tensor(trX ,tf.float32)
-    teX = tf.convert_to_tensor(teX ,tf.float32)
+
+    # For RGB
+    # trX = tf.convert_to_tensor(trX ,tf.float32)
+    # teX = tf.convert_to_tensor(teX ,tf.float32)
+
     if is_training:
         return trX, trY
     else:
