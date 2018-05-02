@@ -1,0 +1,2231 @@
+INFO:tensorflow:input shape: (50, 28, 28, 1)
+2018-05-02 04:49:29,045 [3064] INFO     tensorflow: input shape: (50, 28, 28, 1)
+INFO:tensorflow:conv1 output shape: (50, 12, 12, 32)
+2018-05-02 04:49:29,057 [3064] INFO     tensorflow: conv1 output shape: (50, 12, 12, 32)
+INFO:tensorflow:primary capsule output shape: (50, 12, 12, 136)
+2018-05-02 04:49:29,082 [3064] INFO     tensorflow: primary capsule output shape: (50, 12, 12, 136)
+INFO:tensorflow:conv cap 1 votes shape: (1250, 72, 16, 16)
+2018-05-02 04:49:29,098 [3064] INFO     tensorflow: conv cap 1 votes shape: (1250, 72, 16, 16)
+WARNING:tensorflow:From /mnt/wd1/project/EM/capsulesMNIST.py:255: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-02 04:49:29,146 [3064] WARNING  tensorflow: From /mnt/wd1/project/EM/capsulesMNIST.py:255: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /mnt/wd1/project/EM/capsulesMNIST.py:291: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-02 04:49:29,169 [3064] WARNING  tensorflow: From /mnt/wd1/project/EM/capsulesMNIST.py:291: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+INFO:tensorflow:conv cap 1 miu shape: (1250, 1, 16, 16)
+2018-05-02 04:49:29,186 [3064] INFO     tensorflow: conv cap 1 miu shape: (1250, 1, 16, 16)
+INFO:tensorflow:conv cap 1 activation before reshape: (1250, 16)
+2018-05-02 04:49:29,186 [3064] INFO     tensorflow: conv cap 1 activation before reshape: (1250, 16)
+INFO:tensorflow:conv cap 1 pose shape: (50, 5, 5, 16, 16)
+2018-05-02 04:49:29,187 [3064] INFO     tensorflow: conv cap 1 pose shape: (50, 5, 5, 16, 16)
+INFO:tensorflow:conv cap 1 activation after reshape: (50, 5, 5, 16, 1)
+2018-05-02 04:49:29,188 [3064] INFO     tensorflow: conv cap 1 activation after reshape: (50, 5, 5, 16, 1)
+INFO:tensorflow:conv cap 1 output shape: (50, 5, 5, 272)
+2018-05-02 04:49:29,190 [3064] INFO     tensorflow: conv cap 1 output shape: (50, 5, 5, 272)
+INFO:tensorflow:conv cap 2 votes shape: (450, 144, 16, 16)
+2018-05-02 04:49:29,206 [3064] INFO     tensorflow: conv cap 2 votes shape: (450, 144, 16, 16)
+INFO:tensorflow:conv cap 2 pose shape: (450, 144, 16, 16)
+2018-05-02 04:49:29,248 [3064] INFO     tensorflow: conv cap 2 pose shape: (450, 144, 16, 16)
+INFO:tensorflow:conv cap 2 activation shape: (450, 16, 1)
+2018-05-02 04:49:29,249 [3064] INFO     tensorflow: conv cap 2 activation shape: (450, 16, 1)
+INFO:tensorflow:class cap votes original shape: (450, 16, 10, 16)
+2018-05-02 04:49:29,258 [3064] INFO     tensorflow: class cap votes original shape: (450, 16, 10, 16)
+INFO:tensorflow:class cap votes coord add shape: (450, 16, 10, 18)
+2018-05-02 04:49:29,259 [3064] INFO     tensorflow: class cap votes coord add shape: (450, 16, 10, 18)
+INFO:tensorflow:class cap activation shape: (450, 10)
+2018-05-02 04:49:29,298 [3064] INFO     tensorflow: class cap activation shape: (450, 10)
+INFO:tensorflow:class cap output shape: (50, 10)
+2018-05-02 04:49:29,302 [3064] INFO     tensorflow: class cap output shape: (50, 10)
+2018-05-02 04:49:29.336460: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-02 04:49:29.461116: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-02 04:49:29.461494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 1070 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:0e:00.0
+totalMemory: 7.93GiB freeMemory: 7.53GiB
+2018-05-02 04:49:29.461511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:0e:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5779.ckpt-30000
+2018-05-02 04:49:31,801 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5779.ckpt-30000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5483.ckpt-60000
+2018-05-02 04:49:37,423 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5483.ckpt-60000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5579.ckpt-90000
+2018-05-02 04:49:41,729 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5579.ckpt-90000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:49:45,869 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:49:50,073 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:49:53,988 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:49:58,105 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:02,164 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:06,234 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:10,442 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:14,426 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:18,488 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:22,642 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:26,637 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:30,655 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:34,726 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:38,898 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+0 batches are tested.
+1 batches are tested.
+2 batches are tested.
+3 batches are tested.
+4 batches are tested.
+5 batches are tested.
+6 batches are tested.
+7 batches are tested.
+8 batches are tested.
+9 batches are tested.
+10 batches are tested.
+11 batches are tested.
+12 batches are tested.
+13 batches are tested.
+14 batches are tested.
+15 batches are tested.
+16 batches are tested.
+17 batches are tested.
+18 batches are tested.
+19 batches are tested.
+the average accuracy is 0.992000
+20 batches are tested.
+21 batches are tested.
+22 batches are tested.
+23 batches are tested.
+24 batches are tested.
+25 batches are tested.
+26 batches are tested.
+27 batches are tested.
+28 batches are tested.
+29 batches are tested.
+30 batches are tested.
+31 batches are tested.
+32 batches are tested.
+33 batches are tested.
+34 batches are tested.
+35 batches are tested.
+36 batches are tested.
+37 batches are tested.
+38 batches are tested.
+39 batches are tested.
+the average accuracy is 0.988000
+40 batches are tested.
+41 batches are tested.
+42 batches are tested.
+43 batches are tested.
+44 batches are tested.
+45 batches are tested.
+46 batches are tested.
+47 batches are tested.
+48 batches are tested.
+49 batches are tested.
+50 batches are tested.
+51 batches are tested.
+52 batches are tested.
+53 batches are tested.
+54 batches are tested.
+55 batches are tested.
+56 batches are tested.
+57 batches are tested.
+58 batches are tested.
+59 batches are tested.
+the average accuracy is 0.987000
+60 batches are tested.
+61 batches are tested.
+62 batches are tested.
+63 batches are tested.
+64 batches are tested.
+65 batches are tested.
+66 batches are tested.
+67 batches are tested.
+68 batches are tested.
+69 batches are tested.
+70 batches are tested.
+71 batches are tested.
+72 batches are tested.
+73 batches are tested.
+74 batches are tested.
+75 batches are tested.
+76 batches are tested.
+77 batches are tested.
+78 batches are tested.
+79 batches are tested.
+the average accuracy is 0.991000
+80 batches are tested.
+81 batches are tested.
+82 batches are tested.
+83 batches are tested.
+84 batches are tested.
+85 batches are tested.
+86 batches are tested.
+87 batches are tested.
+88 batches are tested.
+89 batches are tested.
+90 batches are tested.
+91 batches are tested.
+92 batches are tested.
+93 batches are tested.
+94 batches are tested.
+95 batches are tested.
+96 batches are tested.
+97 batches are tested.
+98 batches are tested.
+99 batches are tested.
+the average accuracy is 0.988000
+100 batches are tested.
+101 batches are tested.
+102 batches are tested.
+103 batches are tested.
+104 batches are tested.
+105 batches are tested.
+106 batches are tested.
+107 batches are tested.
+108 batches are tested.
+109 batches are tested.
+110 batches are tested.
+111 batches are tested.
+112 batches are tested.
+113 batches are tested.
+114 batches are tested.
+115 batches are tested.
+116 batches are tested.
+117 batches are tested.
+118 batches are tested.
+119 batches are tested.
+the average accuracy is 0.986000
+120 batches are tested.
+121 batches are tested.
+122 batches are tested.
+123 batches are tested.
+124 batches are tested.
+125 batches are tested.
+126 batches are tested.
+127 batches are tested.
+128 batches are tested.
+129 batches are tested.
+130 batches are tested.
+131 batches are tested.
+132 batches are tested.
+133 batches are tested.
+134 batches are tested.
+135 batches are tested.
+136 batches are tested.
+137 batches are tested.
+138 batches are tested.
+139 batches are tested.
+the average accuracy is 0.986000
+140 batches are tested.
+141 batches are tested.
+142 batches are tested.
+143 batches are tested.
+144 batches are tested.
+145 batches are tested.
+146 batches are tested.
+147 batches are tested.
+148 batches are tested.
+149 batches are tested.
+150 batches are tested.
+151 batches are tested.
+152 batches are tested.
+153 batches are tested.
+154 batches are tested.
+155 batches are tested.
+156 batches are tested.
+157 batches are tested.
+158 batches are tested.
+159 batches are tested.
+the average accuracy is 0.988000
+160 batches are tested.
+161 batches are tested.
+162 batches are tested.
+163 batches are tested.
+164 batches are tested.
+165 batches are tested.
+166 batches are tested.
+167 batches are tested.
+168 batches are tested.
+169 batches are tested.
+170 batches are tested.
+171 batches are tested.
+172 batches are tested.
+173 batches are tested.
+174 batches are tested.
+175 batches are tested.
+176 batches are tested.
+177 batches are tested.
+178 batches are tested.
+179 batches are tested.
+the average accuracy is 0.980000
+180 batches are tested.
+181 batches are tested.
+182 batches are tested.
+183 batches are tested.
+184 batches are tested.
+185 batches are tested.
+186 batches are tested.
+187 batches are tested.
+188 batches are tested.
+189 batches are tested.
+190 batches are tested.
+191 batches are tested.
+192 batches are tested.
+193 batches are tested.
+194 batches are tested.
+195 batches are tested.
+196 batches are tested.
+197 batches are tested.
+198 batches are tested.
+199 batches are tested.
+the average accuracy is 0.987000
+200 batches are tested.
+201 batches are tested.
+202 batches are tested.
+203 batches are tested.
+204 batches are tested.
+205 batches are tested.
+206 batches are tested.
+207 batches are tested.
+208 batches are tested.
+209 batches are tested.
+210 batches are tested.
+211 batches are tested.
+212 batches are tested.
+213 batches are tested.
+214 batches are tested.
+215 batches are tested.
+216 batches are tested.
+217 batches are tested.
+218 batches are tested.
+219 batches are tested.
+the average accuracy is 0.990000
+220 batches are tested.
+221 batches are tested.
+222 batches are tested.
+223 batches are tested.
+224 batches are tested.
+225 batches are tested.
+226 batches are tested.
+227 batches are tested.
+228 batches are tested.
+229 batches are tested.
+230 batches are tested.
+231 batches are tested.
+232 batches are tested.
+233 batches are tested.
+234 batches are tested.
+235 batches are tested.
+236 batches are tested.
+237 batches are tested.
+238 batches are tested.
+239 batches are tested.
+the average accuracy is 0.985000
+240 batches are tested.
+241 batches are tested.
+242 batches are tested.
+243 batches are tested.
+244 batches are tested.
+245 batches are tested.
+246 batches are tested.
+247 batches are tested.
+248 batches are tested.
+249 batches are tested.
+250 batches are tested.
+251 batches are tested.
+252 batches are tested.
+253 batches are tested.
+254 batches are tested.
+255 batches are tested.
+256 batches are tested.
+257 batches are tested.
+258 batches are tested.
+259 batches are tested.
+the average accuracy is 0.992000
+260 batches are tested.
+261 batches are tested.
+262 batches are tested.
+263 batches are tested.
+264 batches are tested.
+265 batches are tested.
+266 batches are tested.
+267 batches are tested.
+268 batches are tested.
+269 batches are tested.
+270 batches are tested.
+271 batches are tested.
+272 batches are tested.
+273 batches are tested.
+274 batches are tested.
+275 batches are tested.
+276 batches are tested.
+277 batches are tested.
+278 batches are tested.
+279 batches are tested.
+the average accuracy is 0.986000
+280 batches are tested.
+281 batches are tested.
+282 batches are tested.
+283 batches are tested.
+284 batches are tested.
+285 batches are tested.
+286 batches are tested.
+287 batches are tested.
+288 batches are tested.
+289 batches are tested.
+290 batches are tested.
+291 batches are tested.
+292 batches are tested.
+293 batches are tested.
+294 batches are tested.
+295 batches are tested.
+296 batches are tested.
+297 batches are tested.
+298 batches are tested.
+299 batches are tested.
+the average accuracy is 0.989000
+300 batches are tested.
+301 batches are tested.
+302 batches are tested.
+303 batches are tested.
+304 batches are tested.
+305 batches are tested.
+306 batches are tested.
+307 batches are tested.
+308 batches are tested.
+309 batches are tested.
+310 batches are tested.
+311 batches are tested.
+312 batches are tested.
+313 batches are tested.
+314 batches are tested.
+315 batches are tested.
+316 batches are tested.
+317 batches are tested.
+318 batches are tested.
+319 batches are tested.
+the average accuracy is 0.984000
+320 batches are tested.
+321 batches are tested.
+322 batches are tested.
+323 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:42,821 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:46,838 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:50,884 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:54,985 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:50:59,144 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:03,343 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:07,438 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:11,431 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:15,522 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:19,617 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:23,649 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:27,702 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:31,730 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:35,684 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:39,517 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:43,490 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+
+324 batches are tested.
+325 batches are tested.
+326 batches are tested.
+327 batches are tested.
+328 batches are tested.
+329 batches are tested.
+330 batches are tested.
+331 batches are tested.
+332 batches are tested.
+333 batches are tested.
+334 batches are tested.
+335 batches are tested.
+336 batches are tested.
+337 batches are tested.
+338 batches are tested.
+339 batches are tested.
+the average accuracy is 0.989000
+340 batches are tested.
+341 batches are tested.
+342 batches are tested.
+343 batches are tested.
+344 batches are tested.
+345 batches are tested.
+346 batches are tested.
+347 batches are tested.
+348 batches are tested.
+349 batches are tested.
+350 batches are tested.
+351 batches are tested.
+352 batches are tested.
+353 batches are tested.
+354 batches are tested.
+355 batches are tested.
+356 batches are tested.
+357 batches are tested.
+358 batches are tested.
+359 batches are tested.
+the average accuracy is 0.989000
+360 batches are tested.
+361 batches are tested.
+362 batches are tested.
+363 batches are tested.
+364 batches are tested.
+365 batches are tested.
+366 batches are tested.
+367 batches are tested.
+368 batches are tested.
+369 batches are tested.
+370 batches are tested.
+371 batches are tested.
+372 batches are tested.
+373 batches are tested.
+374 batches are tested.
+375 batches are tested.
+376 batches are tested.
+377 batches are tested.
+378 batches are tested.
+379 batches are tested.
+the average accuracy is 0.992000
+380 batches are tested.
+381 batches are tested.
+382 batches are tested.
+383 batches are tested.
+384 batches are tested.
+385 batches are tested.
+386 batches are tested.
+387 batches are tested.
+388 batches are tested.
+389 batches are tested.
+390 batches are tested.
+391 batches are tested.
+392 batches are tested.
+393 batches are tested.
+394 batches are tested.
+395 batches are tested.
+396 batches are tested.
+397 batches are tested.
+398 batches are tested.
+399 batches are tested.
+the average accuracy is 0.984000
+400 batches are tested.
+401 batches are tested.
+402 batches are tested.
+403 batches are tested.
+404 batches are tested.
+405 batches are tested.
+406 batches are tested.
+407 batches are tested.
+408 batches are tested.
+409 batches are tested.
+410 batches are tested.
+411 batches are tested.
+412 batches are tested.
+413 batches are tested.
+414 batches are tested.
+415 batches are tested.
+416 batches are tested.
+417 batches are tested.
+418 batches are tested.
+419 batches are tested.
+the average accuracy is 0.993000
+420 batches are tested.
+421 batches are tested.
+422 batches are tested.
+423 batches are tested.
+424 batches are tested.
+425 batches are tested.
+426 batches are tested.
+427 batches are tested.
+428 batches are tested.
+429 batches are tested.
+430 batches are tested.
+431 batches are tested.
+432 batches are tested.
+433 batches are tested.
+434 batches are tested.
+435 batches are tested.
+436 batches are tested.
+437 batches are tested.
+438 batches are tested.
+439 batches are tested.
+the average accuracy is 0.991000
+440 batches are tested.
+441 batches are tested.
+442 batches are tested.
+443 batches are tested.
+444 batches are tested.
+445 batches are tested.
+446 batches are tested.
+447 batches are tested.
+448 batches are tested.
+449 batches are tested.
+450 batches are tested.
+451 batches are tested.
+452 batches are tested.
+453 batches are tested.
+454 batches are tested.
+455 batches are tested.
+456 batches are tested.
+457 batches are tested.
+458 batches are tested.
+459 batches are tested.
+the average accuracy is 0.984000
+460 batches are tested.
+461 batches are tested.
+462 batches are tested.
+463 batches are tested.
+464 batches are tested.
+465 batches are tested.
+466 batches are tested.
+467 batches are tested.
+468 batches are tested.
+469 batches are tested.
+470 batches are tested.
+471 batches are tested.
+472 batches are tested.
+473 batches are tested.
+474 batches are tested.
+475 batches are tested.
+476 batches are tested.
+477 batches are tested.
+478 batches are tested.
+479 batches are tested.
+the average accuracy is 0.992000
+480 batches are tested.
+481 batches are tested.
+482 batches are tested.
+483 batches are tested.
+484 batches are tested.
+485 batches are tested.
+486 batches are tested.
+487 batches are tested.
+488 batches are tested.
+489 batches are tested.
+490 batches are tested.
+491 batches are tested.
+492 batches are tested.
+493 batches are tested.
+494 batches are tested.
+495 batches are tested.
+496 batches are tested.
+497 batches are tested.
+498 batches are tested.
+499 batches are tested.
+the average accuracy is 0.988000
+500 batches are tested.
+501 batches are tested.
+502 batches are tested.
+503 batches are tested.
+504 batches are tested.
+505 batches are tested.
+506 batches are tested.
+507 batches are tested.
+508 batches are tested.
+509 batches are tested.
+510 batches are tested.
+511 batches are tested.
+512 batches are tested.
+513 batches are tested.
+514 batches are tested.
+515 batches are tested.
+516 batches are tested.
+517 batches are tested.
+518 batches are tested.
+519 batches are tested.
+the average accuracy is 0.990000
+520 batches are tested.
+521 batches are tested.
+522 batches are tested.
+523 batches are tested.
+524 batches are tested.
+525 batches are tested.
+526 batches are tested.
+527 batches are tested.
+528 batches are tested.
+529 batches are tested.
+530 batches are tested.
+531 batches are tested.
+532 batches are tested.
+533 batches are tested.
+534 batches are tested.
+535 batches are tested.
+536 batches are tested.
+537 batches are tested.
+538 batches are tested.
+539 batches are tested.
+the average accuracy is 0.986000
+540 batches are tested.
+541 batches are tested.
+542 batches are tested.
+543 batches are tested.
+544 batches are tested.
+545 batches are tested.
+546 batches are tested.
+547 batches are tested.
+548 batches are tested.
+549 batches are tested.
+550 batches are tested.
+551 batches are tested.
+552 batches are tested.
+553 batches are tested.
+554 batches are tested.
+555 batches are tested.
+556 batches are tested.
+557 batches are tested.
+558 batches are tested.
+559 batches are tested.
+the average accuracy is 0.983000
+560 batches are tested.
+561 batches are tested.
+562 batches are tested.
+563 batches are tested.
+564 batches are tested.
+565 batches are tested.
+566 batches are tested.
+567 batches are tested.
+568 batches are tested.
+569 batches are tested.
+570 batches are tested.
+571 batches are tested.
+572 batches are tested.
+573 batches are tested.
+574 batches are tested.
+575 batches are tested.
+576 batches are tested.
+577 batches are tested.
+578 batches are tested.
+579 batches are tested.
+the average accuracy is 0.987000
+580 batches are tested.
+581 batches are tested.
+582 batches are tested.
+583 batches are tested.
+584 batches are tested.
+585 batches are tested.
+586 batches are tested.
+587 batches are tested.
+588 batches are tested.
+589 batches are tested.
+590 batches are tested.
+591 batches are tested.
+592 batches are tested.
+593 batches are tested.
+594 batches are tested.
+595 batches are tested.
+596 batches are tested.
+597 batches are tested.
+598 batches are tested.
+599 batches are tested.
+the average accuracy is 0.992000
+600 batches are tested.
+601 batches are tested.
+602 batches are tested.
+603 batches are tested.
+604 batches are tested.
+605 batches are tested.
+606 batches are tested.
+607 batches are tested.
+608 batches are tested.
+609 batches are tested.
+610 batches are tested.
+611 batches are tested.
+612 batches are tested.
+613 batches are tested.
+614 batches are tested.
+615 batches are tested.
+616 batches are tested.
+617 batches are tested.
+618 batches are tested.
+619 batches are tested.
+the average accuracy is 0.985000
+620 batches are tested.
+621 batches are tested.
+622 batches are tested.
+623 batches are tested.
+624 batches are tested.
+625 batches are tested.
+626 batches are tested.
+627 batches are tested.
+628 batches are tested.
+629 batches are tested.
+630 batches are tested.
+631 batches are tested.
+632 batches are tested.
+633 batches are tested.
+634 batches are tested.
+635 batches are tested.
+636 batches are tested.
+637 batches are tested.
+638 batches are tested.
+639 batches are tested.
+the average accuracy is 0.986000
+640 batches are tested.
+641 batches are tested.
+642 batches are tested.
+643 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:47,319 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:51,411 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:55,486 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:51:59,482 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:03,445 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:07,530 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:11,498 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:15,404 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:19,430 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:23,495 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:27,340 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:31,095 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:35,193 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:39,173 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:43,030 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:47,183 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+
+644 batches are tested.
+645 batches are tested.
+646 batches are tested.
+647 batches are tested.
+648 batches are tested.
+649 batches are tested.
+650 batches are tested.
+651 batches are tested.
+652 batches are tested.
+653 batches are tested.
+654 batches are tested.
+655 batches are tested.
+656 batches are tested.
+657 batches are tested.
+658 batches are tested.
+659 batches are tested.
+the average accuracy is 0.990000
+660 batches are tested.
+661 batches are tested.
+662 batches are tested.
+663 batches are tested.
+664 batches are tested.
+665 batches are tested.
+666 batches are tested.
+667 batches are tested.
+668 batches are tested.
+669 batches are tested.
+670 batches are tested.
+671 batches are tested.
+672 batches are tested.
+673 batches are tested.
+674 batches are tested.
+675 batches are tested.
+676 batches are tested.
+677 batches are tested.
+678 batches are tested.
+679 batches are tested.
+the average accuracy is 0.991000
+680 batches are tested.
+681 batches are tested.
+682 batches are tested.
+683 batches are tested.
+684 batches are tested.
+685 batches are tested.
+686 batches are tested.
+687 batches are tested.
+688 batches are tested.
+689 batches are tested.
+690 batches are tested.
+691 batches are tested.
+692 batches are tested.
+693 batches are tested.
+694 batches are tested.
+695 batches are tested.
+696 batches are tested.
+697 batches are tested.
+698 batches are tested.
+699 batches are tested.
+the average accuracy is 0.982000
+700 batches are tested.
+701 batches are tested.
+702 batches are tested.
+703 batches are tested.
+704 batches are tested.
+705 batches are tested.
+706 batches are tested.
+707 batches are tested.
+708 batches are tested.
+709 batches are tested.
+710 batches are tested.
+711 batches are tested.
+712 batches are tested.
+713 batches are tested.
+714 batches are tested.
+715 batches are tested.
+716 batches are tested.
+717 batches are tested.
+718 batches are tested.
+719 batches are tested.
+the average accuracy is 0.984000
+720 batches are tested.
+721 batches are tested.
+722 batches are tested.
+723 batches are tested.
+724 batches are tested.
+725 batches are tested.
+726 batches are tested.
+727 batches are tested.
+728 batches are tested.
+729 batches are tested.
+730 batches are tested.
+731 batches are tested.
+732 batches are tested.
+733 batches are tested.
+734 batches are tested.
+735 batches are tested.
+736 batches are tested.
+737 batches are tested.
+738 batches are tested.
+739 batches are tested.
+the average accuracy is 0.992000
+740 batches are tested.
+741 batches are tested.
+742 batches are tested.
+743 batches are tested.
+744 batches are tested.
+745 batches are tested.
+746 batches are tested.
+747 batches are tested.
+748 batches are tested.
+749 batches are tested.
+750 batches are tested.
+751 batches are tested.
+752 batches are tested.
+753 batches are tested.
+754 batches are tested.
+755 batches are tested.
+756 batches are tested.
+757 batches are tested.
+758 batches are tested.
+759 batches are tested.
+the average accuracy is 0.993000
+760 batches are tested.
+761 batches are tested.
+762 batches are tested.
+763 batches are tested.
+764 batches are tested.
+765 batches are tested.
+766 batches are tested.
+767 batches are tested.
+768 batches are tested.
+769 batches are tested.
+770 batches are tested.
+771 batches are tested.
+772 batches are tested.
+773 batches are tested.
+774 batches are tested.
+775 batches are tested.
+776 batches are tested.
+777 batches are tested.
+778 batches are tested.
+779 batches are tested.
+the average accuracy is 0.988000
+780 batches are tested.
+781 batches are tested.
+782 batches are tested.
+783 batches are tested.
+784 batches are tested.
+785 batches are tested.
+786 batches are tested.
+787 batches are tested.
+788 batches are tested.
+789 batches are tested.
+790 batches are tested.
+791 batches are tested.
+792 batches are tested.
+793 batches are tested.
+794 batches are tested.
+795 batches are tested.
+796 batches are tested.
+797 batches are tested.
+798 batches are tested.
+799 batches are tested.
+the average accuracy is 0.987000
+800 batches are tested.
+801 batches are tested.
+802 batches are tested.
+803 batches are tested.
+804 batches are tested.
+805 batches are tested.
+806 batches are tested.
+807 batches are tested.
+808 batches are tested.
+809 batches are tested.
+810 batches are tested.
+811 batches are tested.
+812 batches are tested.
+813 batches are tested.
+814 batches are tested.
+815 batches are tested.
+816 batches are tested.
+817 batches are tested.
+818 batches are tested.
+819 batches are tested.
+the average accuracy is 0.993000
+820 batches are tested.
+821 batches are tested.
+822 batches are tested.
+823 batches are tested.
+824 batches are tested.
+825 batches are tested.
+826 batches are tested.
+827 batches are tested.
+828 batches are tested.
+829 batches are tested.
+830 batches are tested.
+831 batches are tested.
+832 batches are tested.
+833 batches are tested.
+834 batches are tested.
+835 batches are tested.
+836 batches are tested.
+837 batches are tested.
+838 batches are tested.
+839 batches are tested.
+the average accuracy is 0.984000
+840 batches are tested.
+841 batches are tested.
+842 batches are tested.
+843 batches are tested.
+844 batches are tested.
+845 batches are tested.
+846 batches are tested.
+847 batches are tested.
+848 batches are tested.
+849 batches are tested.
+850 batches are tested.
+851 batches are tested.
+852 batches are tested.
+853 batches are tested.
+854 batches are tested.
+855 batches are tested.
+856 batches are tested.
+857 batches are tested.
+858 batches are tested.
+859 batches are tested.
+the average accuracy is 0.990000
+860 batches are tested.
+861 batches are tested.
+862 batches are tested.
+863 batches are tested.
+864 batches are tested.
+865 batches are tested.
+866 batches are tested.
+867 batches are tested.
+868 batches are tested.
+869 batches are tested.
+870 batches are tested.
+871 batches are tested.
+872 batches are tested.
+873 batches are tested.
+874 batches are tested.
+875 batches are tested.
+876 batches are tested.
+877 batches are tested.
+878 batches are tested.
+879 batches are tested.
+the average accuracy is 0.986000
+880 batches are tested.
+881 batches are tested.
+882 batches are tested.
+883 batches are tested.
+884 batches are tested.
+885 batches are tested.
+886 batches are tested.
+887 batches are tested.
+888 batches are tested.
+889 batches are tested.
+890 batches are tested.
+891 batches are tested.
+892 batches are tested.
+893 batches are tested.
+894 batches are tested.
+895 batches are tested.
+896 batches are tested.
+897 batches are tested.
+898 batches are tested.
+899 batches are tested.
+the average accuracy is 0.989000
+900 batches are tested.
+901 batches are tested.
+902 batches are tested.
+903 batches are tested.
+904 batches are tested.
+905 batches are tested.
+906 batches are tested.
+907 batches are tested.
+908 batches are tested.
+909 batches are tested.
+910 batches are tested.
+911 batches are tested.
+912 batches are tested.
+913 batches are tested.
+914 batches are tested.
+915 batches are tested.
+916 batches are tested.
+917 batches are tested.
+918 batches are tested.
+919 batches are tested.
+the average accuracy is 0.992000
+920 batches are tested.
+921 batches are tested.
+922 batches are tested.
+923 batches are tested.
+924 batches are tested.
+925 batches are tested.
+926 batches are tested.
+927 batches are tested.
+928 batches are tested.
+929 batches are tested.
+930 batches are tested.
+931 batches are tested.
+932 batches are tested.
+933 batches are tested.
+934 batches are tested.
+935 batches are tested.
+936 batches are tested.
+937 batches are tested.
+938 batches are tested.
+939 batches are tested.
+the average accuracy is 0.991000
+940 batches are tested.
+941 batches are tested.
+942 batches are tested.
+943 batches are tested.
+944 batches are tested.
+945 batches are tested.
+946 batches are tested.
+947 batches are tested.
+948 batches are tested.
+949 batches are tested.
+950 batches are tested.
+951 batches are tested.
+952 batches are tested.
+953 batches are tested.
+954 batches are tested.
+955 batches are tested.
+956 batches are tested.
+957 batches are tested.
+958 batches are tested.
+959 batches are tested.
+the average accuracy is 0.985000
+960 batches are tested.
+961 batches are tested.
+962 batches are tested.
+963 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:51,265 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:55,379 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:52:59,492 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:03,635 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:07,627 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:11,610 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:15,604 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:19,748 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:23,707 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:27,733 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:31,514 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:35,602 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:39,589 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:43,663 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:47,632 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+
+964 batches are tested.
+965 batches are tested.
+966 batches are tested.
+967 batches are tested.
+968 batches are tested.
+969 batches are tested.
+970 batches are tested.
+971 batches are tested.
+972 batches are tested.
+973 batches are tested.
+974 batches are tested.
+975 batches are tested.
+976 batches are tested.
+977 batches are tested.
+978 batches are tested.
+979 batches are tested.
+the average accuracy is 0.992000
+980 batches are tested.
+981 batches are tested.
+982 batches are tested.
+983 batches are tested.
+984 batches are tested.
+985 batches are tested.
+986 batches are tested.
+987 batches are tested.
+988 batches are tested.
+989 batches are tested.
+990 batches are tested.
+991 batches are tested.
+992 batches are tested.
+993 batches are tested.
+994 batches are tested.
+995 batches are tested.
+996 batches are tested.
+997 batches are tested.
+998 batches are tested.
+999 batches are tested.
+the average accuracy is 0.988000
+1000 batches are tested.
+1001 batches are tested.
+1002 batches are tested.
+1003 batches are tested.
+1004 batches are tested.
+1005 batches are tested.
+1006 batches are tested.
+1007 batches are tested.
+1008 batches are tested.
+1009 batches are tested.
+1010 batches are tested.
+1011 batches are tested.
+1012 batches are tested.
+1013 batches are tested.
+1014 batches are tested.
+1015 batches are tested.
+1016 batches are tested.
+1017 batches are tested.
+1018 batches are tested.
+1019 batches are tested.
+the average accuracy is 0.983000
+1020 batches are tested.
+1021 batches are tested.
+1022 batches are tested.
+1023 batches are tested.
+1024 batches are tested.
+1025 batches are tested.
+1026 batches are tested.
+1027 batches are tested.
+1028 batches are tested.
+1029 batches are tested.
+1030 batches are tested.
+1031 batches are tested.
+1032 batches are tested.
+1033 batches are tested.
+1034 batches are tested.
+1035 batches are tested.
+1036 batches are tested.
+1037 batches are tested.
+1038 batches are tested.
+1039 batches are tested.
+the average accuracy is 0.986000
+1040 batches are tested.
+1041 batches are tested.
+1042 batches are tested.
+1043 batches are tested.
+1044 batches are tested.
+1045 batches are tested.
+1046 batches are tested.
+1047 batches are tested.
+1048 batches are tested.
+1049 batches are tested.
+1050 batches are tested.
+1051 batches are tested.
+1052 batches are tested.
+1053 batches are tested.
+1054 batches are tested.
+1055 batches are tested.
+1056 batches are tested.
+1057 batches are tested.
+1058 batches are tested.
+1059 batches are tested.
+the average accuracy is 0.989000
+1060 batches are tested.
+1061 batches are tested.
+1062 batches are tested.
+1063 batches are tested.
+1064 batches are tested.
+1065 batches are tested.
+1066 batches are tested.
+1067 batches are tested.
+1068 batches are tested.
+1069 batches are tested.
+1070 batches are tested.
+1071 batches are tested.
+1072 batches are tested.
+1073 batches are tested.
+1074 batches are tested.
+1075 batches are tested.
+1076 batches are tested.
+1077 batches are tested.
+1078 batches are tested.
+1079 batches are tested.
+the average accuracy is 0.989000
+1080 batches are tested.
+1081 batches are tested.
+1082 batches are tested.
+1083 batches are tested.
+1084 batches are tested.
+1085 batches are tested.
+1086 batches are tested.
+1087 batches are tested.
+1088 batches are tested.
+1089 batches are tested.
+1090 batches are tested.
+1091 batches are tested.
+1092 batches are tested.
+1093 batches are tested.
+1094 batches are tested.
+1095 batches are tested.
+1096 batches are tested.
+1097 batches are tested.
+1098 batches are tested.
+1099 batches are tested.
+the average accuracy is 0.994000
+1100 batches are tested.
+1101 batches are tested.
+1102 batches are tested.
+1103 batches are tested.
+1104 batches are tested.
+1105 batches are tested.
+1106 batches are tested.
+1107 batches are tested.
+1108 batches are tested.
+1109 batches are tested.
+1110 batches are tested.
+1111 batches are tested.
+1112 batches are tested.
+1113 batches are tested.
+1114 batches are tested.
+1115 batches are tested.
+1116 batches are tested.
+1117 batches are tested.
+1118 batches are tested.
+1119 batches are tested.
+the average accuracy is 0.983000
+1120 batches are tested.
+1121 batches are tested.
+1122 batches are tested.
+1123 batches are tested.
+1124 batches are tested.
+1125 batches are tested.
+1126 batches are tested.
+1127 batches are tested.
+1128 batches are tested.
+1129 batches are tested.
+1130 batches are tested.
+1131 batches are tested.
+1132 batches are tested.
+1133 batches are tested.
+1134 batches are tested.
+1135 batches are tested.
+1136 batches are tested.
+1137 batches are tested.
+1138 batches are tested.
+1139 batches are tested.
+the average accuracy is 0.988000
+1140 batches are tested.
+1141 batches are tested.
+1142 batches are tested.
+1143 batches are tested.
+1144 batches are tested.
+1145 batches are tested.
+1146 batches are tested.
+1147 batches are tested.
+1148 batches are tested.
+1149 batches are tested.
+1150 batches are tested.
+1151 batches are tested.
+1152 batches are tested.
+1153 batches are tested.
+1154 batches are tested.
+1155 batches are tested.
+1156 batches are tested.
+1157 batches are tested.
+1158 batches are tested.
+1159 batches are tested.
+the average accuracy is 0.991000
+1160 batches are tested.
+1161 batches are tested.
+1162 batches are tested.
+1163 batches are tested.
+1164 batches are tested.
+1165 batches are tested.
+1166 batches are tested.
+1167 batches are tested.
+1168 batches are tested.
+1169 batches are tested.
+1170 batches are tested.
+1171 batches are tested.
+1172 batches are tested.
+1173 batches are tested.
+1174 batches are tested.
+1175 batches are tested.
+1176 batches are tested.
+1177 batches are tested.
+1178 batches are tested.
+1179 batches are tested.
+the average accuracy is 0.995000
+1180 batches are tested.
+1181 batches are tested.
+1182 batches are tested.
+1183 batches are tested.
+1184 batches are tested.
+1185 batches are tested.
+1186 batches are tested.
+1187 batches are tested.
+1188 batches are tested.
+1189 batches are tested.
+1190 batches are tested.
+1191 batches are tested.
+1192 batches are tested.
+1193 batches are tested.
+1194 batches are tested.
+1195 batches are tested.
+1196 batches are tested.
+1197 batches are tested.
+1198 batches are tested.
+1199 batches are tested.
+the average accuracy is 0.990000
+1200 batches are tested.
+1201 batches are tested.
+1202 batches are tested.
+1203 batches are tested.
+1204 batches are tested.
+1205 batches are tested.
+1206 batches are tested.
+1207 batches are tested.
+1208 batches are tested.
+1209 batches are tested.
+1210 batches are tested.
+1211 batches are tested.
+1212 batches are tested.
+1213 batches are tested.
+1214 batches are tested.
+1215 batches are tested.
+1216 batches are tested.
+1217 batches are tested.
+1218 batches are tested.
+1219 batches are tested.
+the average accuracy is 0.985000
+1220 batches are tested.
+1221 batches are tested.
+1222 batches are tested.
+1223 batches are tested.
+1224 batches are tested.
+1225 batches are tested.
+1226 batches are tested.
+1227 batches are tested.
+1228 batches are tested.
+1229 batches are tested.
+1230 batches are tested.
+1231 batches are tested.
+1232 batches are tested.
+1233 batches are tested.
+1234 batches are tested.
+1235 batches are tested.
+1236 batches are tested.
+1237 batches are tested.
+1238 batches are tested.
+1239 batches are tested.
+the average accuracy is 0.981000
+1240 batches are tested.
+1241 batches are tested.
+1242 batches are tested.
+1243 batches are tested.
+1244 batches are tested.
+1245 batches are tested.
+1246 batches are tested.
+1247 batches are tested.
+1248 batches are tested.
+1249 batches are tested.
+1250 batches are tested.
+1251 batches are tested.
+1252 batches are tested.
+1253 batches are tested.
+1254 batches are tested.
+1255 batches are tested.
+1256 batches are tested.
+1257 batches are tested.
+1258 batches are tested.
+1259 batches are tested.
+the average accuracy is 0.990000
+1260 batches are tested.
+1261 batches are tested.
+1262 batches are tested.
+1263 batches are tested.
+1264 batches are tested.
+1265 batches are tested.
+1266 batches are tested.
+1267 batches are tested.
+1268 batches are tested.
+1269 batches are tested.
+1270 batches are tested.
+1271 batches are tested.
+1272 batches are tested.
+1273 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:51,621 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:55,596 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:53:59,617 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:03,686 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:07,637 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:11,882 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:15,772 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:19,732 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:23,760 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:27,715 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:31,766 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:35,584 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:39,371 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:43,289 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:47,227 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:51,257 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+
+1274 batches are tested.
+1275 batches are tested.
+1276 batches are tested.
+1277 batches are tested.
+1278 batches are tested.
+1279 batches are tested.
+the average accuracy is 0.989000
+1280 batches are tested.
+1281 batches are tested.
+1282 batches are tested.
+1283 batches are tested.
+1284 batches are tested.
+1285 batches are tested.
+1286 batches are tested.
+1287 batches are tested.
+1288 batches are tested.
+1289 batches are tested.
+1290 batches are tested.
+1291 batches are tested.
+1292 batches are tested.
+1293 batches are tested.
+1294 batches are tested.
+1295 batches are tested.
+1296 batches are tested.
+1297 batches are tested.
+1298 batches are tested.
+1299 batches are tested.
+the average accuracy is 0.989000
+1300 batches are tested.
+1301 batches are tested.
+1302 batches are tested.
+1303 batches are tested.
+1304 batches are tested.
+1305 batches are tested.
+1306 batches are tested.
+1307 batches are tested.
+1308 batches are tested.
+1309 batches are tested.
+1310 batches are tested.
+1311 batches are tested.
+1312 batches are tested.
+1313 batches are tested.
+1314 batches are tested.
+1315 batches are tested.
+1316 batches are tested.
+1317 batches are tested.
+1318 batches are tested.
+1319 batches are tested.
+the average accuracy is 0.990000
+1320 batches are tested.
+1321 batches are tested.
+1322 batches are tested.
+1323 batches are tested.
+1324 batches are tested.
+1325 batches are tested.
+1326 batches are tested.
+1327 batches are tested.
+1328 batches are tested.
+1329 batches are tested.
+1330 batches are tested.
+1331 batches are tested.
+1332 batches are tested.
+1333 batches are tested.
+1334 batches are tested.
+1335 batches are tested.
+1336 batches are tested.
+1337 batches are tested.
+1338 batches are tested.
+1339 batches are tested.
+the average accuracy is 0.988000
+1340 batches are tested.
+1341 batches are tested.
+1342 batches are tested.
+1343 batches are tested.
+1344 batches are tested.
+1345 batches are tested.
+1346 batches are tested.
+1347 batches are tested.
+1348 batches are tested.
+1349 batches are tested.
+1350 batches are tested.
+1351 batches are tested.
+1352 batches are tested.
+1353 batches are tested.
+1354 batches are tested.
+1355 batches are tested.
+1356 batches are tested.
+1357 batches are tested.
+1358 batches are tested.
+1359 batches are tested.
+the average accuracy is 0.988000
+1360 batches are tested.
+1361 batches are tested.
+1362 batches are tested.
+1363 batches are tested.
+1364 batches are tested.
+1365 batches are tested.
+1366 batches are tested.
+1367 batches are tested.
+1368 batches are tested.
+1369 batches are tested.
+1370 batches are tested.
+1371 batches are tested.
+1372 batches are tested.
+1373 batches are tested.
+1374 batches are tested.
+1375 batches are tested.
+1376 batches are tested.
+1377 batches are tested.
+1378 batches are tested.
+1379 batches are tested.
+the average accuracy is 0.985000
+1380 batches are tested.
+1381 batches are tested.
+1382 batches are tested.
+1383 batches are tested.
+1384 batches are tested.
+1385 batches are tested.
+1386 batches are tested.
+1387 batches are tested.
+1388 batches are tested.
+1389 batches are tested.
+1390 batches are tested.
+1391 batches are tested.
+1392 batches are tested.
+1393 batches are tested.
+1394 batches are tested.
+1395 batches are tested.
+1396 batches are tested.
+1397 batches are tested.
+1398 batches are tested.
+1399 batches are tested.
+the average accuracy is 0.988000
+1400 batches are tested.
+1401 batches are tested.
+1402 batches are tested.
+1403 batches are tested.
+1404 batches are tested.
+1405 batches are tested.
+1406 batches are tested.
+1407 batches are tested.
+1408 batches are tested.
+1409 batches are tested.
+1410 batches are tested.
+1411 batches are tested.
+1412 batches are tested.
+1413 batches are tested.
+1414 batches are tested.
+1415 batches are tested.
+1416 batches are tested.
+1417 batches are tested.
+1418 batches are tested.
+1419 batches are tested.
+the average accuracy is 0.991000
+1420 batches are tested.
+1421 batches are tested.
+1422 batches are tested.
+1423 batches are tested.
+1424 batches are tested.
+1425 batches are tested.
+1426 batches are tested.
+1427 batches are tested.
+1428 batches are tested.
+1429 batches are tested.
+1430 batches are tested.
+1431 batches are tested.
+1432 batches are tested.
+1433 batches are tested.
+1434 batches are tested.
+1435 batches are tested.
+1436 batches are tested.
+1437 batches are tested.
+1438 batches are tested.
+1439 batches are tested.
+the average accuracy is 0.989000
+1440 batches are tested.
+1441 batches are tested.
+1442 batches are tested.
+1443 batches are tested.
+1444 batches are tested.
+1445 batches are tested.
+1446 batches are tested.
+1447 batches are tested.
+1448 batches are tested.
+1449 batches are tested.
+1450 batches are tested.
+1451 batches are tested.
+1452 batches are tested.
+1453 batches are tested.
+1454 batches are tested.
+1455 batches are tested.
+1456 batches are tested.
+1457 batches are tested.
+1458 batches are tested.
+1459 batches are tested.
+the average accuracy is 0.984000
+1460 batches are tested.
+1461 batches are tested.
+1462 batches are tested.
+1463 batches are tested.
+1464 batches are tested.
+1465 batches are tested.
+1466 batches are tested.
+1467 batches are tested.
+1468 batches are tested.
+1469 batches are tested.
+1470 batches are tested.
+1471 batches are tested.
+1472 batches are tested.
+1473 batches are tested.
+1474 batches are tested.
+1475 batches are tested.
+1476 batches are tested.
+1477 batches are tested.
+1478 batches are tested.
+1479 batches are tested.
+the average accuracy is 0.989000
+1480 batches are tested.
+1481 batches are tested.
+1482 batches are tested.
+1483 batches are tested.
+1484 batches are tested.
+1485 batches are tested.
+1486 batches are tested.
+1487 batches are tested.
+1488 batches are tested.
+1489 batches are tested.
+1490 batches are tested.
+1491 batches are tested.
+1492 batches are tested.
+1493 batches are tested.
+1494 batches are tested.
+1495 batches are tested.
+1496 batches are tested.
+1497 batches are tested.
+1498 batches are tested.
+1499 batches are tested.
+the average accuracy is 0.987000
+1500 batches are tested.
+1501 batches are tested.
+1502 batches are tested.
+1503 batches are tested.
+1504 batches are tested.
+1505 batches are tested.
+1506 batches are tested.
+1507 batches are tested.
+1508 batches are tested.
+1509 batches are tested.
+1510 batches are tested.
+1511 batches are tested.
+1512 batches are tested.
+1513 batches are tested.
+1514 batches are tested.
+1515 batches are tested.
+1516 batches are tested.
+1517 batches are tested.
+1518 batches are tested.
+1519 batches are tested.
+the average accuracy is 0.987000
+1520 batches are tested.
+1521 batches are tested.
+1522 batches are tested.
+1523 batches are tested.
+1524 batches are tested.
+1525 batches are tested.
+1526 batches are tested.
+1527 batches are tested.
+1528 batches are tested.
+1529 batches are tested.
+1530 batches are tested.
+1531 batches are tested.
+1532 batches are tested.
+1533 batches are tested.
+1534 batches are tested.
+1535 batches are tested.
+1536 batches are tested.
+1537 batches are tested.
+1538 batches are tested.
+1539 batches are tested.
+the average accuracy is 0.988000
+1540 batches are tested.
+1541 batches are tested.
+1542 batches are tested.
+1543 batches are tested.
+1544 batches are tested.
+1545 batches are tested.
+1546 batches are tested.
+1547 batches are tested.
+1548 batches are tested.
+1549 batches are tested.
+1550 batches are tested.
+1551 batches are tested.
+1552 batches are tested.
+1553 batches are tested.
+1554 batches are tested.
+1555 batches are tested.
+1556 batches are tested.
+1557 batches are tested.
+1558 batches are tested.
+1559 batches are tested.
+the average accuracy is 0.989000
+1560 batches are tested.
+1561 batches are tested.
+1562 batches are tested.
+1563 batches are tested.
+1564 batches are tested.
+1565 batches are tested.
+1566 batches are tested.
+1567 batches are tested.
+1568 batches are tested.
+1569 batches are tested.
+1570 batches are tested.
+1571 batches are tested.
+1572 batches are tested.
+1573 batches are tested.
+1574 batches are tested.
+1575 batches are tested.
+1576 batches are tested.
+1577 batches are tested.
+1578 batches are tested.
+1579 batches are tested.
+the average accuracy is 0.989000
+1580 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:55,335 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:54:59,432 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:03,491 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:07,404 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:11,388 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:15,411 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:19,479 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:23,579 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:27,669 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:31,526 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:35,574 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:39,755 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:43,777 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:47,716 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:51,650 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+
+1581 batches are tested.
+1582 batches are tested.
+1583 batches are tested.
+1584 batches are tested.
+1585 batches are tested.
+1586 batches are tested.
+1587 batches are tested.
+1588 batches are tested.
+1589 batches are tested.
+1590 batches are tested.
+1591 batches are tested.
+1592 batches are tested.
+1593 batches are tested.
+1594 batches are tested.
+1595 batches are tested.
+1596 batches are tested.
+1597 batches are tested.
+1598 batches are tested.
+1599 batches are tested.
+the average accuracy is 0.985000
+1600 batches are tested.
+1601 batches are tested.
+1602 batches are tested.
+1603 batches are tested.
+1604 batches are tested.
+1605 batches are tested.
+1606 batches are tested.
+1607 batches are tested.
+1608 batches are tested.
+1609 batches are tested.
+1610 batches are tested.
+1611 batches are tested.
+1612 batches are tested.
+1613 batches are tested.
+1614 batches are tested.
+1615 batches are tested.
+1616 batches are tested.
+1617 batches are tested.
+1618 batches are tested.
+1619 batches are tested.
+the average accuracy is 0.990000
+1620 batches are tested.
+1621 batches are tested.
+1622 batches are tested.
+1623 batches are tested.
+1624 batches are tested.
+1625 batches are tested.
+1626 batches are tested.
+1627 batches are tested.
+1628 batches are tested.
+1629 batches are tested.
+1630 batches are tested.
+1631 batches are tested.
+1632 batches are tested.
+1633 batches are tested.
+1634 batches are tested.
+1635 batches are tested.
+1636 batches are tested.
+1637 batches are tested.
+1638 batches are tested.
+1639 batches are tested.
+the average accuracy is 0.987000
+1640 batches are tested.
+1641 batches are tested.
+1642 batches are tested.
+1643 batches are tested.
+1644 batches are tested.
+1645 batches are tested.
+1646 batches are tested.
+1647 batches are tested.
+1648 batches are tested.
+1649 batches are tested.
+1650 batches are tested.
+1651 batches are tested.
+1652 batches are tested.
+1653 batches are tested.
+1654 batches are tested.
+1655 batches are tested.
+1656 batches are tested.
+1657 batches are tested.
+1658 batches are tested.
+1659 batches are tested.
+the average accuracy is 0.991000
+1660 batches are tested.
+1661 batches are tested.
+1662 batches are tested.
+1663 batches are tested.
+1664 batches are tested.
+1665 batches are tested.
+1666 batches are tested.
+1667 batches are tested.
+1668 batches are tested.
+1669 batches are tested.
+1670 batches are tested.
+1671 batches are tested.
+1672 batches are tested.
+1673 batches are tested.
+1674 batches are tested.
+1675 batches are tested.
+1676 batches are tested.
+1677 batches are tested.
+1678 batches are tested.
+1679 batches are tested.
+the average accuracy is 0.985000
+1680 batches are tested.
+1681 batches are tested.
+1682 batches are tested.
+1683 batches are tested.
+1684 batches are tested.
+1685 batches are tested.
+1686 batches are tested.
+1687 batches are tested.
+1688 batches are tested.
+1689 batches are tested.
+1690 batches are tested.
+1691 batches are tested.
+1692 batches are tested.
+1693 batches are tested.
+1694 batches are tested.
+1695 batches are tested.
+1696 batches are tested.
+1697 batches are tested.
+1698 batches are tested.
+1699 batches are tested.
+the average accuracy is 0.989000
+1700 batches are tested.
+1701 batches are tested.
+1702 batches are tested.
+1703 batches are tested.
+1704 batches are tested.
+1705 batches are tested.
+1706 batches are tested.
+1707 batches are tested.
+1708 batches are tested.
+1709 batches are tested.
+1710 batches are tested.
+1711 batches are tested.
+1712 batches are tested.
+1713 batches are tested.
+1714 batches are tested.
+1715 batches are tested.
+1716 batches are tested.
+1717 batches are tested.
+1718 batches are tested.
+1719 batches are tested.
+the average accuracy is 0.991000
+1720 batches are tested.
+1721 batches are tested.
+1722 batches are tested.
+1723 batches are tested.
+1724 batches are tested.
+1725 batches are tested.
+1726 batches are tested.
+1727 batches are tested.
+1728 batches are tested.
+1729 batches are tested.
+1730 batches are tested.
+1731 batches are tested.
+1732 batches are tested.
+1733 batches are tested.
+1734 batches are tested.
+1735 batches are tested.
+1736 batches are tested.
+1737 batches are tested.
+1738 batches are tested.
+1739 batches are tested.
+the average accuracy is 0.990000
+1740 batches are tested.
+1741 batches are tested.
+1742 batches are tested.
+1743 batches are tested.
+1744 batches are tested.
+1745 batches are tested.
+1746 batches are tested.
+1747 batches are tested.
+1748 batches are tested.
+1749 batches are tested.
+1750 batches are tested.
+1751 batches are tested.
+1752 batches are tested.
+1753 batches are tested.
+1754 batches are tested.
+1755 batches are tested.
+1756 batches are tested.
+1757 batches are tested.
+1758 batches are tested.
+1759 batches are tested.
+the average accuracy is 0.986000
+1760 batches are tested.
+1761 batches are tested.
+1762 batches are tested.
+1763 batches are tested.
+1764 batches are tested.
+1765 batches are tested.
+1766 batches are tested.
+1767 batches are tested.
+1768 batches are tested.
+1769 batches are tested.
+1770 batches are tested.
+1771 batches are tested.
+1772 batches are tested.
+1773 batches are tested.
+1774 batches are tested.
+1775 batches are tested.
+1776 batches are tested.
+1777 batches are tested.
+1778 batches are tested.
+1779 batches are tested.
+the average accuracy is 0.989000
+1780 batches are tested.
+1781 batches are tested.
+1782 batches are tested.
+1783 batches are tested.
+1784 batches are tested.
+1785 batches are tested.
+1786 batches are tested.
+1787 batches are tested.
+1788 batches are tested.
+1789 batches are tested.
+1790 batches are tested.
+1791 batches are tested.
+1792 batches are tested.
+1793 batches are tested.
+1794 batches are tested.
+1795 batches are tested.
+1796 batches are tested.
+1797 batches are tested.
+1798 batches are tested.
+1799 batches are tested.
+the average accuracy is 0.987000
+1800 batches are tested.
+1801 batches are tested.
+1802 batches are tested.
+1803 batches are tested.
+1804 batches are tested.
+1805 batches are tested.
+1806 batches are tested.
+1807 batches are tested.
+1808 batches are tested.
+1809 batches are tested.
+1810 batches are tested.
+1811 batches are tested.
+1812 batches are tested.
+1813 batches are tested.
+1814 batches are tested.
+1815 batches are tested.
+1816 batches are tested.
+1817 batches are tested.
+1818 batches are tested.
+1819 batches are tested.
+the average accuracy is 0.985000
+1820 batches are tested.
+1821 batches are tested.
+1822 batches are tested.
+1823 batches are tested.
+1824 batches are tested.
+1825 batches are tested.
+1826 batches are tested.
+1827 batches are tested.
+1828 batches are tested.
+1829 batches are tested.
+1830 batches are tested.
+1831 batches are tested.
+1832 batches are tested.
+1833 batches are tested.
+1834 batches are tested.
+1835 batches are tested.
+1836 batches are tested.
+1837 batches are tested.
+1838 batches are tested.
+1839 batches are tested.
+the average accuracy is 0.994000
+1840 batches are tested.
+1841 batches are tested.
+1842 batches are tested.
+1843 batches are tested.
+1844 batches are tested.
+1845 batches are tested.
+1846 batches are tested.
+1847 batches are tested.
+1848 batches are tested.
+1849 batches are tested.
+1850 batches are tested.
+1851 batches are tested.
+1852 batches are tested.
+1853 batches are tested.
+1854 batches are tested.
+1855 batches are tested.
+1856 batches are tested.
+1857 batches are tested.
+1858 batches are tested.
+1859 batches are tested.
+the average accuracy is 0.986000
+1860 batches are tested.
+1861 batches are tested.
+1862 batches are tested.
+1863 batches are tested.
+1864 batches are tested.
+1865 batches are tested.
+1866 batches are tested.
+1867 batches are tested.
+1868 batches are tested.
+1869 batches are tested.
+1870 batches are tested.
+1871 batches are tested.
+1872 batches are tested.
+1873 batches are tested.
+1874 batches are tested.
+1875 batches are tested.
+1876 batches are tested.
+1877 batches are tested.
+1878 batches are tested.
+1879 batches are tested.
+the average accuracy is 0.986000
+1880 batches are tested.
+1881 batches are tested.
+1882 batches are tested.
+1883 batches are tested.
+1884 batches are tested.
+1885 batches are tested.
+1886 batches are tested.
+1887 batches are tested.
+1888 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:55,550 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:55:59,595 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:56:03,600 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
+2018-05-02 04:56:07,727 [3064] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-1.5112.ckpt-120000
