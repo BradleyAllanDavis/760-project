@@ -76,7 +76,7 @@ def main(args):
         cfg.test_logdir + '/{}/{}/'.format(model_name, dataset_name), graph=sess.graph)  # graph=sess.graph, huge!
 
       files = os.listdir(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name))
-      ckpt_frequency = cfg.checkpoint_frequency
+      ckpt_frequency = cfg.epoch_save
       n_ckpts = int(np.round(cfg.epoch / ckpt_frequency))
       epochs = np.arange(0, n_ckpts)*num_batches_per_epoch_train*ckpt_frequency
       # for epoch in range(20, cfg.epoch):
@@ -87,7 +87,7 @@ def main(args):
         for __file in files:
           if __file.endswith(ckpt_re + ".index"):
             ckpt = os.path.join(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name), __file[:-6])
-        
+
         # ckpt = os.path.join(cfg.logdir, "model.ckpt-%d" % (num_batches_per_epoch_train * epoch))
         saver.restore(sess, ckpt)
 

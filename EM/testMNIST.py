@@ -64,10 +64,12 @@ def main(args):
             for epoch in range(1, cfg.epoch):
                 # requires a regex to adapt the loss value in the file name here
                 ckpt_re = ".ckpt-%d" % int(num_batches_per_epoch_train * cfg.epoch_save * epoch)
+                print("ckpt_re = {}".format(ckpt_re))
                 for __file in files:
                     if __file.endswith(ckpt_re + ".index"):
                         ckpt = os.path.join(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name), __file[:-6])
                 # ckpt = os.path.join(cfg.logdir, "model.ckpt-%d" % (num_batches_per_epoch_train * epoch))
+                print("ckpt = {}".format(ckpt))
                 saver.restore(sess, ckpt)
 
                 accuracy_sum = 0
