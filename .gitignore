@@ -3,3 +3,4 @@ __pycache__/
 logdir/
 test_logdir/
 *.npy
+EM/data/mnist/
