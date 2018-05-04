@@ -62,18 +62,21 @@ def main(args):
 
             files = os.listdir(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name))
             for epoch in range(1, cfg.epoch):
+                print("epoch: {}".format(epoch))
                 # requires a regex to adapt the loss value in the file name here
                 ckpt_re = ".ckpt-%d" % int(num_batches_per_epoch_train * cfg.epoch_save * epoch)
-                print("ckpt_re = {}".format(ckpt_re))
+                print("ckpt_re: {}".format(ckpt_re))
                 for __file in files:
                     if __file.endswith(ckpt_re + ".index"):
                         ckpt = os.path.join(cfg.logdir + '/{}/{}/'.format(model_name, dataset_name), __file[:-6])
                 # ckpt = os.path.join(cfg.logdir, "model.ckpt-%d" % (num_batches_per_epoch_train * epoch))
-                print("ckpt = {}".format(ckpt))
+                print("ckpt: {}".format(ckpt))
                 saver.restore(sess, ckpt)
 
                 accuracy_sum = 0
                 for i in range(num_batches_test):
+                    print("batch: {}".format(i))
+                    print("step: {}".format(step))
                     batch_acc_v, summary_str = sess.run([batch_acc, summary_op])
                     print('%d batches are tested.' % step)
                     summary_writer.add_summary(summary_str, step)

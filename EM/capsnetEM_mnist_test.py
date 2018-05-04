@@ -19,9 +19,9 @@ import daiquiri
 from IPython.core import debugger
 breakpoint = debugger.set_trace
 ##### Local Imports
-from capsnetEM_config import *
-from capsnetEM_datautils import *
-from capsnetEM_EMutils import *
+from config import *
+from capsulesMNIST import *
+from utils import *
 
 
 daiquiri.setup(level=logging.DEBUG)
