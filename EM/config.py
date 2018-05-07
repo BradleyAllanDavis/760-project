@@ -56,7 +56,8 @@ def get_coord_add(dataset_name):
 
 
 def get_dataset_size_train(dataset_name):
-    options = {'mnist': 60000}
+    options = {'mnist': 10000}
+    # options = {'mnist': 60000}
     return options[dataset_name]
 
 

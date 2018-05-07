@@ -1,0 +1,6566 @@
+INFO:tensorflow:input shape: (50, 28, 28, 1)
+2018-05-06 20:22:29,416 [25234] INFO     tensorflow: input shape: (50, 28, 28, 1)
+INFO:tensorflow:conv1 output shape: (50, 12, 12, 32)
+2018-05-06 20:22:29,427 [25234] INFO     tensorflow: conv1 output shape: (50, 12, 12, 32)
+INFO:tensorflow:primary capsule output shape: (50, 12, 12, 136)
+2018-05-06 20:22:29,454 [25234] INFO     tensorflow: primary capsule output shape: (50, 12, 12, 136)
+INFO:tensorflow:conv cap 1 votes shape: (1250, 72, 16, 16)
+2018-05-06 20:22:29,470 [25234] INFO     tensorflow: conv cap 1 votes shape: (1250, 72, 16, 16)
+WARNING:tensorflow:From /mnt/wd1/project/EM/capsulesMNIST.py:255: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-06 20:22:29,519 [25234] WARNING  tensorflow: From /mnt/wd1/project/EM/capsulesMNIST.py:255: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /mnt/wd1/project/EM/capsulesMNIST.py:291: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-05-06 20:22:29,544 [25234] WARNING  tensorflow: From /mnt/wd1/project/EM/capsulesMNIST.py:291: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+INFO:tensorflow:conv cap 1 miu shape: (1250, 1, 16, 16)
+2018-05-06 20:22:29,562 [25234] INFO     tensorflow: conv cap 1 miu shape: (1250, 1, 16, 16)
+INFO:tensorflow:conv cap 1 activation before reshape: (1250, 16)
+2018-05-06 20:22:29,562 [25234] INFO     tensorflow: conv cap 1 activation before reshape: (1250, 16)
+INFO:tensorflow:conv cap 1 pose shape: (50, 5, 5, 16, 16)
+2018-05-06 20:22:29,563 [25234] INFO     tensorflow: conv cap 1 pose shape: (50, 5, 5, 16, 16)
+INFO:tensorflow:conv cap 1 activation after reshape: (50, 5, 5, 16, 1)
+2018-05-06 20:22:29,564 [25234] INFO     tensorflow: conv cap 1 activation after reshape: (50, 5, 5, 16, 1)
+INFO:tensorflow:conv cap 1 output shape: (50, 5, 5, 272)
+2018-05-06 20:22:29,566 [25234] INFO     tensorflow: conv cap 1 output shape: (50, 5, 5, 272)
+INFO:tensorflow:conv cap 2 votes shape: (450, 144, 16, 16)
+2018-05-06 20:22:29,583 [25234] INFO     tensorflow: conv cap 2 votes shape: (450, 144, 16, 16)
+INFO:tensorflow:conv cap 2 pose shape: (450, 144, 16, 16)
+2018-05-06 20:22:29,627 [25234] INFO     tensorflow: conv cap 2 pose shape: (450, 144, 16, 16)
+INFO:tensorflow:conv cap 2 activation shape: (450, 16, 1)
+2018-05-06 20:22:29,628 [25234] INFO     tensorflow: conv cap 2 activation shape: (450, 16, 1)
+INFO:tensorflow:class cap votes original shape: (450, 16, 10, 16)
+2018-05-06 20:22:29,637 [25234] INFO     tensorflow: class cap votes original shape: (450, 16, 10, 16)
+INFO:tensorflow:class cap votes coord add shape: (450, 16, 10, 18)
+2018-05-06 20:22:29,639 [25234] INFO     tensorflow: class cap votes coord add shape: (450, 16, 10, 18)
+INFO:tensorflow:class cap activation shape: (450, 10)
+2018-05-06 20:22:29,679 [25234] INFO     tensorflow: class cap activation shape: (450, 10)
+INFO:tensorflow:class cap output shape: (50, 10)
+2018-05-06 20:22:29,683 [25234] INFO     tensorflow: class cap output shape: (50, 10)
+2018-05-06 20:22:29.718274: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-05-06 20:22:29.794027: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:895] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-06 20:22:29.794396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1105] Found device 0 with properties: 
+name: GeForce GTX 1070 Ti major: 6 minor: 1 memoryClockRate(GHz): 1.683
+pciBusID: 0000:0e:00.0
+totalMemory: 7.93GiB freeMemory: 7.16GiB
+2018-05-06 20:22:29.794411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1195] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: GeForce GTX 1070 Ti, pci bus id: 0000:0e:00.0, compute capability: 6.1)
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-9.9136.ckpt-500
+2018-05-06 20:22:30,313 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-9.9136.ckpt-500
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-6.1254.ckpt-1000
+2018-05-06 20:22:35,670 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-6.1254.ckpt-1000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-4.7587.ckpt-1500
+2018-05-06 20:22:39,910 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-4.7587.ckpt-1500
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:22:44,086 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:22:48,314 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:22:52,354 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:22:56,671 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:00,927 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:05,133 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+epoch: 1
+ckpt_re: .ckpt-500
+ckpt: logdir/caps/mnist/model-9.9136.ckpt-500
+batch: 0
+step: 0
+0 batches are tested.
+batch: 1
+step: 1
+1 batches are tested.
+batch: 2
+step: 2
+2 batches are tested.
+batch: 3
+step: 3
+3 batches are tested.
+batch: 4
+step: 4
+4 batches are tested.
+batch: 5
+step: 5
+5 batches are tested.
+batch: 6
+step: 6
+6 batches are tested.
+batch: 7
+step: 7
+7 batches are tested.
+batch: 8
+step: 8
+8 batches are tested.
+batch: 9
+step: 9
+9 batches are tested.
+batch: 10
+step: 10
+10 batches are tested.
+batch: 11
+step: 11
+11 batches are tested.
+batch: 12
+step: 12
+12 batches are tested.
+batch: 13
+step: 13
+13 batches are tested.
+batch: 14
+step: 14
+14 batches are tested.
+batch: 15
+step: 15
+15 batches are tested.
+batch: 16
+step: 16
+16 batches are tested.
+batch: 17
+step: 17
+17 batches are tested.
+batch: 18
+step: 18
+18 batches are tested.
+batch: 19
+step: 19
+19 batches are tested.
+the average accuracy is 0.093000
+epoch: 2
+ckpt_re: .ckpt-1000
+ckpt: logdir/caps/mnist/model-6.1254.ckpt-1000
+batch: 0
+step: 20
+20 batches are tested.
+batch: 1
+step: 21
+21 batches are tested.
+batch: 2
+step: 22
+22 batches are tested.
+batch: 3
+step: 23
+23 batches are tested.
+batch: 4
+step: 24
+24 batches are tested.
+batch: 5
+step: 25
+25 batches are tested.
+batch: 6
+step: 26
+26 batches are tested.
+batch: 7
+step: 27
+27 batches are tested.
+batch: 8
+step: 28
+28 batches are tested.
+batch: 9
+step: 29
+29 batches are tested.
+batch: 10
+step: 30
+30 batches are tested.
+batch: 11
+step: 31
+31 batches are tested.
+batch: 12
+step: 32
+32 batches are tested.
+batch: 13
+step: 33
+33 batches are tested.
+batch: 14
+step: 34
+34 batches are tested.
+batch: 15
+step: 35
+35 batches are tested.
+batch: 16
+step: 36
+36 batches are tested.
+batch: 17
+step: 37
+37 batches are tested.
+batch: 18
+step: 38
+38 batches are tested.
+batch: 19
+step: 39
+39 batches are tested.
+the average accuracy is 0.090000
+epoch: 3
+ckpt_re: .ckpt-1500
+ckpt: logdir/caps/mnist/model-4.7587.ckpt-1500
+batch: 0
+step: 40
+40 batches are tested.
+batch: 1
+step: 41
+41 batches are tested.
+batch: 2
+step: 42
+42 batches are tested.
+batch: 3
+step: 43
+43 batches are tested.
+batch: 4
+step: 44
+44 batches are tested.
+batch: 5
+step: 45
+45 batches are tested.
+batch: 6
+step: 46
+46 batches are tested.
+batch: 7
+step: 47
+47 batches are tested.
+batch: 8
+step: 48
+48 batches are tested.
+batch: 9
+step: 49
+49 batches are tested.
+batch: 10
+step: 50
+50 batches are tested.
+batch: 11
+step: 51
+51 batches are tested.
+batch: 12
+step: 52
+52 batches are tested.
+batch: 13
+step: 53
+53 batches are tested.
+batch: 14
+step: 54
+54 batches are tested.
+batch: 15
+step: 55
+55 batches are tested.
+batch: 16
+step: 56
+56 batches are tested.
+batch: 17
+step: 57
+57 batches are tested.
+batch: 18
+step: 58
+58 batches are tested.
+batch: 19
+step: 59
+59 batches are tested.
+the average accuracy is 0.171000
+epoch: 4
+ckpt_re: .ckpt-2000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 60
+60 batches are tested.
+batch: 1
+step: 61
+61 batches are tested.
+batch: 2
+step: 62
+62 batches are tested.
+batch: 3
+step: 63
+63 batches are tested.
+batch: 4
+step: 64
+64 batches are tested.
+batch: 5
+step: 65
+65 batches are tested.
+batch: 6
+step: 66
+66 batches are tested.
+batch: 7
+step: 67
+67 batches are tested.
+batch: 8
+step: 68
+68 batches are tested.
+batch: 9
+step: 69
+69 batches are tested.
+batch: 10
+step: 70
+70 batches are tested.
+batch: 11
+step: 71
+71 batches are tested.
+batch: 12
+step: 72
+72 batches are tested.
+batch: 13
+step: 73
+73 batches are tested.
+batch: 14
+step: 74
+74 batches are tested.
+batch: 15
+step: 75
+75 batches are tested.
+batch: 16
+step: 76
+76 batches are tested.
+batch: 17
+step: 77
+77 batches are tested.
+batch: 18
+step: 78
+78 batches are tested.
+batch: 19
+step: 79
+79 batches are tested.
+the average accuracy is 0.267000
+epoch: 5
+ckpt_re: .ckpt-2500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 80
+80 batches are tested.
+batch: 1
+step: 81
+81 batches are tested.
+batch: 2
+step: 82
+82 batches are tested.
+batch: 3
+step: 83
+83 batches are tested.
+batch: 4
+step: 84
+84 batches are tested.
+batch: 5
+step: 85
+85 batches are tested.
+batch: 6
+step: 86
+86 batches are tested.
+batch: 7
+step: 87
+87 batches are tested.
+batch: 8
+step: 88
+88 batches are tested.
+batch: 9
+step: 89
+89 batches are tested.
+batch: 10
+step: 90
+90 batches are tested.
+batch: 11
+step: 91
+91 batches are tested.
+batch: 12
+step: 92
+92 batches are tested.
+batch: 13
+step: 93
+93 batches are tested.
+batch: 14
+step: 94
+94 batches are tested.
+batch: 15
+step: 95
+95 batches are tested.
+batch: 16
+step: 96
+96 batches are tested.
+batch: 17
+step: 97
+97 batches are tested.
+batch: 18
+step: 98
+98 batches are tested.
+batch: 19
+step: 99
+99 batches are tested.
+the average accuracy is 0.287000
+epoch: 6
+ckpt_re: .ckpt-3000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 100
+100 batches are tested.
+batch: 1
+step: 101
+101 batches are tested.
+batch: 2
+step: 102
+102 batches are tested.
+batch: 3
+step: 103
+103 batches are tested.
+batch: 4
+step: 104
+104 batches are tested.
+batch: 5
+step: 105
+105 batches are tested.
+batch: 6
+step: 106
+106 batches are tested.
+batch: 7
+step: 107
+107 batches are tested.
+batch: 8
+step: 108
+108 batches are tested.
+batch: 9
+step: 109
+109 batches are tested.
+batch: 10
+step: 110
+110 batches are tested.
+batch: 11
+step: 111
+111 batches are tested.
+batch: 12
+step: 112
+112 batches are tested.
+batch: 13
+step: 113
+113 batches are tested.
+batch: 14
+step: 114
+114 batches are tested.
+batch: 15
+step: 115
+115 batches are tested.
+batch: 16
+step: 116
+116 batches are tested.
+batch: 17
+step: 117
+117 batches are tested.
+batch: 18
+step: 118
+118 batches are tested.
+batch: 19
+step: 119
+119 batches are tested.
+the average accuracy is 0.298000
+epoch: 7
+ckpt_re: .ckpt-3500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 120
+120 batches are tested.
+batch: 1
+step: 121
+121 batches are tested.
+batch: 2
+step: 122
+122 batches are tested.
+batch: 3
+step: 123
+123 batches are tested.
+batch: 4
+step: 124
+124 batches are tested.
+batch: 5
+step: 125
+125 batches are tested.
+batch: 6
+step: 126
+126 batches are tested.
+batch: 7
+step: 127
+127 batches are tested.
+batch: 8
+step: 128
+128 batches are tested.
+batch: 9
+step: 129
+129 batches are tested.
+batch: 10
+step: 130
+130 batches are tested.
+batch: 11
+step: 131
+131 batches are tested.
+batch: 12
+step: 132
+132 batches are tested.
+batch: 13
+step: 133
+133 batches are tested.
+batch: 14
+step: 134
+134 batches are tested.
+batch: 15
+step: 135
+135 batches are tested.
+batch: 16
+step: 136
+136 batches are tested.
+batch: 17
+step: 137
+137 batches are tested.
+batch: 18
+step: 138
+138 batches are tested.
+batch: 19
+step: 139
+139 batches are tested.
+the average accuracy is 0.295000
+epoch: 8
+ckpt_re: .ckpt-4000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 140
+140 batches are tested.
+batch: 1
+step: 141
+141 batches are tested.
+batch: 2
+step: 142
+142 batches are tested.
+batch: 3
+step: 143
+143 batches are tested.
+batch: 4
+step: 144
+144 batches are tested.
+batch: 5
+step: 145
+145 batches are tested.
+batch: 6
+step: 146
+146 batches are tested.
+batch: 7
+step: 147
+147 batches are tested.
+batch: 8
+step: 148
+148 batches are tested.
+batch: 9
+step: 149
+149 batches are tested.
+batch: 10
+step: 150
+150 batches are tested.
+batch: 11
+step: 151
+151 batches are tested.
+batch: 12
+step: 152
+152 batches are tested.
+batch: 13
+step: 153
+153 batches are tested.
+batch: 14
+step: 154
+154 batches are tested.
+batch: 15
+step: 155
+155 batches are tested.
+batch: 16
+step: 156
+156 batches are tested.
+batch: 17
+step: 157
+157 batches are tested.
+batch: 18
+step: 158
+158 batches are tested.
+batch: 19
+step: 159
+159 batches are tested.
+the average accuracy is 0.288000
+epoch: 9
+ckpt_re: .ckpt-4500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 160
+160 batches are tested.
+batch: 1
+step: 161
+161 batches are tested.
+batch: 2
+step: 162
+162 batches are tested.
+batch: 3
+step: 163
+163 batches are tested.
+batch: 4
+step: 164
+164 batches are tested.
+batch: 5
+step: 165
+165 batches are tested.
+batch: 6
+step: 166
+166 batches are tested.
+batch: 7
+step: 167
+167 batches are tested.
+batch: 8
+step: 168
+168 batches are tested.
+batch: 9
+step: 169
+169 batches are tested.
+batch: 10
+step: 170
+170 batches are tested.
+batch: 11
+step: 171
+171 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:09,457 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:13,651 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:17,908 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:21,938 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:26,099 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:30,284 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:34,321 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:38,586 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 12
+step: 172
+172 batches are tested.
+batch: 13
+step: 173
+173 batches are tested.
+batch: 14
+step: 174
+174 batches are tested.
+batch: 15
+step: 175
+175 batches are tested.
+batch: 16
+step: 176
+176 batches are tested.
+batch: 17
+step: 177
+177 batches are tested.
+batch: 18
+step: 178
+178 batches are tested.
+batch: 19
+step: 179
+179 batches are tested.
+the average accuracy is 0.285000
+epoch: 10
+ckpt_re: .ckpt-5000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 180
+180 batches are tested.
+batch: 1
+step: 181
+181 batches are tested.
+batch: 2
+step: 182
+182 batches are tested.
+batch: 3
+step: 183
+183 batches are tested.
+batch: 4
+step: 184
+184 batches are tested.
+batch: 5
+step: 185
+185 batches are tested.
+batch: 6
+step: 186
+186 batches are tested.
+batch: 7
+step: 187
+187 batches are tested.
+batch: 8
+step: 188
+188 batches are tested.
+batch: 9
+step: 189
+189 batches are tested.
+batch: 10
+step: 190
+190 batches are tested.
+batch: 11
+step: 191
+191 batches are tested.
+batch: 12
+step: 192
+192 batches are tested.
+batch: 13
+step: 193
+193 batches are tested.
+batch: 14
+step: 194
+194 batches are tested.
+batch: 15
+step: 195
+195 batches are tested.
+batch: 16
+step: 196
+196 batches are tested.
+batch: 17
+step: 197
+197 batches are tested.
+batch: 18
+step: 198
+198 batches are tested.
+batch: 19
+step: 199
+199 batches are tested.
+the average accuracy is 0.281000
+epoch: 11
+ckpt_re: .ckpt-5500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 200
+200 batches are tested.
+batch: 1
+step: 201
+201 batches are tested.
+batch: 2
+step: 202
+202 batches are tested.
+batch: 3
+step: 203
+203 batches are tested.
+batch: 4
+step: 204
+204 batches are tested.
+batch: 5
+step: 205
+205 batches are tested.
+batch: 6
+step: 206
+206 batches are tested.
+batch: 7
+step: 207
+207 batches are tested.
+batch: 8
+step: 208
+208 batches are tested.
+batch: 9
+step: 209
+209 batches are tested.
+batch: 10
+step: 210
+210 batches are tested.
+batch: 11
+step: 211
+211 batches are tested.
+batch: 12
+step: 212
+212 batches are tested.
+batch: 13
+step: 213
+213 batches are tested.
+batch: 14
+step: 214
+214 batches are tested.
+batch: 15
+step: 215
+215 batches are tested.
+batch: 16
+step: 216
+216 batches are tested.
+batch: 17
+step: 217
+217 batches are tested.
+batch: 18
+step: 218
+218 batches are tested.
+batch: 19
+step: 219
+219 batches are tested.
+the average accuracy is 0.283000
+epoch: 12
+ckpt_re: .ckpt-6000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 220
+220 batches are tested.
+batch: 1
+step: 221
+221 batches are tested.
+batch: 2
+step: 222
+222 batches are tested.
+batch: 3
+step: 223
+223 batches are tested.
+batch: 4
+step: 224
+224 batches are tested.
+batch: 5
+step: 225
+225 batches are tested.
+batch: 6
+step: 226
+226 batches are tested.
+batch: 7
+step: 227
+227 batches are tested.
+batch: 8
+step: 228
+228 batches are tested.
+batch: 9
+step: 229
+229 batches are tested.
+batch: 10
+step: 230
+230 batches are tested.
+batch: 11
+step: 231
+231 batches are tested.
+batch: 12
+step: 232
+232 batches are tested.
+batch: 13
+step: 233
+233 batches are tested.
+batch: 14
+step: 234
+234 batches are tested.
+batch: 15
+step: 235
+235 batches are tested.
+batch: 16
+step: 236
+236 batches are tested.
+batch: 17
+step: 237
+237 batches are tested.
+batch: 18
+step: 238
+238 batches are tested.
+batch: 19
+step: 239
+239 batches are tested.
+the average accuracy is 0.292000
+epoch: 13
+ckpt_re: .ckpt-6500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 240
+240 batches are tested.
+batch: 1
+step: 241
+241 batches are tested.
+batch: 2
+step: 242
+242 batches are tested.
+batch: 3
+step: 243
+243 batches are tested.
+batch: 4
+step: 244
+244 batches are tested.
+batch: 5
+step: 245
+245 batches are tested.
+batch: 6
+step: 246
+246 batches are tested.
+batch: 7
+step: 247
+247 batches are tested.
+batch: 8
+step: 248
+248 batches are tested.
+batch: 9
+step: 249
+249 batches are tested.
+batch: 10
+step: 250
+250 batches are tested.
+batch: 11
+step: 251
+251 batches are tested.
+batch: 12
+step: 252
+252 batches are tested.
+batch: 13
+step: 253
+253 batches are tested.
+batch: 14
+step: 254
+254 batches are tested.
+batch: 15
+step: 255
+255 batches are tested.
+batch: 16
+step: 256
+256 batches are tested.
+batch: 17
+step: 257
+257 batches are tested.
+batch: 18
+step: 258
+258 batches are tested.
+batch: 19
+step: 259
+259 batches are tested.
+the average accuracy is 0.296000
+epoch: 14
+ckpt_re: .ckpt-7000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 260
+260 batches are tested.
+batch: 1
+step: 261
+261 batches are tested.
+batch: 2
+step: 262
+262 batches are tested.
+batch: 3
+step: 263
+263 batches are tested.
+batch: 4
+step: 264
+264 batches are tested.
+batch: 5
+step: 265
+265 batches are tested.
+batch: 6
+step: 266
+266 batches are tested.
+batch: 7
+step: 267
+267 batches are tested.
+batch: 8
+step: 268
+268 batches are tested.
+batch: 9
+step: 269
+269 batches are tested.
+batch: 10
+step: 270
+270 batches are tested.
+batch: 11
+step: 271
+271 batches are tested.
+batch: 12
+step: 272
+272 batches are tested.
+batch: 13
+step: 273
+273 batches are tested.
+batch: 14
+step: 274
+274 batches are tested.
+batch: 15
+step: 275
+275 batches are tested.
+batch: 16
+step: 276
+276 batches are tested.
+batch: 17
+step: 277
+277 batches are tested.
+batch: 18
+step: 278
+278 batches are tested.
+batch: 19
+step: 279
+279 batches are tested.
+the average accuracy is 0.283000
+epoch: 15
+ckpt_re: .ckpt-7500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 280
+280 batches are tested.
+batch: 1
+step: 281
+281 batches are tested.
+batch: 2
+step: 282
+282 batches are tested.
+batch: 3
+step: 283
+283 batches are tested.
+batch: 4
+step: 284
+284 batches are tested.
+batch: 5
+step: 285
+285 batches are tested.
+batch: 6
+step: 286
+286 batches are tested.
+batch: 7
+step: 287
+287 batches are tested.
+batch: 8
+step: 288
+288 batches are tested.
+batch: 9
+step: 289
+289 batches are tested.
+batch: 10
+step: 290
+290 batches are tested.
+batch: 11
+step: 291
+291 batches are tested.
+batch: 12
+step: 292
+292 batches are tested.
+batch: 13
+step: 293
+293 batches are tested.
+batch: 14
+step: 294
+294 batches are tested.
+batch: 15
+step: 295
+295 batches are tested.
+batch: 16
+step: 296
+296 batches are tested.
+batch: 17
+step: 297
+297 batches are tested.
+batch: 18
+step: 298
+298 batches are tested.
+batch: 19
+step: 299
+299 batches are tested.
+the average accuracy is 0.286000
+epoch: 16
+ckpt_re: .ckpt-8000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 300
+300 batches are tested.
+batch: 1
+step: 301
+301 batches are tested.
+batch: 2
+step: 302
+302 batches are tested.
+batch: 3
+step: 303
+303 batches are tested.
+batch: 4
+step: 304
+304 batches are tested.
+batch: 5
+step: 305
+305 batches are tested.
+batch: 6
+step: 306
+306 batches are tested.
+batch: 7
+step: 307
+307 batches are tested.
+batch: 8
+step: 308
+308 batches are tested.
+batch: 9
+step: 309
+309 batches are tested.
+batch: 10
+step: 310
+310 batches are tested.
+batch: 11
+step: 311
+311 batches are tested.
+batch: 12
+step: 312
+312 batches are tested.
+batch: 13
+step: 313
+313 batches are tested.
+batch: 14
+step: 314
+314 batches are tested.
+batch: 15
+step: 315
+315 batches are tested.
+batch: 16
+step: 316
+316 batches are tested.
+batch: 17
+step: 317
+317 batches are tested.
+batch: 18
+step: 318
+318 batches are tested.
+batch: 19
+step: 319
+319 batches are tested.
+the average accuracy is 0.288000
+epoch: 17
+ckpt_re: .ckpt-8500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 320
+320 batches are tested.
+batch: 1
+step: 321
+321 batches are tested.
+batch: 2
+step: 322
+322 batches are tested.
+batch: 3
+step: 323
+323 batches are tested.
+batch: 4
+step: 324
+324 batches are tested.
+batch: 5
+step: 325
+325 batches are tested.
+batch: 6
+step: 326
+326 batches are tested.
+batch: 7
+step: 327
+327 batches are tested.
+batch: 8
+step: 328
+328 batches are tested.
+batch: 9
+step: 329
+329 batches are tested.
+batch: 10
+step: 330
+330 batches are tested.
+batch: 11
+step: 331
+331 batches are tested.
+batch: 12
+step: 332
+332 batches are tested.
+batch: 13
+step: 333
+333 batches are tested.
+batch: 14
+step: 334
+334 batches are tested.
+batch: 15
+step: 335
+335 batches are tested.
+batch: 16
+step: 336
+336 batches are tested.
+batch: 17
+step: 337
+337 batches are tested.
+batch: 18
+step: 338
+338 batches are tested.
+batch: 19
+step: 339
+339 batches are tested.
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:42,832 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:46,919 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:51,073 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:55,268 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:23:59,468 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:03,673 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:07,768 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:11,868 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:15,976 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+the average accuracy is 0.291000
+epoch: 18
+ckpt_re: .ckpt-9000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 340
+340 batches are tested.
+batch: 1
+step: 341
+341 batches are tested.
+batch: 2
+step: 342
+342 batches are tested.
+batch: 3
+step: 343
+343 batches are tested.
+batch: 4
+step: 344
+344 batches are tested.
+batch: 5
+step: 345
+345 batches are tested.
+batch: 6
+step: 346
+346 batches are tested.
+batch: 7
+step: 347
+347 batches are tested.
+batch: 8
+step: 348
+348 batches are tested.
+batch: 9
+step: 349
+349 batches are tested.
+batch: 10
+step: 350
+350 batches are tested.
+batch: 11
+step: 351
+351 batches are tested.
+batch: 12
+step: 352
+352 batches are tested.
+batch: 13
+step: 353
+353 batches are tested.
+batch: 14
+step: 354
+354 batches are tested.
+batch: 15
+step: 355
+355 batches are tested.
+batch: 16
+step: 356
+356 batches are tested.
+batch: 17
+step: 357
+357 batches are tested.
+batch: 18
+step: 358
+358 batches are tested.
+batch: 19
+step: 359
+359 batches are tested.
+the average accuracy is 0.276000
+epoch: 19
+ckpt_re: .ckpt-9500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 360
+360 batches are tested.
+batch: 1
+step: 361
+361 batches are tested.
+batch: 2
+step: 362
+362 batches are tested.
+batch: 3
+step: 363
+363 batches are tested.
+batch: 4
+step: 364
+364 batches are tested.
+batch: 5
+step: 365
+365 batches are tested.
+batch: 6
+step: 366
+366 batches are tested.
+batch: 7
+step: 367
+367 batches are tested.
+batch: 8
+step: 368
+368 batches are tested.
+batch: 9
+step: 369
+369 batches are tested.
+batch: 10
+step: 370
+370 batches are tested.
+batch: 11
+step: 371
+371 batches are tested.
+batch: 12
+step: 372
+372 batches are tested.
+batch: 13
+step: 373
+373 batches are tested.
+batch: 14
+step: 374
+374 batches are tested.
+batch: 15
+step: 375
+375 batches are tested.
+batch: 16
+step: 376
+376 batches are tested.
+batch: 17
+step: 377
+377 batches are tested.
+batch: 18
+step: 378
+378 batches are tested.
+batch: 19
+step: 379
+379 batches are tested.
+the average accuracy is 0.259000
+epoch: 20
+ckpt_re: .ckpt-10000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 380
+380 batches are tested.
+batch: 1
+step: 381
+381 batches are tested.
+batch: 2
+step: 382
+382 batches are tested.
+batch: 3
+step: 383
+383 batches are tested.
+batch: 4
+step: 384
+384 batches are tested.
+batch: 5
+step: 385
+385 batches are tested.
+batch: 6
+step: 386
+386 batches are tested.
+batch: 7
+step: 387
+387 batches are tested.
+batch: 8
+step: 388
+388 batches are tested.
+batch: 9
+step: 389
+389 batches are tested.
+batch: 10
+step: 390
+390 batches are tested.
+batch: 11
+step: 391
+391 batches are tested.
+batch: 12
+step: 392
+392 batches are tested.
+batch: 13
+step: 393
+393 batches are tested.
+batch: 14
+step: 394
+394 batches are tested.
+batch: 15
+step: 395
+395 batches are tested.
+batch: 16
+step: 396
+396 batches are tested.
+batch: 17
+step: 397
+397 batches are tested.
+batch: 18
+step: 398
+398 batches are tested.
+batch: 19
+step: 399
+399 batches are tested.
+the average accuracy is 0.277000
+epoch: 21
+ckpt_re: .ckpt-10500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 400
+400 batches are tested.
+batch: 1
+step: 401
+401 batches are tested.
+batch: 2
+step: 402
+402 batches are tested.
+batch: 3
+step: 403
+403 batches are tested.
+batch: 4
+step: 404
+404 batches are tested.
+batch: 5
+step: 405
+405 batches are tested.
+batch: 6
+step: 406
+406 batches are tested.
+batch: 7
+step: 407
+407 batches are tested.
+batch: 8
+step: 408
+408 batches are tested.
+batch: 9
+step: 409
+409 batches are tested.
+batch: 10
+step: 410
+410 batches are tested.
+batch: 11
+step: 411
+411 batches are tested.
+batch: 12
+step: 412
+412 batches are tested.
+batch: 13
+step: 413
+413 batches are tested.
+batch: 14
+step: 414
+414 batches are tested.
+batch: 15
+step: 415
+415 batches are tested.
+batch: 16
+step: 416
+416 batches are tested.
+batch: 17
+step: 417
+417 batches are tested.
+batch: 18
+step: 418
+418 batches are tested.
+batch: 19
+step: 419
+419 batches are tested.
+the average accuracy is 0.309000
+epoch: 22
+ckpt_re: .ckpt-11000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 420
+420 batches are tested.
+batch: 1
+step: 421
+421 batches are tested.
+batch: 2
+step: 422
+422 batches are tested.
+batch: 3
+step: 423
+423 batches are tested.
+batch: 4
+step: 424
+424 batches are tested.
+batch: 5
+step: 425
+425 batches are tested.
+batch: 6
+step: 426
+426 batches are tested.
+batch: 7
+step: 427
+427 batches are tested.
+batch: 8
+step: 428
+428 batches are tested.
+batch: 9
+step: 429
+429 batches are tested.
+batch: 10
+step: 430
+430 batches are tested.
+batch: 11
+step: 431
+431 batches are tested.
+batch: 12
+step: 432
+432 batches are tested.
+batch: 13
+step: 433
+433 batches are tested.
+batch: 14
+step: 434
+434 batches are tested.
+batch: 15
+step: 435
+435 batches are tested.
+batch: 16
+step: 436
+436 batches are tested.
+batch: 17
+step: 437
+437 batches are tested.
+batch: 18
+step: 438
+438 batches are tested.
+batch: 19
+step: 439
+439 batches are tested.
+the average accuracy is 0.300000
+epoch: 23
+ckpt_re: .ckpt-11500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 440
+440 batches are tested.
+batch: 1
+step: 441
+441 batches are tested.
+batch: 2
+step: 442
+442 batches are tested.
+batch: 3
+step: 443
+443 batches are tested.
+batch: 4
+step: 444
+444 batches are tested.
+batch: 5
+step: 445
+445 batches are tested.
+batch: 6
+step: 446
+446 batches are tested.
+batch: 7
+step: 447
+447 batches are tested.
+batch: 8
+step: 448
+448 batches are tested.
+batch: 9
+step: 449
+449 batches are tested.
+batch: 10
+step: 450
+450 batches are tested.
+batch: 11
+step: 451
+451 batches are tested.
+batch: 12
+step: 452
+452 batches are tested.
+batch: 13
+step: 453
+453 batches are tested.
+batch: 14
+step: 454
+454 batches are tested.
+batch: 15
+step: 455
+455 batches are tested.
+batch: 16
+step: 456
+456 batches are tested.
+batch: 17
+step: 457
+457 batches are tested.
+batch: 18
+step: 458
+458 batches are tested.
+batch: 19
+step: 459
+459 batches are tested.
+the average accuracy is 0.297000
+epoch: 24
+ckpt_re: .ckpt-12000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 460
+460 batches are tested.
+batch: 1
+step: 461
+461 batches are tested.
+batch: 2
+step: 462
+462 batches are tested.
+batch: 3
+step: 463
+463 batches are tested.
+batch: 4
+step: 464
+464 batches are tested.
+batch: 5
+step: 465
+465 batches are tested.
+batch: 6
+step: 466
+466 batches are tested.
+batch: 7
+step: 467
+467 batches are tested.
+batch: 8
+step: 468
+468 batches are tested.
+batch: 9
+step: 469
+469 batches are tested.
+batch: 10
+step: 470
+470 batches are tested.
+batch: 11
+step: 471
+471 batches are tested.
+batch: 12
+step: 472
+472 batches are tested.
+batch: 13
+step: 473
+473 batches are tested.
+batch: 14
+step: 474
+474 batches are tested.
+batch: 15
+step: 475
+475 batches are tested.
+batch: 16
+step: 476
+476 batches are tested.
+batch: 17
+step: 477
+477 batches are tested.
+batch: 18
+step: 478
+478 batches are tested.
+batch: 19
+step: 479
+479 batches are tested.
+the average accuracy is 0.268000
+epoch: 25
+ckpt_re: .ckpt-12500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 480
+480 batches are tested.
+batch: 1
+step: 481
+481 batches are tested.
+batch: 2
+step: 482
+482 batches are tested.
+batch: 3
+step: 483
+483 batches are tested.
+batch: 4
+step: 484
+484 batches are tested.
+batch: 5
+step: 485
+485 batches are tested.
+batch: 6
+step: 486
+486 batches are tested.
+batch: 7
+step: 487
+487 batches are tested.
+batch: 8
+step: 488
+488 batches are tested.
+batch: 9
+step: 489
+489 batches are tested.
+batch: 10
+step: 490
+490 batches are tested.
+batch: 11
+step: 491
+491 batches are tested.
+batch: 12
+step: 492
+492 batches are tested.
+batch: 13
+step: 493
+493 batches are tested.
+batch: 14
+step: 494
+494 batches are tested.
+batch: 15
+step: 495
+495 batches are tested.
+batch: 16
+step: 496
+496 batches are tested.
+batch: 17
+step: 497
+497 batches are tested.
+batch: 18
+step: 498
+498 batches are tested.
+batch: 19
+step: 499
+499 batches are tested.
+the average accuracy is 0.274000
+epoch: 26
+ckpt_re: .ckpt-13000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 500
+500 batches are tested.
+batch: 1
+step: 501
+501 batches are tested.
+batch: 2
+step: 502
+502 batches are tested.
+batch: 3
+step: 503
+503 batches are tested.
+batch: 4
+step: 504
+504 batches are tested.
+batch: 5
+step: 505
+505 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:20,268 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:24,369 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:28,540 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:32,595 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:36,647 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:40,694 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:44,653 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:48,689 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 6
+step: 506
+506 batches are tested.
+batch: 7
+step: 507
+507 batches are tested.
+batch: 8
+step: 508
+508 batches are tested.
+batch: 9
+step: 509
+509 batches are tested.
+batch: 10
+step: 510
+510 batches are tested.
+batch: 11
+step: 511
+511 batches are tested.
+batch: 12
+step: 512
+512 batches are tested.
+batch: 13
+step: 513
+513 batches are tested.
+batch: 14
+step: 514
+514 batches are tested.
+batch: 15
+step: 515
+515 batches are tested.
+batch: 16
+step: 516
+516 batches are tested.
+batch: 17
+step: 517
+517 batches are tested.
+batch: 18
+step: 518
+518 batches are tested.
+batch: 19
+step: 519
+519 batches are tested.
+the average accuracy is 0.289000
+epoch: 27
+ckpt_re: .ckpt-13500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 520
+520 batches are tested.
+batch: 1
+step: 521
+521 batches are tested.
+batch: 2
+step: 522
+522 batches are tested.
+batch: 3
+step: 523
+523 batches are tested.
+batch: 4
+step: 524
+524 batches are tested.
+batch: 5
+step: 525
+525 batches are tested.
+batch: 6
+step: 526
+526 batches are tested.
+batch: 7
+step: 527
+527 batches are tested.
+batch: 8
+step: 528
+528 batches are tested.
+batch: 9
+step: 529
+529 batches are tested.
+batch: 10
+step: 530
+530 batches are tested.
+batch: 11
+step: 531
+531 batches are tested.
+batch: 12
+step: 532
+532 batches are tested.
+batch: 13
+step: 533
+533 batches are tested.
+batch: 14
+step: 534
+534 batches are tested.
+batch: 15
+step: 535
+535 batches are tested.
+batch: 16
+step: 536
+536 batches are tested.
+batch: 17
+step: 537
+537 batches are tested.
+batch: 18
+step: 538
+538 batches are tested.
+batch: 19
+step: 539
+539 batches are tested.
+the average accuracy is 0.284000
+epoch: 28
+ckpt_re: .ckpt-14000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 540
+540 batches are tested.
+batch: 1
+step: 541
+541 batches are tested.
+batch: 2
+step: 542
+542 batches are tested.
+batch: 3
+step: 543
+543 batches are tested.
+batch: 4
+step: 544
+544 batches are tested.
+batch: 5
+step: 545
+545 batches are tested.
+batch: 6
+step: 546
+546 batches are tested.
+batch: 7
+step: 547
+547 batches are tested.
+batch: 8
+step: 548
+548 batches are tested.
+batch: 9
+step: 549
+549 batches are tested.
+batch: 10
+step: 550
+550 batches are tested.
+batch: 11
+step: 551
+551 batches are tested.
+batch: 12
+step: 552
+552 batches are tested.
+batch: 13
+step: 553
+553 batches are tested.
+batch: 14
+step: 554
+554 batches are tested.
+batch: 15
+step: 555
+555 batches are tested.
+batch: 16
+step: 556
+556 batches are tested.
+batch: 17
+step: 557
+557 batches are tested.
+batch: 18
+step: 558
+558 batches are tested.
+batch: 19
+step: 559
+559 batches are tested.
+the average accuracy is 0.264000
+epoch: 29
+ckpt_re: .ckpt-14500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 560
+560 batches are tested.
+batch: 1
+step: 561
+561 batches are tested.
+batch: 2
+step: 562
+562 batches are tested.
+batch: 3
+step: 563
+563 batches are tested.
+batch: 4
+step: 564
+564 batches are tested.
+batch: 5
+step: 565
+565 batches are tested.
+batch: 6
+step: 566
+566 batches are tested.
+batch: 7
+step: 567
+567 batches are tested.
+batch: 8
+step: 568
+568 batches are tested.
+batch: 9
+step: 569
+569 batches are tested.
+batch: 10
+step: 570
+570 batches are tested.
+batch: 11
+step: 571
+571 batches are tested.
+batch: 12
+step: 572
+572 batches are tested.
+batch: 13
+step: 573
+573 batches are tested.
+batch: 14
+step: 574
+574 batches are tested.
+batch: 15
+step: 575
+575 batches are tested.
+batch: 16
+step: 576
+576 batches are tested.
+batch: 17
+step: 577
+577 batches are tested.
+batch: 18
+step: 578
+578 batches are tested.
+batch: 19
+step: 579
+579 batches are tested.
+the average accuracy is 0.293000
+epoch: 30
+ckpt_re: .ckpt-15000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 580
+580 batches are tested.
+batch: 1
+step: 581
+581 batches are tested.
+batch: 2
+step: 582
+582 batches are tested.
+batch: 3
+step: 583
+583 batches are tested.
+batch: 4
+step: 584
+584 batches are tested.
+batch: 5
+step: 585
+585 batches are tested.
+batch: 6
+step: 586
+586 batches are tested.
+batch: 7
+step: 587
+587 batches are tested.
+batch: 8
+step: 588
+588 batches are tested.
+batch: 9
+step: 589
+589 batches are tested.
+batch: 10
+step: 590
+590 batches are tested.
+batch: 11
+step: 591
+591 batches are tested.
+batch: 12
+step: 592
+592 batches are tested.
+batch: 13
+step: 593
+593 batches are tested.
+batch: 14
+step: 594
+594 batches are tested.
+batch: 15
+step: 595
+595 batches are tested.
+batch: 16
+step: 596
+596 batches are tested.
+batch: 17
+step: 597
+597 batches are tested.
+batch: 18
+step: 598
+598 batches are tested.
+batch: 19
+step: 599
+599 batches are tested.
+the average accuracy is 0.289000
+epoch: 31
+ckpt_re: .ckpt-15500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 600
+600 batches are tested.
+batch: 1
+step: 601
+601 batches are tested.
+batch: 2
+step: 602
+602 batches are tested.
+batch: 3
+step: 603
+603 batches are tested.
+batch: 4
+step: 604
+604 batches are tested.
+batch: 5
+step: 605
+605 batches are tested.
+batch: 6
+step: 606
+606 batches are tested.
+batch: 7
+step: 607
+607 batches are tested.
+batch: 8
+step: 608
+608 batches are tested.
+batch: 9
+step: 609
+609 batches are tested.
+batch: 10
+step: 610
+610 batches are tested.
+batch: 11
+step: 611
+611 batches are tested.
+batch: 12
+step: 612
+612 batches are tested.
+batch: 13
+step: 613
+613 batches are tested.
+batch: 14
+step: 614
+614 batches are tested.
+batch: 15
+step: 615
+615 batches are tested.
+batch: 16
+step: 616
+616 batches are tested.
+batch: 17
+step: 617
+617 batches are tested.
+batch: 18
+step: 618
+618 batches are tested.
+batch: 19
+step: 619
+619 batches are tested.
+the average accuracy is 0.298000
+epoch: 32
+ckpt_re: .ckpt-16000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 620
+620 batches are tested.
+batch: 1
+step: 621
+621 batches are tested.
+batch: 2
+step: 622
+622 batches are tested.
+batch: 3
+step: 623
+623 batches are tested.
+batch: 4
+step: 624
+624 batches are tested.
+batch: 5
+step: 625
+625 batches are tested.
+batch: 6
+step: 626
+626 batches are tested.
+batch: 7
+step: 627
+627 batches are tested.
+batch: 8
+step: 628
+628 batches are tested.
+batch: 9
+step: 629
+629 batches are tested.
+batch: 10
+step: 630
+630 batches are tested.
+batch: 11
+step: 631
+631 batches are tested.
+batch: 12
+step: 632
+632 batches are tested.
+batch: 13
+step: 633
+633 batches are tested.
+batch: 14
+step: 634
+634 batches are tested.
+batch: 15
+step: 635
+635 batches are tested.
+batch: 16
+step: 636
+636 batches are tested.
+batch: 17
+step: 637
+637 batches are tested.
+batch: 18
+step: 638
+638 batches are tested.
+batch: 19
+step: 639
+639 batches are tested.
+the average accuracy is 0.306000
+epoch: 33
+ckpt_re: .ckpt-16500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 640
+640 batches are tested.
+batch: 1
+step: 641
+641 batches are tested.
+batch: 2
+step: 642
+642 batches are tested.
+batch: 3
+step: 643
+643 batches are tested.
+batch: 4
+step: 644
+644 batches are tested.
+batch: 5
+step: 645
+645 batches are tested.
+batch: 6
+step: 646
+646 batches are tested.
+batch: 7
+step: 647
+647 batches are tested.
+batch: 8
+step: 648
+648 batches are tested.
+batch: 9
+step: 649
+649 batches are tested.
+batch: 10
+step: 650
+650 batches are tested.
+batch: 11
+step: 651
+651 batches are tested.
+batch: 12
+step: 652
+652 batches are tested.
+batch: 13
+step: 653
+653 batches are tested.
+batch: 14
+step: 654
+654 batches are tested.
+batch: 15
+step: 655
+655 batches are tested.
+batch: 16
+step: 656
+656 batches are tested.
+batch: 17
+step: 657
+657 batches are tested.
+batch: 18
+step: 658
+658 batches are tested.
+batch: 19
+step: 659
+659 batches are tested.
+the average accuracy is 0.274000
+epoch: 34
+ckpt_re: .ckpt-17000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 660
+660 batches are tested.
+batch: 1
+step: 661
+661 batches are tested.
+batch: 2
+step: 662
+662 batches are tested.
+batch: 3
+step: 663
+663 batches are tested.
+batch: 4
+step: 664
+664 batches are tested.
+batch: 5
+step: 665
+665 batches are tested.
+batch: 6
+step: 666
+666 batches are tested.
+batch: 7
+step: 667
+667 batches are tested.
+batch: 8
+step: 668
+668 batches are tested.
+batch: 9
+step: 669
+669 batches are tested.
+batch: 10
+step: 670
+670 batches are tested.
+batch: 11
+step: 671
+671 batches are tested.
+batch: 12
+step: 672
+672 batches are tested.
+batch: 13
+step: 673
+673 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:52,947 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:24:56,887 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:01,123 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:05,194 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:09,352 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:13,527 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:17,573 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:21,868 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 14
+step: 674
+674 batches are tested.
+batch: 15
+step: 675
+675 batches are tested.
+batch: 16
+step: 676
+676 batches are tested.
+batch: 17
+step: 677
+677 batches are tested.
+batch: 18
+step: 678
+678 batches are tested.
+batch: 19
+step: 679
+679 batches are tested.
+the average accuracy is 0.277000
+epoch: 35
+ckpt_re: .ckpt-17500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 680
+680 batches are tested.
+batch: 1
+step: 681
+681 batches are tested.
+batch: 2
+step: 682
+682 batches are tested.
+batch: 3
+step: 683
+683 batches are tested.
+batch: 4
+step: 684
+684 batches are tested.
+batch: 5
+step: 685
+685 batches are tested.
+batch: 6
+step: 686
+686 batches are tested.
+batch: 7
+step: 687
+687 batches are tested.
+batch: 8
+step: 688
+688 batches are tested.
+batch: 9
+step: 689
+689 batches are tested.
+batch: 10
+step: 690
+690 batches are tested.
+batch: 11
+step: 691
+691 batches are tested.
+batch: 12
+step: 692
+692 batches are tested.
+batch: 13
+step: 693
+693 batches are tested.
+batch: 14
+step: 694
+694 batches are tested.
+batch: 15
+step: 695
+695 batches are tested.
+batch: 16
+step: 696
+696 batches are tested.
+batch: 17
+step: 697
+697 batches are tested.
+batch: 18
+step: 698
+698 batches are tested.
+batch: 19
+step: 699
+699 batches are tested.
+the average accuracy is 0.306000
+epoch: 36
+ckpt_re: .ckpt-18000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 700
+700 batches are tested.
+batch: 1
+step: 701
+701 batches are tested.
+batch: 2
+step: 702
+702 batches are tested.
+batch: 3
+step: 703
+703 batches are tested.
+batch: 4
+step: 704
+704 batches are tested.
+batch: 5
+step: 705
+705 batches are tested.
+batch: 6
+step: 706
+706 batches are tested.
+batch: 7
+step: 707
+707 batches are tested.
+batch: 8
+step: 708
+708 batches are tested.
+batch: 9
+step: 709
+709 batches are tested.
+batch: 10
+step: 710
+710 batches are tested.
+batch: 11
+step: 711
+711 batches are tested.
+batch: 12
+step: 712
+712 batches are tested.
+batch: 13
+step: 713
+713 batches are tested.
+batch: 14
+step: 714
+714 batches are tested.
+batch: 15
+step: 715
+715 batches are tested.
+batch: 16
+step: 716
+716 batches are tested.
+batch: 17
+step: 717
+717 batches are tested.
+batch: 18
+step: 718
+718 batches are tested.
+batch: 19
+step: 719
+719 batches are tested.
+the average accuracy is 0.278000
+epoch: 37
+ckpt_re: .ckpt-18500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 720
+720 batches are tested.
+batch: 1
+step: 721
+721 batches are tested.
+batch: 2
+step: 722
+722 batches are tested.
+batch: 3
+step: 723
+723 batches are tested.
+batch: 4
+step: 724
+724 batches are tested.
+batch: 5
+step: 725
+725 batches are tested.
+batch: 6
+step: 726
+726 batches are tested.
+batch: 7
+step: 727
+727 batches are tested.
+batch: 8
+step: 728
+728 batches are tested.
+batch: 9
+step: 729
+729 batches are tested.
+batch: 10
+step: 730
+730 batches are tested.
+batch: 11
+step: 731
+731 batches are tested.
+batch: 12
+step: 732
+732 batches are tested.
+batch: 13
+step: 733
+733 batches are tested.
+batch: 14
+step: 734
+734 batches are tested.
+batch: 15
+step: 735
+735 batches are tested.
+batch: 16
+step: 736
+736 batches are tested.
+batch: 17
+step: 737
+737 batches are tested.
+batch: 18
+step: 738
+738 batches are tested.
+batch: 19
+step: 739
+739 batches are tested.
+the average accuracy is 0.269000
+epoch: 38
+ckpt_re: .ckpt-19000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 740
+740 batches are tested.
+batch: 1
+step: 741
+741 batches are tested.
+batch: 2
+step: 742
+742 batches are tested.
+batch: 3
+step: 743
+743 batches are tested.
+batch: 4
+step: 744
+744 batches are tested.
+batch: 5
+step: 745
+745 batches are tested.
+batch: 6
+step: 746
+746 batches are tested.
+batch: 7
+step: 747
+747 batches are tested.
+batch: 8
+step: 748
+748 batches are tested.
+batch: 9
+step: 749
+749 batches are tested.
+batch: 10
+step: 750
+750 batches are tested.
+batch: 11
+step: 751
+751 batches are tested.
+batch: 12
+step: 752
+752 batches are tested.
+batch: 13
+step: 753
+753 batches are tested.
+batch: 14
+step: 754
+754 batches are tested.
+batch: 15
+step: 755
+755 batches are tested.
+batch: 16
+step: 756
+756 batches are tested.
+batch: 17
+step: 757
+757 batches are tested.
+batch: 18
+step: 758
+758 batches are tested.
+batch: 19
+step: 759
+759 batches are tested.
+the average accuracy is 0.272000
+epoch: 39
+ckpt_re: .ckpt-19500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 760
+760 batches are tested.
+batch: 1
+step: 761
+761 batches are tested.
+batch: 2
+step: 762
+762 batches are tested.
+batch: 3
+step: 763
+763 batches are tested.
+batch: 4
+step: 764
+764 batches are tested.
+batch: 5
+step: 765
+765 batches are tested.
+batch: 6
+step: 766
+766 batches are tested.
+batch: 7
+step: 767
+767 batches are tested.
+batch: 8
+step: 768
+768 batches are tested.
+batch: 9
+step: 769
+769 batches are tested.
+batch: 10
+step: 770
+770 batches are tested.
+batch: 11
+step: 771
+771 batches are tested.
+batch: 12
+step: 772
+772 batches are tested.
+batch: 13
+step: 773
+773 batches are tested.
+batch: 14
+step: 774
+774 batches are tested.
+batch: 15
+step: 775
+775 batches are tested.
+batch: 16
+step: 776
+776 batches are tested.
+batch: 17
+step: 777
+777 batches are tested.
+batch: 18
+step: 778
+778 batches are tested.
+batch: 19
+step: 779
+779 batches are tested.
+the average accuracy is 0.261000
+epoch: 40
+ckpt_re: .ckpt-20000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 780
+780 batches are tested.
+batch: 1
+step: 781
+781 batches are tested.
+batch: 2
+step: 782
+782 batches are tested.
+batch: 3
+step: 783
+783 batches are tested.
+batch: 4
+step: 784
+784 batches are tested.
+batch: 5
+step: 785
+785 batches are tested.
+batch: 6
+step: 786
+786 batches are tested.
+batch: 7
+step: 787
+787 batches are tested.
+batch: 8
+step: 788
+788 batches are tested.
+batch: 9
+step: 789
+789 batches are tested.
+batch: 10
+step: 790
+790 batches are tested.
+batch: 11
+step: 791
+791 batches are tested.
+batch: 12
+step: 792
+792 batches are tested.
+batch: 13
+step: 793
+793 batches are tested.
+batch: 14
+step: 794
+794 batches are tested.
+batch: 15
+step: 795
+795 batches are tested.
+batch: 16
+step: 796
+796 batches are tested.
+batch: 17
+step: 797
+797 batches are tested.
+batch: 18
+step: 798
+798 batches are tested.
+batch: 19
+step: 799
+799 batches are tested.
+the average accuracy is 0.268000
+epoch: 41
+ckpt_re: .ckpt-20500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 800
+800 batches are tested.
+batch: 1
+step: 801
+801 batches are tested.
+batch: 2
+step: 802
+802 batches are tested.
+batch: 3
+step: 803
+803 batches are tested.
+batch: 4
+step: 804
+804 batches are tested.
+batch: 5
+step: 805
+805 batches are tested.
+batch: 6
+step: 806
+806 batches are tested.
+batch: 7
+step: 807
+807 batches are tested.
+batch: 8
+step: 808
+808 batches are tested.
+batch: 9
+step: 809
+809 batches are tested.
+batch: 10
+step: 810
+810 batches are tested.
+batch: 11
+step: 811
+811 batches are tested.
+batch: 12
+step: 812
+812 batches are tested.
+batch: 13
+step: 813
+813 batches are tested.
+batch: 14
+step: 814
+814 batches are tested.
+batch: 15
+step: 815
+815 batches are tested.
+batch: 16
+step: 816
+816 batches are tested.
+batch: 17
+step: 817
+817 batches are tested.
+batch: 18
+step: 818
+818 batches are tested.
+batch: 19
+step: 819
+819 batches are tested.
+the average accuracy is 0.275000
+epoch: 42
+ckpt_re: .ckpt-21000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 820
+820 batches are tested.
+batch: 1
+step: 821
+821 batches are tested.
+batch: 2
+step: 822
+822 batches are tested.
+batch: 3
+step: 823
+823 batches are tested.
+batch: 4
+step: 824
+824 batches are tested.
+batch: 5
+step: 825
+825 batches are tested.
+batch: 6
+step: 826
+826 batches are tested.
+batch: 7
+step: 827
+827 batches are tested.
+batch: 8
+step: 828
+828 batches are tested.
+batch: 9
+step: 829
+829 batches are tested.
+batch: 10
+step: 830
+830 batches are tested.
+batch: 11
+step: 831
+831 batches are tested.
+batch: 12
+step: 832
+832 batches are tested.
+batch: 13
+step: 833
+833 batches are tested.
+batch: 14
+step: 834
+834 batches are tested.
+batch: 15
+step: 835
+835 batches are tested.
+batch: 16
+step: 836
+836 batches are tested.
+batch: 17
+step: 837
+837 batches are tested.
+batch: 18
+step: 838
+838 batches are tested.
+batch: 19
+step: 839
+839 batches are tested.
+the average accuracy is 0.277000
+epoch: 43
+ckpt_re: .ckpt-21500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:26,031 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:30,168 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:34,140 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:38,293 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:42,359 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:46,641 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:50,730 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:54,722 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:25:58,521 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 0
+step: 840
+840 batches are tested.
+batch: 1
+step: 841
+841 batches are tested.
+batch: 2
+step: 842
+842 batches are tested.
+batch: 3
+step: 843
+843 batches are tested.
+batch: 4
+step: 844
+844 batches are tested.
+batch: 5
+step: 845
+845 batches are tested.
+batch: 6
+step: 846
+846 batches are tested.
+batch: 7
+step: 847
+847 batches are tested.
+batch: 8
+step: 848
+848 batches are tested.
+batch: 9
+step: 849
+849 batches are tested.
+batch: 10
+step: 850
+850 batches are tested.
+batch: 11
+step: 851
+851 batches are tested.
+batch: 12
+step: 852
+852 batches are tested.
+batch: 13
+step: 853
+853 batches are tested.
+batch: 14
+step: 854
+854 batches are tested.
+batch: 15
+step: 855
+855 batches are tested.
+batch: 16
+step: 856
+856 batches are tested.
+batch: 17
+step: 857
+857 batches are tested.
+batch: 18
+step: 858
+858 batches are tested.
+batch: 19
+step: 859
+859 batches are tested.
+the average accuracy is 0.294000
+epoch: 44
+ckpt_re: .ckpt-22000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 860
+860 batches are tested.
+batch: 1
+step: 861
+861 batches are tested.
+batch: 2
+step: 862
+862 batches are tested.
+batch: 3
+step: 863
+863 batches are tested.
+batch: 4
+step: 864
+864 batches are tested.
+batch: 5
+step: 865
+865 batches are tested.
+batch: 6
+step: 866
+866 batches are tested.
+batch: 7
+step: 867
+867 batches are tested.
+batch: 8
+step: 868
+868 batches are tested.
+batch: 9
+step: 869
+869 batches are tested.
+batch: 10
+step: 870
+870 batches are tested.
+batch: 11
+step: 871
+871 batches are tested.
+batch: 12
+step: 872
+872 batches are tested.
+batch: 13
+step: 873
+873 batches are tested.
+batch: 14
+step: 874
+874 batches are tested.
+batch: 15
+step: 875
+875 batches are tested.
+batch: 16
+step: 876
+876 batches are tested.
+batch: 17
+step: 877
+877 batches are tested.
+batch: 18
+step: 878
+878 batches are tested.
+batch: 19
+step: 879
+879 batches are tested.
+the average accuracy is 0.294000
+epoch: 45
+ckpt_re: .ckpt-22500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 880
+880 batches are tested.
+batch: 1
+step: 881
+881 batches are tested.
+batch: 2
+step: 882
+882 batches are tested.
+batch: 3
+step: 883
+883 batches are tested.
+batch: 4
+step: 884
+884 batches are tested.
+batch: 5
+step: 885
+885 batches are tested.
+batch: 6
+step: 886
+886 batches are tested.
+batch: 7
+step: 887
+887 batches are tested.
+batch: 8
+step: 888
+888 batches are tested.
+batch: 9
+step: 889
+889 batches are tested.
+batch: 10
+step: 890
+890 batches are tested.
+batch: 11
+step: 891
+891 batches are tested.
+batch: 12
+step: 892
+892 batches are tested.
+batch: 13
+step: 893
+893 batches are tested.
+batch: 14
+step: 894
+894 batches are tested.
+batch: 15
+step: 895
+895 batches are tested.
+batch: 16
+step: 896
+896 batches are tested.
+batch: 17
+step: 897
+897 batches are tested.
+batch: 18
+step: 898
+898 batches are tested.
+batch: 19
+step: 899
+899 batches are tested.
+the average accuracy is 0.276000
+epoch: 46
+ckpt_re: .ckpt-23000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 900
+900 batches are tested.
+batch: 1
+step: 901
+901 batches are tested.
+batch: 2
+step: 902
+902 batches are tested.
+batch: 3
+step: 903
+903 batches are tested.
+batch: 4
+step: 904
+904 batches are tested.
+batch: 5
+step: 905
+905 batches are tested.
+batch: 6
+step: 906
+906 batches are tested.
+batch: 7
+step: 907
+907 batches are tested.
+batch: 8
+step: 908
+908 batches are tested.
+batch: 9
+step: 909
+909 batches are tested.
+batch: 10
+step: 910
+910 batches are tested.
+batch: 11
+step: 911
+911 batches are tested.
+batch: 12
+step: 912
+912 batches are tested.
+batch: 13
+step: 913
+913 batches are tested.
+batch: 14
+step: 914
+914 batches are tested.
+batch: 15
+step: 915
+915 batches are tested.
+batch: 16
+step: 916
+916 batches are tested.
+batch: 17
+step: 917
+917 batches are tested.
+batch: 18
+step: 918
+918 batches are tested.
+batch: 19
+step: 919
+919 batches are tested.
+the average accuracy is 0.289000
+epoch: 47
+ckpt_re: .ckpt-23500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 920
+920 batches are tested.
+batch: 1
+step: 921
+921 batches are tested.
+batch: 2
+step: 922
+922 batches are tested.
+batch: 3
+step: 923
+923 batches are tested.
+batch: 4
+step: 924
+924 batches are tested.
+batch: 5
+step: 925
+925 batches are tested.
+batch: 6
+step: 926
+926 batches are tested.
+batch: 7
+step: 927
+927 batches are tested.
+batch: 8
+step: 928
+928 batches are tested.
+batch: 9
+step: 929
+929 batches are tested.
+batch: 10
+step: 930
+930 batches are tested.
+batch: 11
+step: 931
+931 batches are tested.
+batch: 12
+step: 932
+932 batches are tested.
+batch: 13
+step: 933
+933 batches are tested.
+batch: 14
+step: 934
+934 batches are tested.
+batch: 15
+step: 935
+935 batches are tested.
+batch: 16
+step: 936
+936 batches are tested.
+batch: 17
+step: 937
+937 batches are tested.
+batch: 18
+step: 938
+938 batches are tested.
+batch: 19
+step: 939
+939 batches are tested.
+the average accuracy is 0.299000
+epoch: 48
+ckpt_re: .ckpt-24000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 940
+940 batches are tested.
+batch: 1
+step: 941
+941 batches are tested.
+batch: 2
+step: 942
+942 batches are tested.
+batch: 3
+step: 943
+943 batches are tested.
+batch: 4
+step: 944
+944 batches are tested.
+batch: 5
+step: 945
+945 batches are tested.
+batch: 6
+step: 946
+946 batches are tested.
+batch: 7
+step: 947
+947 batches are tested.
+batch: 8
+step: 948
+948 batches are tested.
+batch: 9
+step: 949
+949 batches are tested.
+batch: 10
+step: 950
+950 batches are tested.
+batch: 11
+step: 951
+951 batches are tested.
+batch: 12
+step: 952
+952 batches are tested.
+batch: 13
+step: 953
+953 batches are tested.
+batch: 14
+step: 954
+954 batches are tested.
+batch: 15
+step: 955
+955 batches are tested.
+batch: 16
+step: 956
+956 batches are tested.
+batch: 17
+step: 957
+957 batches are tested.
+batch: 18
+step: 958
+958 batches are tested.
+batch: 19
+step: 959
+959 batches are tested.
+the average accuracy is 0.284000
+epoch: 49
+ckpt_re: .ckpt-24500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 960
+960 batches are tested.
+batch: 1
+step: 961
+961 batches are tested.
+batch: 2
+step: 962
+962 batches are tested.
+batch: 3
+step: 963
+963 batches are tested.
+batch: 4
+step: 964
+964 batches are tested.
+batch: 5
+step: 965
+965 batches are tested.
+batch: 6
+step: 966
+966 batches are tested.
+batch: 7
+step: 967
+967 batches are tested.
+batch: 8
+step: 968
+968 batches are tested.
+batch: 9
+step: 969
+969 batches are tested.
+batch: 10
+step: 970
+970 batches are tested.
+batch: 11
+step: 971
+971 batches are tested.
+batch: 12
+step: 972
+972 batches are tested.
+batch: 13
+step: 973
+973 batches are tested.
+batch: 14
+step: 974
+974 batches are tested.
+batch: 15
+step: 975
+975 batches are tested.
+batch: 16
+step: 976
+976 batches are tested.
+batch: 17
+step: 977
+977 batches are tested.
+batch: 18
+step: 978
+978 batches are tested.
+batch: 19
+step: 979
+979 batches are tested.
+the average accuracy is 0.300000
+epoch: 50
+ckpt_re: .ckpt-25000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 980
+980 batches are tested.
+batch: 1
+step: 981
+981 batches are tested.
+batch: 2
+step: 982
+982 batches are tested.
+batch: 3
+step: 983
+983 batches are tested.
+batch: 4
+step: 984
+984 batches are tested.
+batch: 5
+step: 985
+985 batches are tested.
+batch: 6
+step: 986
+986 batches are tested.
+batch: 7
+step: 987
+987 batches are tested.
+batch: 8
+step: 988
+988 batches are tested.
+batch: 9
+step: 989
+989 batches are tested.
+batch: 10
+step: 990
+990 batches are tested.
+batch: 11
+step: 991
+991 batches are tested.
+batch: 12
+step: 992
+992 batches are tested.
+batch: 13
+step: 993
+993 batches are tested.
+batch: 14
+step: 994
+994 batches are tested.
+batch: 15
+step: 995
+995 batches are tested.
+batch: 16
+step: 996
+996 batches are tested.
+batch: 17
+step: 997
+997 batches are tested.
+batch: 18
+step: 998
+998 batches are tested.
+batch: 19
+step: 999
+999 batches are tested.
+the average accuracy is 0.301000
+epoch: 51
+ckpt_re: .ckpt-25500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1000
+1000 batches are tested.
+batch: 1
+step: 1001
+1001 batches are tested.
+batch: 2
+step: 1002
+1002 batches are tested.
+batch: 3
+step: 1003
+1003 batches are tested.
+batch: 4
+step: 1004
+1004 batches are tested.
+batch: 5
+step: 1005
+1005 batches are tested.
+batch: 6
+step: 1006
+1006 batches are tested.
+batch: 7
+step: 1007
+1007 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:02,488 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:06,456 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:10,435 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:14,393 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:18,248 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:22,277 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:26,265 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:30,377 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 8
+step: 1008
+1008 batches are tested.
+batch: 9
+step: 1009
+1009 batches are tested.
+batch: 10
+step: 1010
+1010 batches are tested.
+batch: 11
+step: 1011
+1011 batches are tested.
+batch: 12
+step: 1012
+1012 batches are tested.
+batch: 13
+step: 1013
+1013 batches are tested.
+batch: 14
+step: 1014
+1014 batches are tested.
+batch: 15
+step: 1015
+1015 batches are tested.
+batch: 16
+step: 1016
+1016 batches are tested.
+batch: 17
+step: 1017
+1017 batches are tested.
+batch: 18
+step: 1018
+1018 batches are tested.
+batch: 19
+step: 1019
+1019 batches are tested.
+the average accuracy is 0.292000
+epoch: 52
+ckpt_re: .ckpt-26000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1020
+1020 batches are tested.
+batch: 1
+step: 1021
+1021 batches are tested.
+batch: 2
+step: 1022
+1022 batches are tested.
+batch: 3
+step: 1023
+1023 batches are tested.
+batch: 4
+step: 1024
+1024 batches are tested.
+batch: 5
+step: 1025
+1025 batches are tested.
+batch: 6
+step: 1026
+1026 batches are tested.
+batch: 7
+step: 1027
+1027 batches are tested.
+batch: 8
+step: 1028
+1028 batches are tested.
+batch: 9
+step: 1029
+1029 batches are tested.
+batch: 10
+step: 1030
+1030 batches are tested.
+batch: 11
+step: 1031
+1031 batches are tested.
+batch: 12
+step: 1032
+1032 batches are tested.
+batch: 13
+step: 1033
+1033 batches are tested.
+batch: 14
+step: 1034
+1034 batches are tested.
+batch: 15
+step: 1035
+1035 batches are tested.
+batch: 16
+step: 1036
+1036 batches are tested.
+batch: 17
+step: 1037
+1037 batches are tested.
+batch: 18
+step: 1038
+1038 batches are tested.
+batch: 19
+step: 1039
+1039 batches are tested.
+the average accuracy is 0.298000
+epoch: 53
+ckpt_re: .ckpt-26500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1040
+1040 batches are tested.
+batch: 1
+step: 1041
+1041 batches are tested.
+batch: 2
+step: 1042
+1042 batches are tested.
+batch: 3
+step: 1043
+1043 batches are tested.
+batch: 4
+step: 1044
+1044 batches are tested.
+batch: 5
+step: 1045
+1045 batches are tested.
+batch: 6
+step: 1046
+1046 batches are tested.
+batch: 7
+step: 1047
+1047 batches are tested.
+batch: 8
+step: 1048
+1048 batches are tested.
+batch: 9
+step: 1049
+1049 batches are tested.
+batch: 10
+step: 1050
+1050 batches are tested.
+batch: 11
+step: 1051
+1051 batches are tested.
+batch: 12
+step: 1052
+1052 batches are tested.
+batch: 13
+step: 1053
+1053 batches are tested.
+batch: 14
+step: 1054
+1054 batches are tested.
+batch: 15
+step: 1055
+1055 batches are tested.
+batch: 16
+step: 1056
+1056 batches are tested.
+batch: 17
+step: 1057
+1057 batches are tested.
+batch: 18
+step: 1058
+1058 batches are tested.
+batch: 19
+step: 1059
+1059 batches are tested.
+the average accuracy is 0.278000
+epoch: 54
+ckpt_re: .ckpt-27000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1060
+1060 batches are tested.
+batch: 1
+step: 1061
+1061 batches are tested.
+batch: 2
+step: 1062
+1062 batches are tested.
+batch: 3
+step: 1063
+1063 batches are tested.
+batch: 4
+step: 1064
+1064 batches are tested.
+batch: 5
+step: 1065
+1065 batches are tested.
+batch: 6
+step: 1066
+1066 batches are tested.
+batch: 7
+step: 1067
+1067 batches are tested.
+batch: 8
+step: 1068
+1068 batches are tested.
+batch: 9
+step: 1069
+1069 batches are tested.
+batch: 10
+step: 1070
+1070 batches are tested.
+batch: 11
+step: 1071
+1071 batches are tested.
+batch: 12
+step: 1072
+1072 batches are tested.
+batch: 13
+step: 1073
+1073 batches are tested.
+batch: 14
+step: 1074
+1074 batches are tested.
+batch: 15
+step: 1075
+1075 batches are tested.
+batch: 16
+step: 1076
+1076 batches are tested.
+batch: 17
+step: 1077
+1077 batches are tested.
+batch: 18
+step: 1078
+1078 batches are tested.
+batch: 19
+step: 1079
+1079 batches are tested.
+the average accuracy is 0.249000
+epoch: 55
+ckpt_re: .ckpt-27500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1080
+1080 batches are tested.
+batch: 1
+step: 1081
+1081 batches are tested.
+batch: 2
+step: 1082
+1082 batches are tested.
+batch: 3
+step: 1083
+1083 batches are tested.
+batch: 4
+step: 1084
+1084 batches are tested.
+batch: 5
+step: 1085
+1085 batches are tested.
+batch: 6
+step: 1086
+1086 batches are tested.
+batch: 7
+step: 1087
+1087 batches are tested.
+batch: 8
+step: 1088
+1088 batches are tested.
+batch: 9
+step: 1089
+1089 batches are tested.
+batch: 10
+step: 1090
+1090 batches are tested.
+batch: 11
+step: 1091
+1091 batches are tested.
+batch: 12
+step: 1092
+1092 batches are tested.
+batch: 13
+step: 1093
+1093 batches are tested.
+batch: 14
+step: 1094
+1094 batches are tested.
+batch: 15
+step: 1095
+1095 batches are tested.
+batch: 16
+step: 1096
+1096 batches are tested.
+batch: 17
+step: 1097
+1097 batches are tested.
+batch: 18
+step: 1098
+1098 batches are tested.
+batch: 19
+step: 1099
+1099 batches are tested.
+the average accuracy is 0.306000
+epoch: 56
+ckpt_re: .ckpt-28000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1100
+1100 batches are tested.
+batch: 1
+step: 1101
+1101 batches are tested.
+batch: 2
+step: 1102
+1102 batches are tested.
+batch: 3
+step: 1103
+1103 batches are tested.
+batch: 4
+step: 1104
+1104 batches are tested.
+batch: 5
+step: 1105
+1105 batches are tested.
+batch: 6
+step: 1106
+1106 batches are tested.
+batch: 7
+step: 1107
+1107 batches are tested.
+batch: 8
+step: 1108
+1108 batches are tested.
+batch: 9
+step: 1109
+1109 batches are tested.
+batch: 10
+step: 1110
+1110 batches are tested.
+batch: 11
+step: 1111
+1111 batches are tested.
+batch: 12
+step: 1112
+1112 batches are tested.
+batch: 13
+step: 1113
+1113 batches are tested.
+batch: 14
+step: 1114
+1114 batches are tested.
+batch: 15
+step: 1115
+1115 batches are tested.
+batch: 16
+step: 1116
+1116 batches are tested.
+batch: 17
+step: 1117
+1117 batches are tested.
+batch: 18
+step: 1118
+1118 batches are tested.
+batch: 19
+step: 1119
+1119 batches are tested.
+the average accuracy is 0.280000
+epoch: 57
+ckpt_re: .ckpt-28500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1120
+1120 batches are tested.
+batch: 1
+step: 1121
+1121 batches are tested.
+batch: 2
+step: 1122
+1122 batches are tested.
+batch: 3
+step: 1123
+1123 batches are tested.
+batch: 4
+step: 1124
+1124 batches are tested.
+batch: 5
+step: 1125
+1125 batches are tested.
+batch: 6
+step: 1126
+1126 batches are tested.
+batch: 7
+step: 1127
+1127 batches are tested.
+batch: 8
+step: 1128
+1128 batches are tested.
+batch: 9
+step: 1129
+1129 batches are tested.
+batch: 10
+step: 1130
+1130 batches are tested.
+batch: 11
+step: 1131
+1131 batches are tested.
+batch: 12
+step: 1132
+1132 batches are tested.
+batch: 13
+step: 1133
+1133 batches are tested.
+batch: 14
+step: 1134
+1134 batches are tested.
+batch: 15
+step: 1135
+1135 batches are tested.
+batch: 16
+step: 1136
+1136 batches are tested.
+batch: 17
+step: 1137
+1137 batches are tested.
+batch: 18
+step: 1138
+1138 batches are tested.
+batch: 19
+step: 1139
+1139 batches are tested.
+the average accuracy is 0.295000
+epoch: 58
+ckpt_re: .ckpt-29000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1140
+1140 batches are tested.
+batch: 1
+step: 1141
+1141 batches are tested.
+batch: 2
+step: 1142
+1142 batches are tested.
+batch: 3
+step: 1143
+1143 batches are tested.
+batch: 4
+step: 1144
+1144 batches are tested.
+batch: 5
+step: 1145
+1145 batches are tested.
+batch: 6
+step: 1146
+1146 batches are tested.
+batch: 7
+step: 1147
+1147 batches are tested.
+batch: 8
+step: 1148
+1148 batches are tested.
+batch: 9
+step: 1149
+1149 batches are tested.
+batch: 10
+step: 1150
+1150 batches are tested.
+batch: 11
+step: 1151
+1151 batches are tested.
+batch: 12
+step: 1152
+1152 batches are tested.
+batch: 13
+step: 1153
+1153 batches are tested.
+batch: 14
+step: 1154
+1154 batches are tested.
+batch: 15
+step: 1155
+1155 batches are tested.
+batch: 16
+step: 1156
+1156 batches are tested.
+batch: 17
+step: 1157
+1157 batches are tested.
+batch: 18
+step: 1158
+1158 batches are tested.
+batch: 19
+step: 1159
+1159 batches are tested.
+the average accuracy is 0.289000
+epoch: 59
+ckpt_re: .ckpt-29500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1160
+1160 batches are tested.
+batch: 1
+step: 1161
+1161 batches are tested.
+batch: 2
+step: 1162
+1162 batches are tested.
+batch: 3
+step: 1163
+1163 batches are tested.
+batch: 4
+step: 1164
+1164 batches are tested.
+batch: 5
+step: 1165
+1165 batches are tested.
+batch: 6
+step: 1166
+1166 batches are tested.
+batch: 7
+step: 1167
+1167 batches are tested.
+batch: 8
+step: 1168
+1168 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:34,382 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:38,420 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:42,379 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:46,423 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:50,494 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:54,596 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:26:58,665 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:02,702 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 9
+step: 1169
+1169 batches are tested.
+batch: 10
+step: 1170
+1170 batches are tested.
+batch: 11
+step: 1171
+1171 batches are tested.
+batch: 12
+step: 1172
+1172 batches are tested.
+batch: 13
+step: 1173
+1173 batches are tested.
+batch: 14
+step: 1174
+1174 batches are tested.
+batch: 15
+step: 1175
+1175 batches are tested.
+batch: 16
+step: 1176
+1176 batches are tested.
+batch: 17
+step: 1177
+1177 batches are tested.
+batch: 18
+step: 1178
+1178 batches are tested.
+batch: 19
+step: 1179
+1179 batches are tested.
+the average accuracy is 0.274000
+epoch: 60
+ckpt_re: .ckpt-30000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1180
+1180 batches are tested.
+batch: 1
+step: 1181
+1181 batches are tested.
+batch: 2
+step: 1182
+1182 batches are tested.
+batch: 3
+step: 1183
+1183 batches are tested.
+batch: 4
+step: 1184
+1184 batches are tested.
+batch: 5
+step: 1185
+1185 batches are tested.
+batch: 6
+step: 1186
+1186 batches are tested.
+batch: 7
+step: 1187
+1187 batches are tested.
+batch: 8
+step: 1188
+1188 batches are tested.
+batch: 9
+step: 1189
+1189 batches are tested.
+batch: 10
+step: 1190
+1190 batches are tested.
+batch: 11
+step: 1191
+1191 batches are tested.
+batch: 12
+step: 1192
+1192 batches are tested.
+batch: 13
+step: 1193
+1193 batches are tested.
+batch: 14
+step: 1194
+1194 batches are tested.
+batch: 15
+step: 1195
+1195 batches are tested.
+batch: 16
+step: 1196
+1196 batches are tested.
+batch: 17
+step: 1197
+1197 batches are tested.
+batch: 18
+step: 1198
+1198 batches are tested.
+batch: 19
+step: 1199
+1199 batches are tested.
+the average accuracy is 0.300000
+epoch: 61
+ckpt_re: .ckpt-30500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1200
+1200 batches are tested.
+batch: 1
+step: 1201
+1201 batches are tested.
+batch: 2
+step: 1202
+1202 batches are tested.
+batch: 3
+step: 1203
+1203 batches are tested.
+batch: 4
+step: 1204
+1204 batches are tested.
+batch: 5
+step: 1205
+1205 batches are tested.
+batch: 6
+step: 1206
+1206 batches are tested.
+batch: 7
+step: 1207
+1207 batches are tested.
+batch: 8
+step: 1208
+1208 batches are tested.
+batch: 9
+step: 1209
+1209 batches are tested.
+batch: 10
+step: 1210
+1210 batches are tested.
+batch: 11
+step: 1211
+1211 batches are tested.
+batch: 12
+step: 1212
+1212 batches are tested.
+batch: 13
+step: 1213
+1213 batches are tested.
+batch: 14
+step: 1214
+1214 batches are tested.
+batch: 15
+step: 1215
+1215 batches are tested.
+batch: 16
+step: 1216
+1216 batches are tested.
+batch: 17
+step: 1217
+1217 batches are tested.
+batch: 18
+step: 1218
+1218 batches are tested.
+batch: 19
+step: 1219
+1219 batches are tested.
+the average accuracy is 0.268000
+epoch: 62
+ckpt_re: .ckpt-31000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1220
+1220 batches are tested.
+batch: 1
+step: 1221
+1221 batches are tested.
+batch: 2
+step: 1222
+1222 batches are tested.
+batch: 3
+step: 1223
+1223 batches are tested.
+batch: 4
+step: 1224
+1224 batches are tested.
+batch: 5
+step: 1225
+1225 batches are tested.
+batch: 6
+step: 1226
+1226 batches are tested.
+batch: 7
+step: 1227
+1227 batches are tested.
+batch: 8
+step: 1228
+1228 batches are tested.
+batch: 9
+step: 1229
+1229 batches are tested.
+batch: 10
+step: 1230
+1230 batches are tested.
+batch: 11
+step: 1231
+1231 batches are tested.
+batch: 12
+step: 1232
+1232 batches are tested.
+batch: 13
+step: 1233
+1233 batches are tested.
+batch: 14
+step: 1234
+1234 batches are tested.
+batch: 15
+step: 1235
+1235 batches are tested.
+batch: 16
+step: 1236
+1236 batches are tested.
+batch: 17
+step: 1237
+1237 batches are tested.
+batch: 18
+step: 1238
+1238 batches are tested.
+batch: 19
+step: 1239
+1239 batches are tested.
+the average accuracy is 0.315000
+epoch: 63
+ckpt_re: .ckpt-31500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1240
+1240 batches are tested.
+batch: 1
+step: 1241
+1241 batches are tested.
+batch: 2
+step: 1242
+1242 batches are tested.
+batch: 3
+step: 1243
+1243 batches are tested.
+batch: 4
+step: 1244
+1244 batches are tested.
+batch: 5
+step: 1245
+1245 batches are tested.
+batch: 6
+step: 1246
+1246 batches are tested.
+batch: 7
+step: 1247
+1247 batches are tested.
+batch: 8
+step: 1248
+1248 batches are tested.
+batch: 9
+step: 1249
+1249 batches are tested.
+batch: 10
+step: 1250
+1250 batches are tested.
+batch: 11
+step: 1251
+1251 batches are tested.
+batch: 12
+step: 1252
+1252 batches are tested.
+batch: 13
+step: 1253
+1253 batches are tested.
+batch: 14
+step: 1254
+1254 batches are tested.
+batch: 15
+step: 1255
+1255 batches are tested.
+batch: 16
+step: 1256
+1256 batches are tested.
+batch: 17
+step: 1257
+1257 batches are tested.
+batch: 18
+step: 1258
+1258 batches are tested.
+batch: 19
+step: 1259
+1259 batches are tested.
+the average accuracy is 0.292000
+epoch: 64
+ckpt_re: .ckpt-32000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1260
+1260 batches are tested.
+batch: 1
+step: 1261
+1261 batches are tested.
+batch: 2
+step: 1262
+1262 batches are tested.
+batch: 3
+step: 1263
+1263 batches are tested.
+batch: 4
+step: 1264
+1264 batches are tested.
+batch: 5
+step: 1265
+1265 batches are tested.
+batch: 6
+step: 1266
+1266 batches are tested.
+batch: 7
+step: 1267
+1267 batches are tested.
+batch: 8
+step: 1268
+1268 batches are tested.
+batch: 9
+step: 1269
+1269 batches are tested.
+batch: 10
+step: 1270
+1270 batches are tested.
+batch: 11
+step: 1271
+1271 batches are tested.
+batch: 12
+step: 1272
+1272 batches are tested.
+batch: 13
+step: 1273
+1273 batches are tested.
+batch: 14
+step: 1274
+1274 batches are tested.
+batch: 15
+step: 1275
+1275 batches are tested.
+batch: 16
+step: 1276
+1276 batches are tested.
+batch: 17
+step: 1277
+1277 batches are tested.
+batch: 18
+step: 1278
+1278 batches are tested.
+batch: 19
+step: 1279
+1279 batches are tested.
+the average accuracy is 0.268000
+epoch: 65
+ckpt_re: .ckpt-32500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1280
+1280 batches are tested.
+batch: 1
+step: 1281
+1281 batches are tested.
+batch: 2
+step: 1282
+1282 batches are tested.
+batch: 3
+step: 1283
+1283 batches are tested.
+batch: 4
+step: 1284
+1284 batches are tested.
+batch: 5
+step: 1285
+1285 batches are tested.
+batch: 6
+step: 1286
+1286 batches are tested.
+batch: 7
+step: 1287
+1287 batches are tested.
+batch: 8
+step: 1288
+1288 batches are tested.
+batch: 9
+step: 1289
+1289 batches are tested.
+batch: 10
+step: 1290
+1290 batches are tested.
+batch: 11
+step: 1291
+1291 batches are tested.
+batch: 12
+step: 1292
+1292 batches are tested.
+batch: 13
+step: 1293
+1293 batches are tested.
+batch: 14
+step: 1294
+1294 batches are tested.
+batch: 15
+step: 1295
+1295 batches are tested.
+batch: 16
+step: 1296
+1296 batches are tested.
+batch: 17
+step: 1297
+1297 batches are tested.
+batch: 18
+step: 1298
+1298 batches are tested.
+batch: 19
+step: 1299
+1299 batches are tested.
+the average accuracy is 0.302000
+epoch: 66
+ckpt_re: .ckpt-33000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1300
+1300 batches are tested.
+batch: 1
+step: 1301
+1301 batches are tested.
+batch: 2
+step: 1302
+1302 batches are tested.
+batch: 3
+step: 1303
+1303 batches are tested.
+batch: 4
+step: 1304
+1304 batches are tested.
+batch: 5
+step: 1305
+1305 batches are tested.
+batch: 6
+step: 1306
+1306 batches are tested.
+batch: 7
+step: 1307
+1307 batches are tested.
+batch: 8
+step: 1308
+1308 batches are tested.
+batch: 9
+step: 1309
+1309 batches are tested.
+batch: 10
+step: 1310
+1310 batches are tested.
+batch: 11
+step: 1311
+1311 batches are tested.
+batch: 12
+step: 1312
+1312 batches are tested.
+batch: 13
+step: 1313
+1313 batches are tested.
+batch: 14
+step: 1314
+1314 batches are tested.
+batch: 15
+step: 1315
+1315 batches are tested.
+batch: 16
+step: 1316
+1316 batches are tested.
+batch: 17
+step: 1317
+1317 batches are tested.
+batch: 18
+step: 1318
+1318 batches are tested.
+batch: 19
+step: 1319
+1319 batches are tested.
+the average accuracy is 0.281000
+epoch: 67
+ckpt_re: .ckpt-33500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1320
+1320 batches are tested.
+batch: 1
+step: 1321
+1321 batches are tested.
+batch: 2
+step: 1322
+1322 batches are tested.
+batch: 3
+step: 1323
+1323 batches are tested.
+batch: 4
+step: 1324
+1324 batches are tested.
+batch: 5
+step: 1325
+1325 batches are tested.
+batch: 6
+step: 1326
+1326 batches are tested.
+batch: 7
+step: 1327
+1327 batches are tested.
+batch: 8
+step: 1328
+1328 batches are tested.
+batch: 9
+step: 1329
+1329 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:06,791 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:10,926 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:15,045 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:19,212 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:23,214 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:27,179 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:31,129 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:35,184 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 10
+step: 1330
+1330 batches are tested.
+batch: 11
+step: 1331
+1331 batches are tested.
+batch: 12
+step: 1332
+1332 batches are tested.
+batch: 13
+step: 1333
+1333 batches are tested.
+batch: 14
+step: 1334
+1334 batches are tested.
+batch: 15
+step: 1335
+1335 batches are tested.
+batch: 16
+step: 1336
+1336 batches are tested.
+batch: 17
+step: 1337
+1337 batches are tested.
+batch: 18
+step: 1338
+1338 batches are tested.
+batch: 19
+step: 1339
+1339 batches are tested.
+the average accuracy is 0.269000
+epoch: 68
+ckpt_re: .ckpt-34000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1340
+1340 batches are tested.
+batch: 1
+step: 1341
+1341 batches are tested.
+batch: 2
+step: 1342
+1342 batches are tested.
+batch: 3
+step: 1343
+1343 batches are tested.
+batch: 4
+step: 1344
+1344 batches are tested.
+batch: 5
+step: 1345
+1345 batches are tested.
+batch: 6
+step: 1346
+1346 batches are tested.
+batch: 7
+step: 1347
+1347 batches are tested.
+batch: 8
+step: 1348
+1348 batches are tested.
+batch: 9
+step: 1349
+1349 batches are tested.
+batch: 10
+step: 1350
+1350 batches are tested.
+batch: 11
+step: 1351
+1351 batches are tested.
+batch: 12
+step: 1352
+1352 batches are tested.
+batch: 13
+step: 1353
+1353 batches are tested.
+batch: 14
+step: 1354
+1354 batches are tested.
+batch: 15
+step: 1355
+1355 batches are tested.
+batch: 16
+step: 1356
+1356 batches are tested.
+batch: 17
+step: 1357
+1357 batches are tested.
+batch: 18
+step: 1358
+1358 batches are tested.
+batch: 19
+step: 1359
+1359 batches are tested.
+the average accuracy is 0.254000
+epoch: 69
+ckpt_re: .ckpt-34500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1360
+1360 batches are tested.
+batch: 1
+step: 1361
+1361 batches are tested.
+batch: 2
+step: 1362
+1362 batches are tested.
+batch: 3
+step: 1363
+1363 batches are tested.
+batch: 4
+step: 1364
+1364 batches are tested.
+batch: 5
+step: 1365
+1365 batches are tested.
+batch: 6
+step: 1366
+1366 batches are tested.
+batch: 7
+step: 1367
+1367 batches are tested.
+batch: 8
+step: 1368
+1368 batches are tested.
+batch: 9
+step: 1369
+1369 batches are tested.
+batch: 10
+step: 1370
+1370 batches are tested.
+batch: 11
+step: 1371
+1371 batches are tested.
+batch: 12
+step: 1372
+1372 batches are tested.
+batch: 13
+step: 1373
+1373 batches are tested.
+batch: 14
+step: 1374
+1374 batches are tested.
+batch: 15
+step: 1375
+1375 batches are tested.
+batch: 16
+step: 1376
+1376 batches are tested.
+batch: 17
+step: 1377
+1377 batches are tested.
+batch: 18
+step: 1378
+1378 batches are tested.
+batch: 19
+step: 1379
+1379 batches are tested.
+the average accuracy is 0.261000
+epoch: 70
+ckpt_re: .ckpt-35000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1380
+1380 batches are tested.
+batch: 1
+step: 1381
+1381 batches are tested.
+batch: 2
+step: 1382
+1382 batches are tested.
+batch: 3
+step: 1383
+1383 batches are tested.
+batch: 4
+step: 1384
+1384 batches are tested.
+batch: 5
+step: 1385
+1385 batches are tested.
+batch: 6
+step: 1386
+1386 batches are tested.
+batch: 7
+step: 1387
+1387 batches are tested.
+batch: 8
+step: 1388
+1388 batches are tested.
+batch: 9
+step: 1389
+1389 batches are tested.
+batch: 10
+step: 1390
+1390 batches are tested.
+batch: 11
+step: 1391
+1391 batches are tested.
+batch: 12
+step: 1392
+1392 batches are tested.
+batch: 13
+step: 1393
+1393 batches are tested.
+batch: 14
+step: 1394
+1394 batches are tested.
+batch: 15
+step: 1395
+1395 batches are tested.
+batch: 16
+step: 1396
+1396 batches are tested.
+batch: 17
+step: 1397
+1397 batches are tested.
+batch: 18
+step: 1398
+1398 batches are tested.
+batch: 19
+step: 1399
+1399 batches are tested.
+the average accuracy is 0.291000
+epoch: 71
+ckpt_re: .ckpt-35500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1400
+1400 batches are tested.
+batch: 1
+step: 1401
+1401 batches are tested.
+batch: 2
+step: 1402
+1402 batches are tested.
+batch: 3
+step: 1403
+1403 batches are tested.
+batch: 4
+step: 1404
+1404 batches are tested.
+batch: 5
+step: 1405
+1405 batches are tested.
+batch: 6
+step: 1406
+1406 batches are tested.
+batch: 7
+step: 1407
+1407 batches are tested.
+batch: 8
+step: 1408
+1408 batches are tested.
+batch: 9
+step: 1409
+1409 batches are tested.
+batch: 10
+step: 1410
+1410 batches are tested.
+batch: 11
+step: 1411
+1411 batches are tested.
+batch: 12
+step: 1412
+1412 batches are tested.
+batch: 13
+step: 1413
+1413 batches are tested.
+batch: 14
+step: 1414
+1414 batches are tested.
+batch: 15
+step: 1415
+1415 batches are tested.
+batch: 16
+step: 1416
+1416 batches are tested.
+batch: 17
+step: 1417
+1417 batches are tested.
+batch: 18
+step: 1418
+1418 batches are tested.
+batch: 19
+step: 1419
+1419 batches are tested.
+the average accuracy is 0.310000
+epoch: 72
+ckpt_re: .ckpt-36000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1420
+1420 batches are tested.
+batch: 1
+step: 1421
+1421 batches are tested.
+batch: 2
+step: 1422
+1422 batches are tested.
+batch: 3
+step: 1423
+1423 batches are tested.
+batch: 4
+step: 1424
+1424 batches are tested.
+batch: 5
+step: 1425
+1425 batches are tested.
+batch: 6
+step: 1426
+1426 batches are tested.
+batch: 7
+step: 1427
+1427 batches are tested.
+batch: 8
+step: 1428
+1428 batches are tested.
+batch: 9
+step: 1429
+1429 batches are tested.
+batch: 10
+step: 1430
+1430 batches are tested.
+batch: 11
+step: 1431
+1431 batches are tested.
+batch: 12
+step: 1432
+1432 batches are tested.
+batch: 13
+step: 1433
+1433 batches are tested.
+batch: 14
+step: 1434
+1434 batches are tested.
+batch: 15
+step: 1435
+1435 batches are tested.
+batch: 16
+step: 1436
+1436 batches are tested.
+batch: 17
+step: 1437
+1437 batches are tested.
+batch: 18
+step: 1438
+1438 batches are tested.
+batch: 19
+step: 1439
+1439 batches are tested.
+the average accuracy is 0.294000
+epoch: 73
+ckpt_re: .ckpt-36500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1440
+1440 batches are tested.
+batch: 1
+step: 1441
+1441 batches are tested.
+batch: 2
+step: 1442
+1442 batches are tested.
+batch: 3
+step: 1443
+1443 batches are tested.
+batch: 4
+step: 1444
+1444 batches are tested.
+batch: 5
+step: 1445
+1445 batches are tested.
+batch: 6
+step: 1446
+1446 batches are tested.
+batch: 7
+step: 1447
+1447 batches are tested.
+batch: 8
+step: 1448
+1448 batches are tested.
+batch: 9
+step: 1449
+1449 batches are tested.
+batch: 10
+step: 1450
+1450 batches are tested.
+batch: 11
+step: 1451
+1451 batches are tested.
+batch: 12
+step: 1452
+1452 batches are tested.
+batch: 13
+step: 1453
+1453 batches are tested.
+batch: 14
+step: 1454
+1454 batches are tested.
+batch: 15
+step: 1455
+1455 batches are tested.
+batch: 16
+step: 1456
+1456 batches are tested.
+batch: 17
+step: 1457
+1457 batches are tested.
+batch: 18
+step: 1458
+1458 batches are tested.
+batch: 19
+step: 1459
+1459 batches are tested.
+the average accuracy is 0.287000
+epoch: 74
+ckpt_re: .ckpt-37000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1460
+1460 batches are tested.
+batch: 1
+step: 1461
+1461 batches are tested.
+batch: 2
+step: 1462
+1462 batches are tested.
+batch: 3
+step: 1463
+1463 batches are tested.
+batch: 4
+step: 1464
+1464 batches are tested.
+batch: 5
+step: 1465
+1465 batches are tested.
+batch: 6
+step: 1466
+1466 batches are tested.
+batch: 7
+step: 1467
+1467 batches are tested.
+batch: 8
+step: 1468
+1468 batches are tested.
+batch: 9
+step: 1469
+1469 batches are tested.
+batch: 10
+step: 1470
+1470 batches are tested.
+batch: 11
+step: 1471
+1471 batches are tested.
+batch: 12
+step: 1472
+1472 batches are tested.
+batch: 13
+step: 1473
+1473 batches are tested.
+batch: 14
+step: 1474
+1474 batches are tested.
+batch: 15
+step: 1475
+1475 batches are tested.
+batch: 16
+step: 1476
+1476 batches are tested.
+batch: 17
+step: 1477
+1477 batches are tested.
+batch: 18
+step: 1478
+1478 batches are tested.
+batch: 19
+step: 1479
+1479 batches are tested.
+the average accuracy is 0.282000
+epoch: 75
+ckpt_re: .ckpt-37500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1480
+1480 batches are tested.
+batch: 1
+step: 1481
+1481 batches are tested.
+batch: 2
+step: 1482
+1482 batches are tested.
+batch: 3
+step: 1483
+1483 batches are tested.
+batch: 4
+step: 1484
+1484 batches are tested.
+batch: 5
+step: 1485
+1485 batches are tested.
+batch: 6
+step: 1486
+1486 batches are tested.
+batch: 7
+step: 1487
+1487 batches are tested.
+batch: 8
+step: 1488
+1488 batches are tested.
+batch: 9
+step: 1489
+1489 batches are tested.
+batch: 10
+step: 1490
+1490 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:39,127 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:43,088 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:47,087 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:51,162 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:55,150 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:27:59,261 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:03,323 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:07,423 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 11
+step: 1491
+1491 batches are tested.
+batch: 12
+step: 1492
+1492 batches are tested.
+batch: 13
+step: 1493
+1493 batches are tested.
+batch: 14
+step: 1494
+1494 batches are tested.
+batch: 15
+step: 1495
+1495 batches are tested.
+batch: 16
+step: 1496
+1496 batches are tested.
+batch: 17
+step: 1497
+1497 batches are tested.
+batch: 18
+step: 1498
+1498 batches are tested.
+batch: 19
+step: 1499
+1499 batches are tested.
+the average accuracy is 0.307000
+epoch: 76
+ckpt_re: .ckpt-38000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1500
+1500 batches are tested.
+batch: 1
+step: 1501
+1501 batches are tested.
+batch: 2
+step: 1502
+1502 batches are tested.
+batch: 3
+step: 1503
+1503 batches are tested.
+batch: 4
+step: 1504
+1504 batches are tested.
+batch: 5
+step: 1505
+1505 batches are tested.
+batch: 6
+step: 1506
+1506 batches are tested.
+batch: 7
+step: 1507
+1507 batches are tested.
+batch: 8
+step: 1508
+1508 batches are tested.
+batch: 9
+step: 1509
+1509 batches are tested.
+batch: 10
+step: 1510
+1510 batches are tested.
+batch: 11
+step: 1511
+1511 batches are tested.
+batch: 12
+step: 1512
+1512 batches are tested.
+batch: 13
+step: 1513
+1513 batches are tested.
+batch: 14
+step: 1514
+1514 batches are tested.
+batch: 15
+step: 1515
+1515 batches are tested.
+batch: 16
+step: 1516
+1516 batches are tested.
+batch: 17
+step: 1517
+1517 batches are tested.
+batch: 18
+step: 1518
+1518 batches are tested.
+batch: 19
+step: 1519
+1519 batches are tested.
+the average accuracy is 0.292000
+epoch: 77
+ckpt_re: .ckpt-38500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1520
+1520 batches are tested.
+batch: 1
+step: 1521
+1521 batches are tested.
+batch: 2
+step: 1522
+1522 batches are tested.
+batch: 3
+step: 1523
+1523 batches are tested.
+batch: 4
+step: 1524
+1524 batches are tested.
+batch: 5
+step: 1525
+1525 batches are tested.
+batch: 6
+step: 1526
+1526 batches are tested.
+batch: 7
+step: 1527
+1527 batches are tested.
+batch: 8
+step: 1528
+1528 batches are tested.
+batch: 9
+step: 1529
+1529 batches are tested.
+batch: 10
+step: 1530
+1530 batches are tested.
+batch: 11
+step: 1531
+1531 batches are tested.
+batch: 12
+step: 1532
+1532 batches are tested.
+batch: 13
+step: 1533
+1533 batches are tested.
+batch: 14
+step: 1534
+1534 batches are tested.
+batch: 15
+step: 1535
+1535 batches are tested.
+batch: 16
+step: 1536
+1536 batches are tested.
+batch: 17
+step: 1537
+1537 batches are tested.
+batch: 18
+step: 1538
+1538 batches are tested.
+batch: 19
+step: 1539
+1539 batches are tested.
+the average accuracy is 0.287000
+epoch: 78
+ckpt_re: .ckpt-39000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1540
+1540 batches are tested.
+batch: 1
+step: 1541
+1541 batches are tested.
+batch: 2
+step: 1542
+1542 batches are tested.
+batch: 3
+step: 1543
+1543 batches are tested.
+batch: 4
+step: 1544
+1544 batches are tested.
+batch: 5
+step: 1545
+1545 batches are tested.
+batch: 6
+step: 1546
+1546 batches are tested.
+batch: 7
+step: 1547
+1547 batches are tested.
+batch: 8
+step: 1548
+1548 batches are tested.
+batch: 9
+step: 1549
+1549 batches are tested.
+batch: 10
+step: 1550
+1550 batches are tested.
+batch: 11
+step: 1551
+1551 batches are tested.
+batch: 12
+step: 1552
+1552 batches are tested.
+batch: 13
+step: 1553
+1553 batches are tested.
+batch: 14
+step: 1554
+1554 batches are tested.
+batch: 15
+step: 1555
+1555 batches are tested.
+batch: 16
+step: 1556
+1556 batches are tested.
+batch: 17
+step: 1557
+1557 batches are tested.
+batch: 18
+step: 1558
+1558 batches are tested.
+batch: 19
+step: 1559
+1559 batches are tested.
+the average accuracy is 0.278000
+epoch: 79
+ckpt_re: .ckpt-39500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1560
+1560 batches are tested.
+batch: 1
+step: 1561
+1561 batches are tested.
+batch: 2
+step: 1562
+1562 batches are tested.
+batch: 3
+step: 1563
+1563 batches are tested.
+batch: 4
+step: 1564
+1564 batches are tested.
+batch: 5
+step: 1565
+1565 batches are tested.
+batch: 6
+step: 1566
+1566 batches are tested.
+batch: 7
+step: 1567
+1567 batches are tested.
+batch: 8
+step: 1568
+1568 batches are tested.
+batch: 9
+step: 1569
+1569 batches are tested.
+batch: 10
+step: 1570
+1570 batches are tested.
+batch: 11
+step: 1571
+1571 batches are tested.
+batch: 12
+step: 1572
+1572 batches are tested.
+batch: 13
+step: 1573
+1573 batches are tested.
+batch: 14
+step: 1574
+1574 batches are tested.
+batch: 15
+step: 1575
+1575 batches are tested.
+batch: 16
+step: 1576
+1576 batches are tested.
+batch: 17
+step: 1577
+1577 batches are tested.
+batch: 18
+step: 1578
+1578 batches are tested.
+batch: 19
+step: 1579
+1579 batches are tested.
+the average accuracy is 0.269000
+epoch: 80
+ckpt_re: .ckpt-40000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1580
+1580 batches are tested.
+batch: 1
+step: 1581
+1581 batches are tested.
+batch: 2
+step: 1582
+1582 batches are tested.
+batch: 3
+step: 1583
+1583 batches are tested.
+batch: 4
+step: 1584
+1584 batches are tested.
+batch: 5
+step: 1585
+1585 batches are tested.
+batch: 6
+step: 1586
+1586 batches are tested.
+batch: 7
+step: 1587
+1587 batches are tested.
+batch: 8
+step: 1588
+1588 batches are tested.
+batch: 9
+step: 1589
+1589 batches are tested.
+batch: 10
+step: 1590
+1590 batches are tested.
+batch: 11
+step: 1591
+1591 batches are tested.
+batch: 12
+step: 1592
+1592 batches are tested.
+batch: 13
+step: 1593
+1593 batches are tested.
+batch: 14
+step: 1594
+1594 batches are tested.
+batch: 15
+step: 1595
+1595 batches are tested.
+batch: 16
+step: 1596
+1596 batches are tested.
+batch: 17
+step: 1597
+1597 batches are tested.
+batch: 18
+step: 1598
+1598 batches are tested.
+batch: 19
+step: 1599
+1599 batches are tested.
+the average accuracy is 0.299000
+epoch: 81
+ckpt_re: .ckpt-40500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1600
+1600 batches are tested.
+batch: 1
+step: 1601
+1601 batches are tested.
+batch: 2
+step: 1602
+1602 batches are tested.
+batch: 3
+step: 1603
+1603 batches are tested.
+batch: 4
+step: 1604
+1604 batches are tested.
+batch: 5
+step: 1605
+1605 batches are tested.
+batch: 6
+step: 1606
+1606 batches are tested.
+batch: 7
+step: 1607
+1607 batches are tested.
+batch: 8
+step: 1608
+1608 batches are tested.
+batch: 9
+step: 1609
+1609 batches are tested.
+batch: 10
+step: 1610
+1610 batches are tested.
+batch: 11
+step: 1611
+1611 batches are tested.
+batch: 12
+step: 1612
+1612 batches are tested.
+batch: 13
+step: 1613
+1613 batches are tested.
+batch: 14
+step: 1614
+1614 batches are tested.
+batch: 15
+step: 1615
+1615 batches are tested.
+batch: 16
+step: 1616
+1616 batches are tested.
+batch: 17
+step: 1617
+1617 batches are tested.
+batch: 18
+step: 1618
+1618 batches are tested.
+batch: 19
+step: 1619
+1619 batches are tested.
+the average accuracy is 0.298000
+epoch: 82
+ckpt_re: .ckpt-41000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1620
+1620 batches are tested.
+batch: 1
+step: 1621
+1621 batches are tested.
+batch: 2
+step: 1622
+1622 batches are tested.
+batch: 3
+step: 1623
+1623 batches are tested.
+batch: 4
+step: 1624
+1624 batches are tested.
+batch: 5
+step: 1625
+1625 batches are tested.
+batch: 6
+step: 1626
+1626 batches are tested.
+batch: 7
+step: 1627
+1627 batches are tested.
+batch: 8
+step: 1628
+1628 batches are tested.
+batch: 9
+step: 1629
+1629 batches are tested.
+batch: 10
+step: 1630
+1630 batches are tested.
+batch: 11
+step: 1631
+1631 batches are tested.
+batch: 12
+step: 1632
+1632 batches are tested.
+batch: 13
+step: 1633
+1633 batches are tested.
+batch: 14
+step: 1634
+1634 batches are tested.
+batch: 15
+step: 1635
+1635 batches are tested.
+batch: 16
+step: 1636
+1636 batches are tested.
+batch: 17
+step: 1637
+1637 batches are tested.
+batch: 18
+step: 1638
+1638 batches are tested.
+batch: 19
+step: 1639
+1639 batches are tested.
+the average accuracy is 0.272000
+epoch: 83
+ckpt_re: .ckpt-41500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1640
+1640 batches are tested.
+batch: 1
+step: 1641
+1641 batches are tested.
+batch: 2
+step: 1642
+1642 batches are tested.
+batch: 3
+step: 1643
+1643 batches are tested.
+batch: 4
+step: 1644
+1644 batches are tested.
+batch: 5
+step: 1645
+1645 batches are tested.
+batch: 6
+step: 1646
+1646 batches are tested.
+batch: 7
+step: 1647
+1647 batches are tested.
+batch: 8
+step: 1648
+1648 batches are tested.
+batch: 9
+step: 1649
+1649 batches are tested.
+batch: 10
+step: 1650
+1650 batches are tested.
+batch: 11
+step: 1651
+1651 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:11,493 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:15,636 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:19,622 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:23,774 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:27,851 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:31,943 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:35,981 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:39,919 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 12
+step: 1652
+1652 batches are tested.
+batch: 13
+step: 1653
+1653 batches are tested.
+batch: 14
+step: 1654
+1654 batches are tested.
+batch: 15
+step: 1655
+1655 batches are tested.
+batch: 16
+step: 1656
+1656 batches are tested.
+batch: 17
+step: 1657
+1657 batches are tested.
+batch: 18
+step: 1658
+1658 batches are tested.
+batch: 19
+step: 1659
+1659 batches are tested.
+the average accuracy is 0.281000
+epoch: 84
+ckpt_re: .ckpt-42000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1660
+1660 batches are tested.
+batch: 1
+step: 1661
+1661 batches are tested.
+batch: 2
+step: 1662
+1662 batches are tested.
+batch: 3
+step: 1663
+1663 batches are tested.
+batch: 4
+step: 1664
+1664 batches are tested.
+batch: 5
+step: 1665
+1665 batches are tested.
+batch: 6
+step: 1666
+1666 batches are tested.
+batch: 7
+step: 1667
+1667 batches are tested.
+batch: 8
+step: 1668
+1668 batches are tested.
+batch: 9
+step: 1669
+1669 batches are tested.
+batch: 10
+step: 1670
+1670 batches are tested.
+batch: 11
+step: 1671
+1671 batches are tested.
+batch: 12
+step: 1672
+1672 batches are tested.
+batch: 13
+step: 1673
+1673 batches are tested.
+batch: 14
+step: 1674
+1674 batches are tested.
+batch: 15
+step: 1675
+1675 batches are tested.
+batch: 16
+step: 1676
+1676 batches are tested.
+batch: 17
+step: 1677
+1677 batches are tested.
+batch: 18
+step: 1678
+1678 batches are tested.
+batch: 19
+step: 1679
+1679 batches are tested.
+the average accuracy is 0.301000
+epoch: 85
+ckpt_re: .ckpt-42500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1680
+1680 batches are tested.
+batch: 1
+step: 1681
+1681 batches are tested.
+batch: 2
+step: 1682
+1682 batches are tested.
+batch: 3
+step: 1683
+1683 batches are tested.
+batch: 4
+step: 1684
+1684 batches are tested.
+batch: 5
+step: 1685
+1685 batches are tested.
+batch: 6
+step: 1686
+1686 batches are tested.
+batch: 7
+step: 1687
+1687 batches are tested.
+batch: 8
+step: 1688
+1688 batches are tested.
+batch: 9
+step: 1689
+1689 batches are tested.
+batch: 10
+step: 1690
+1690 batches are tested.
+batch: 11
+step: 1691
+1691 batches are tested.
+batch: 12
+step: 1692
+1692 batches are tested.
+batch: 13
+step: 1693
+1693 batches are tested.
+batch: 14
+step: 1694
+1694 batches are tested.
+batch: 15
+step: 1695
+1695 batches are tested.
+batch: 16
+step: 1696
+1696 batches are tested.
+batch: 17
+step: 1697
+1697 batches are tested.
+batch: 18
+step: 1698
+1698 batches are tested.
+batch: 19
+step: 1699
+1699 batches are tested.
+the average accuracy is 0.288000
+epoch: 86
+ckpt_re: .ckpt-43000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1700
+1700 batches are tested.
+batch: 1
+step: 1701
+1701 batches are tested.
+batch: 2
+step: 1702
+1702 batches are tested.
+batch: 3
+step: 1703
+1703 batches are tested.
+batch: 4
+step: 1704
+1704 batches are tested.
+batch: 5
+step: 1705
+1705 batches are tested.
+batch: 6
+step: 1706
+1706 batches are tested.
+batch: 7
+step: 1707
+1707 batches are tested.
+batch: 8
+step: 1708
+1708 batches are tested.
+batch: 9
+step: 1709
+1709 batches are tested.
+batch: 10
+step: 1710
+1710 batches are tested.
+batch: 11
+step: 1711
+1711 batches are tested.
+batch: 12
+step: 1712
+1712 batches are tested.
+batch: 13
+step: 1713
+1713 batches are tested.
+batch: 14
+step: 1714
+1714 batches are tested.
+batch: 15
+step: 1715
+1715 batches are tested.
+batch: 16
+step: 1716
+1716 batches are tested.
+batch: 17
+step: 1717
+1717 batches are tested.
+batch: 18
+step: 1718
+1718 batches are tested.
+batch: 19
+step: 1719
+1719 batches are tested.
+the average accuracy is 0.278000
+epoch: 87
+ckpt_re: .ckpt-43500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1720
+1720 batches are tested.
+batch: 1
+step: 1721
+1721 batches are tested.
+batch: 2
+step: 1722
+1722 batches are tested.
+batch: 3
+step: 1723
+1723 batches are tested.
+batch: 4
+step: 1724
+1724 batches are tested.
+batch: 5
+step: 1725
+1725 batches are tested.
+batch: 6
+step: 1726
+1726 batches are tested.
+batch: 7
+step: 1727
+1727 batches are tested.
+batch: 8
+step: 1728
+1728 batches are tested.
+batch: 9
+step: 1729
+1729 batches are tested.
+batch: 10
+step: 1730
+1730 batches are tested.
+batch: 11
+step: 1731
+1731 batches are tested.
+batch: 12
+step: 1732
+1732 batches are tested.
+batch: 13
+step: 1733
+1733 batches are tested.
+batch: 14
+step: 1734
+1734 batches are tested.
+batch: 15
+step: 1735
+1735 batches are tested.
+batch: 16
+step: 1736
+1736 batches are tested.
+batch: 17
+step: 1737
+1737 batches are tested.
+batch: 18
+step: 1738
+1738 batches are tested.
+batch: 19
+step: 1739
+1739 batches are tested.
+the average accuracy is 0.271000
+epoch: 88
+ckpt_re: .ckpt-44000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1740
+1740 batches are tested.
+batch: 1
+step: 1741
+1741 batches are tested.
+batch: 2
+step: 1742
+1742 batches are tested.
+batch: 3
+step: 1743
+1743 batches are tested.
+batch: 4
+step: 1744
+1744 batches are tested.
+batch: 5
+step: 1745
+1745 batches are tested.
+batch: 6
+step: 1746
+1746 batches are tested.
+batch: 7
+step: 1747
+1747 batches are tested.
+batch: 8
+step: 1748
+1748 batches are tested.
+batch: 9
+step: 1749
+1749 batches are tested.
+batch: 10
+step: 1750
+1750 batches are tested.
+batch: 11
+step: 1751
+1751 batches are tested.
+batch: 12
+step: 1752
+1752 batches are tested.
+batch: 13
+step: 1753
+1753 batches are tested.
+batch: 14
+step: 1754
+1754 batches are tested.
+batch: 15
+step: 1755
+1755 batches are tested.
+batch: 16
+step: 1756
+1756 batches are tested.
+batch: 17
+step: 1757
+1757 batches are tested.
+batch: 18
+step: 1758
+1758 batches are tested.
+batch: 19
+step: 1759
+1759 batches are tested.
+the average accuracy is 0.291000
+epoch: 89
+ckpt_re: .ckpt-44500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1760
+1760 batches are tested.
+batch: 1
+step: 1761
+1761 batches are tested.
+batch: 2
+step: 1762
+1762 batches are tested.
+batch: 3
+step: 1763
+1763 batches are tested.
+batch: 4
+step: 1764
+1764 batches are tested.
+batch: 5
+step: 1765
+1765 batches are tested.
+batch: 6
+step: 1766
+1766 batches are tested.
+batch: 7
+step: 1767
+1767 batches are tested.
+batch: 8
+step: 1768
+1768 batches are tested.
+batch: 9
+step: 1769
+1769 batches are tested.
+batch: 10
+step: 1770
+1770 batches are tested.
+batch: 11
+step: 1771
+1771 batches are tested.
+batch: 12
+step: 1772
+1772 batches are tested.
+batch: 13
+step: 1773
+1773 batches are tested.
+batch: 14
+step: 1774
+1774 batches are tested.
+batch: 15
+step: 1775
+1775 batches are tested.
+batch: 16
+step: 1776
+1776 batches are tested.
+batch: 17
+step: 1777
+1777 batches are tested.
+batch: 18
+step: 1778
+1778 batches are tested.
+batch: 19
+step: 1779
+1779 batches are tested.
+the average accuracy is 0.291000
+epoch: 90
+ckpt_re: .ckpt-45000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1780
+1780 batches are tested.
+batch: 1
+step: 1781
+1781 batches are tested.
+batch: 2
+step: 1782
+1782 batches are tested.
+batch: 3
+step: 1783
+1783 batches are tested.
+batch: 4
+step: 1784
+1784 batches are tested.
+batch: 5
+step: 1785
+1785 batches are tested.
+batch: 6
+step: 1786
+1786 batches are tested.
+batch: 7
+step: 1787
+1787 batches are tested.
+batch: 8
+step: 1788
+1788 batches are tested.
+batch: 9
+step: 1789
+1789 batches are tested.
+batch: 10
+step: 1790
+1790 batches are tested.
+batch: 11
+step: 1791
+1791 batches are tested.
+batch: 12
+step: 1792
+1792 batches are tested.
+batch: 13
+step: 1793
+1793 batches are tested.
+batch: 14
+step: 1794
+1794 batches are tested.
+batch: 15
+step: 1795
+1795 batches are tested.
+batch: 16
+step: 1796
+1796 batches are tested.
+batch: 17
+step: 1797
+1797 batches are tested.
+batch: 18
+step: 1798
+1798 batches are tested.
+batch: 19
+step: 1799
+1799 batches are tested.
+the average accuracy is 0.289000
+epoch: 91
+ckpt_re: .ckpt-45500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1800
+1800 batches are tested.
+batch: 1
+step: 1801
+1801 batches are tested.
+batch: 2
+step: 1802
+1802 batches are tested.
+batch: 3
+step: 1803
+1803 batches are tested.
+batch: 4
+step: 1804
+1804 batches are tested.
+batch: 5
+step: 1805
+1805 batches are tested.
+batch: 6
+step: 1806
+1806 batches are tested.
+batch: 7
+step: 1807
+1807 batches are tested.
+batch: 8
+step: 1808
+1808 batches are tested.
+batch: 9
+step: 1809
+1809 batches are tested.
+batch: 10
+step: 1810
+1810 batches are tested.
+batch: 11
+step: 1811
+1811 batches are tested.
+batch: 12
+step: 1812
+1812 batches are tested.INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:43,994 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:47,931 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:51,922 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:28:56,069 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:29:00,179 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:29:04,285 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:29:08,280 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+INFO:tensorflow:Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+2018-05-06 20:29:12,415 [25234] INFO     tensorflow: Restoring parameters from logdir/caps/mnist/model-3.9491.ckpt-2000
+
+batch: 13
+step: 1813
+1813 batches are tested.
+batch: 14
+step: 1814
+1814 batches are tested.
+batch: 15
+step: 1815
+1815 batches are tested.
+batch: 16
+step: 1816
+1816 batches are tested.
+batch: 17
+step: 1817
+1817 batches are tested.
+batch: 18
+step: 1818
+1818 batches are tested.
+batch: 19
+step: 1819
+1819 batches are tested.
+the average accuracy is 0.281000
+epoch: 92
+ckpt_re: .ckpt-46000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1820
+1820 batches are tested.
+batch: 1
+step: 1821
+1821 batches are tested.
+batch: 2
+step: 1822
+1822 batches are tested.
+batch: 3
+step: 1823
+1823 batches are tested.
+batch: 4
+step: 1824
+1824 batches are tested.
+batch: 5
+step: 1825
+1825 batches are tested.
+batch: 6
+step: 1826
+1826 batches are tested.
+batch: 7
+step: 1827
+1827 batches are tested.
+batch: 8
+step: 1828
+1828 batches are tested.
+batch: 9
+step: 1829
+1829 batches are tested.
+batch: 10
+step: 1830
+1830 batches are tested.
+batch: 11
+step: 1831
+1831 batches are tested.
+batch: 12
+step: 1832
+1832 batches are tested.
+batch: 13
+step: 1833
+1833 batches are tested.
+batch: 14
+step: 1834
+1834 batches are tested.
+batch: 15
+step: 1835
+1835 batches are tested.
+batch: 16
+step: 1836
+1836 batches are tested.
+batch: 17
+step: 1837
+1837 batches are tested.
+batch: 18
+step: 1838
+1838 batches are tested.
+batch: 19
+step: 1839
+1839 batches are tested.
+the average accuracy is 0.288000
+epoch: 93
+ckpt_re: .ckpt-46500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1840
+1840 batches are tested.
+batch: 1
+step: 1841
+1841 batches are tested.
+batch: 2
+step: 1842
+1842 batches are tested.
+batch: 3
+step: 1843
+1843 batches are tested.
+batch: 4
+step: 1844
+1844 batches are tested.
+batch: 5
+step: 1845
+1845 batches are tested.
+batch: 6
+step: 1846
+1846 batches are tested.
+batch: 7
+step: 1847
+1847 batches are tested.
+batch: 8
+step: 1848
+1848 batches are tested.
+batch: 9
+step: 1849
+1849 batches are tested.
+batch: 10
+step: 1850
+1850 batches are tested.
+batch: 11
+step: 1851
+1851 batches are tested.
+batch: 12
+step: 1852
+1852 batches are tested.
+batch: 13
+step: 1853
+1853 batches are tested.
+batch: 14
+step: 1854
+1854 batches are tested.
+batch: 15
+step: 1855
+1855 batches are tested.
+batch: 16
+step: 1856
+1856 batches are tested.
+batch: 17
+step: 1857
+1857 batches are tested.
+batch: 18
+step: 1858
+1858 batches are tested.
+batch: 19
+step: 1859
+1859 batches are tested.
+the average accuracy is 0.272000
+epoch: 94
+ckpt_re: .ckpt-47000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1860
+1860 batches are tested.
+batch: 1
+step: 1861
+1861 batches are tested.
+batch: 2
+step: 1862
+1862 batches are tested.
+batch: 3
+step: 1863
+1863 batches are tested.
+batch: 4
+step: 1864
+1864 batches are tested.
+batch: 5
+step: 1865
+1865 batches are tested.
+batch: 6
+step: 1866
+1866 batches are tested.
+batch: 7
+step: 1867
+1867 batches are tested.
+batch: 8
+step: 1868
+1868 batches are tested.
+batch: 9
+step: 1869
+1869 batches are tested.
+batch: 10
+step: 1870
+1870 batches are tested.
+batch: 11
+step: 1871
+1871 batches are tested.
+batch: 12
+step: 1872
+1872 batches are tested.
+batch: 13
+step: 1873
+1873 batches are tested.
+batch: 14
+step: 1874
+1874 batches are tested.
+batch: 15
+step: 1875
+1875 batches are tested.
+batch: 16
+step: 1876
+1876 batches are tested.
+batch: 17
+step: 1877
+1877 batches are tested.
+batch: 18
+step: 1878
+1878 batches are tested.
+batch: 19
+step: 1879
+1879 batches are tested.
+the average accuracy is 0.288000
+epoch: 95
+ckpt_re: .ckpt-47500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1880
+1880 batches are tested.
+batch: 1
+step: 1881
+1881 batches are tested.
+batch: 2
+step: 1882
+1882 batches are tested.
+batch: 3
+step: 1883
+1883 batches are tested.
+batch: 4
+step: 1884
+1884 batches are tested.
+batch: 5
+step: 1885
+1885 batches are tested.
+batch: 6
+step: 1886
+1886 batches are tested.
+batch: 7
+step: 1887
+1887 batches are tested.
+batch: 8
+step: 1888
+1888 batches are tested.
+batch: 9
+step: 1889
+1889 batches are tested.
+batch: 10
+step: 1890
+1890 batches are tested.
+batch: 11
+step: 1891
+1891 batches are tested.
+batch: 12
+step: 1892
+1892 batches are tested.
+batch: 13
+step: 1893
+1893 batches are tested.
+batch: 14
+step: 1894
+1894 batches are tested.
+batch: 15
+step: 1895
+1895 batches are tested.
+batch: 16
+step: 1896
+1896 batches are tested.
+batch: 17
+step: 1897
+1897 batches are tested.
+batch: 18
+step: 1898
+1898 batches are tested.
+batch: 19
+step: 1899
+1899 batches are tested.
+the average accuracy is 0.266000
+epoch: 96
+ckpt_re: .ckpt-48000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1900
+1900 batches are tested.
+batch: 1
+step: 1901
+1901 batches are tested.
+batch: 2
+step: 1902
+1902 batches are tested.
+batch: 3
+step: 1903
+1903 batches are tested.
+batch: 4
+step: 1904
+1904 batches are tested.
+batch: 5
+step: 1905
+1905 batches are tested.
+batch: 6
+step: 1906
+1906 batches are tested.
+batch: 7
+step: 1907
+1907 batches are tested.
+batch: 8
+step: 1908
+1908 batches are tested.
+batch: 9
+step: 1909
+1909 batches are tested.
+batch: 10
+step: 1910
+1910 batches are tested.
+batch: 11
+step: 1911
+1911 batches are tested.
+batch: 12
+step: 1912
+1912 batches are tested.
+batch: 13
+step: 1913
+1913 batches are tested.
+batch: 14
+step: 1914
+1914 batches are tested.
+batch: 15
+step: 1915
+1915 batches are tested.
+batch: 16
+step: 1916
+1916 batches are tested.
+batch: 17
+step: 1917
+1917 batches are tested.
+batch: 18
+step: 1918
+1918 batches are tested.
+batch: 19
+step: 1919
+1919 batches are tested.
+the average accuracy is 0.290000
+epoch: 97
+ckpt_re: .ckpt-48500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1920
+1920 batches are tested.
+batch: 1
+step: 1921
+1921 batches are tested.
+batch: 2
+step: 1922
+1922 batches are tested.
+batch: 3
+step: 1923
+1923 batches are tested.
+batch: 4
+step: 1924
+1924 batches are tested.
+batch: 5
+step: 1925
+1925 batches are tested.
+batch: 6
+step: 1926
+1926 batches are tested.
+batch: 7
+step: 1927
+1927 batches are tested.
+batch: 8
+step: 1928
+1928 batches are tested.
+batch: 9
+step: 1929
+1929 batches are tested.
+batch: 10
+step: 1930
+1930 batches are tested.
+batch: 11
+step: 1931
+1931 batches are tested.
+batch: 12
+step: 1932
+1932 batches are tested.
+batch: 13
+step: 1933
+1933 batches are tested.
+batch: 14
+step: 1934
+1934 batches are tested.
+batch: 15
+step: 1935
+1935 batches are tested.
+batch: 16
+step: 1936
+1936 batches are tested.
+batch: 17
+step: 1937
+1937 batches are tested.
+batch: 18
+step: 1938
+1938 batches are tested.
+batch: 19
+step: 1939
+1939 batches are tested.
+the average accuracy is 0.270000
+epoch: 98
+ckpt_re: .ckpt-49000
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1940
+1940 batches are tested.
+batch: 1
+step: 1941
+1941 batches are tested.
+batch: 2
+step: 1942
+1942 batches are tested.
+batch: 3
+step: 1943
+1943 batches are tested.
+batch: 4
+step: 1944
+1944 batches are tested.
+batch: 5
+step: 1945
+1945 batches are tested.
+batch: 6
+step: 1946
+1946 batches are tested.
+batch: 7
+step: 1947
+1947 batches are tested.
+batch: 8
+step: 1948
+1948 batches are tested.
+batch: 9
+step: 1949
+1949 batches are tested.
+batch: 10
+step: 1950
+1950 batches are tested.
+batch: 11
+step: 1951
+1951 batches are tested.
+batch: 12
+step: 1952
+1952 batches are tested.
+batch: 13
+step: 1953
+1953 batches are tested.
+batch: 14
+step: 1954
+1954 batches are tested.
+batch: 15
+step: 1955
+1955 batches are tested.
+batch: 16
+step: 1956
+1956 batches are tested.
+batch: 17
+step: 1957
+1957 batches are tested.
+batch: 18
+step: 1958
+1958 batches are tested.
+batch: 19
+step: 1959
+1959 batches are tested.
+the average accuracy is 0.305000
+epoch: 99
+ckpt_re: .ckpt-49500
+ckpt: logdir/caps/mnist/model-3.9491.ckpt-2000
+batch: 0
+step: 1960
+1960 batches are tested.
+batch: 1
+step: 1961
+1961 batches are tested.
+batch: 2
+step: 1962
+1962 batches are tested.
+batch: 3
+step: 1963
+1963 batches are tested.
+batch: 4
+step: 1964
+1964 batches are tested.
+batch: 5
+step: 1965
+1965 batches are tested.
+batch: 6
+step: 1966
+1966 batches are tested.
+batch: 7
+step: 1967
+1967 batches are tested.
+batch: 8
+step: 1968
+1968 batches are tested.
+batch: 9
+step: 1969
+1969 batches are tested.
+batch: 10
+step: 1970
+1970 batches are tested.
+batch: 11
+step: 1971
+1971 batches are tested.
+batch: 12
+step: 1972
+1972 batches are tested.
+batch: 13
+step: 1973
+1973 batches are tested.
