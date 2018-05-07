@@ -14,3 +14,4 @@ The retrieval result (accuracy and pictures) are in folder `./retrieval`.
 To retreive, you can use `encode_chunk.py` and `zz_retrieve.py` to first encode the images and then retrieval. Results are shown in folder ./retreival.
 
 For the landmark dataset retrieval result, it is saved in `retrieval_accu_label.txt`. The top-5 labels are stored in order.
+The "True label" in .txt file means the query label, and the images in `./retrieval` folder are in format "querylabel_i.jpg".
